@@ -1,0 +1,20 @@
+# main links
+main:
+  - title: "Research"
+    url: /research/
+  - title: "Publications"
+    url: /publications/
+  - title: "Conferences"
+    url: /conferences
+  - title: "Teaching"
+    url: /teaching/
+#  - title: "Students"
+#    url: /students/
+#  - title: "Software"
+#    url: /software/
+  - title: "CV"
+    url: /cv/
+#  - title: "Links"
+#    url: /links/
+  - title: "Contact"
+    url: /contact/

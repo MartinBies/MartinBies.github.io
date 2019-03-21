@@ -1,0 +1,12 @@
+Things to know:
+
+(*) config.yml: 
+    - personal data
+(*) _pages:
+    - here you want to fill in all your data/details
+(*) _data/navigation:
+    - header and their order is defined here
+(*) _post
+    - place posts here
+    - one file for each post
+    - yyyy-mm-dd-title.md is the format for each post file

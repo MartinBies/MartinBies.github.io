@@ -22,6 +22,6 @@ Look at [Inspire](https://inspirehep.net/author/profile/M.Bies.1) to see my pape
 You can find my software at [GitHub](https://github.com/herearound).
 
 ## Theses
-* [*Cohomologies of coherent sheaves and massless spectra in F-theory*](https://arxiv.org/abs/1802.08860). Doctoral thesis, Departement of theoretical physics, University of Heidelberg (February 2018).
-* [*Cohomologies of holomorphic line bundles in smooth and compactnormal toric varieties*](/Master_thesis_MartinBies.pdf). Master thesis,, Departement of theoretical physics University of Heidelberg (February 2014). [presentation](/Master_thesis_presentation.pdf)
-* [*Intersecting D6-brane models onT2×T2×T2/(σ×Ω)andT2×T2×T2/(Z2×Z2×σ×Ω)orientifolds*](/Bachelor_thesis_MartinBies.pdf). Bachelor thesis, Departement of theoretical physics, University of Heidelberg (August 2012). [presentation](/Bachelor_thesis_presentation.pdf)
+* [*Cohomologies of coherent sheaves and massless spectra in F-theory*](https://arxiv.org/abs/1802.08860). Doctoral thesis, Department of theoretical physics, University of Heidelberg (February 2018).
+* [*Cohomologies of holomorphic line bundles in smooth and compactnormal toric varieties*](/Master_thesis_MartinBies.pdf). Master thesis,, Department of theoretical physics University of Heidelberg (February 2014). [presentation](/Master_thesis_presentation.pdf)
+* [*Intersecting D6-brane models onT2×T2×T2/(σ×Ω)andT2×T2×T2/(Z2×Z2×σ×Ω)orientifolds*](/Bachelor_thesis_MartinBies.pdf). Bachelor thesis, Department of theoretical physics, University of Heidelberg (August 2012). [presentation](/Bachelor_thesis_presentation.pdf)

@@ -10,8 +10,8 @@ permalink: /publications/
 
 ## Paper
 
-You can find all my publications on ([inspire](https://inspirehep.net/author/profile/M.Bies.1) or on the
-[arXiv](https://arxiv.org/search/hep-th?searchtype=author&query=Bies%2C+M)). Publications include:
+You can find all my publications on [inspire](https://inspirehep.net/author/profile/M.Bies.1) or on the
+[arXiv](https://arxiv.org/search/hep-th?searchtype=author&query=Bies%2C+M). Publications include:
 
 4 | Martin Bies, [*Cohomologies of coherent sheaves and massless spectra in F-theory*](https://arxiv.org/abs/1802.08860)
 

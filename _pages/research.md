@@ -7,7 +7,7 @@ permalink: /research/
 
 ### Physics
 
-By upbringing, I am a physicist interested in theoretical high energy physics, in particular string theory. My particular interest focuses on F-theory, which utilizes geometry to investigate the properties of solutions to string theory.
+By upbringing, I am a physicist interested in theoretical high energy physics -- in particular string theory. Currently, my focus rests on F-theory, which utilizes geometry to investigate the properties of solutions to string theory.
 
 
 ### Mathematics

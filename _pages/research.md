@@ -73,11 +73,29 @@ allows to compute triangulations and blowups of toric varieties.
 
 
 
-## Overview and documentation of software packages
+## Documentation of my software packages
 
+Once the above software packages and gap are installed, the latest version of the documentation can be generated as follows:
+
+* Navigate into the package folder
+* Issue *gap makedoc.g*
+* Navigate into the *doc* subfolder of the package folder
+* You should find the file *manual.pdf* with the latest documentation.
+
+For convenience, you can also download these documentations (version: 4 april 2019) from the list below:
+
+* [CAPCategoryOfProjectiveGradedModules](/CAPCategoryOfProjectiveGradedModules.pdf)
+* CAPCategoryOfProjectiveGradedModules 
+* CAPPresentationCategory
+* PresentationsByProjectiveGradedModules
+* FreydCategoriesForCAP
+* TruncatinosOfPresentationsOfProjectiveGradedModules
+* cohomCalg-Interface
+* SheafCohomologiesOnToricVarieties
+* TopcomInterface
+* TriangulationsAndBlowupsOfToricVarieties
+* ToricVarieties
 
 Here is a image which describes the current dependencies among the above mentioned packages.
 
 ...
-
-Also, find here the current (add date of date) documentations of all these packages.

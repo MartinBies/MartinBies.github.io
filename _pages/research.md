@@ -21,9 +21,8 @@ Within the frameworks of F-theory, type IIB string theory, the topological B-mod
 
 ### Software
 
-Here I focus on toric geometry, as this is accessible to computers. In collaboration with Mohamed Barakt on the homalg_project I have learned that the category of coherent sheaves can be modelled in the computer by the category of so-called finitely-presented graded modules.
-
-Based on this, I have collaborated on the CAP_project (categories, algorithms and programming) and have implemented the following packages, to model coherent sheaves in the computer:
+Toric geometry is easily accessible to computers. As shown in [*Gabriel morphisms and the computability of Serre quotients with applications to coherent sheaves*](https://arxiv.org/abs/1409.2028), one can then utilise the category of finitely-presented graded S-modules (S being the Cox ring of the toric variety of interest) to model coherent sheaves in the computer. Therefore, I have collaborated on both the 
+[*homalg_project*](http://homalg-project.github.io/) and the [*CAP_project*](https://homalg-project.github.io/CAP_project/) and have written the following four packages, which can be used to model the category of finitely-presented graded S-modules in the computer:
 
 * package 1
 * package 2

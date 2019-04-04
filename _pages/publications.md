@@ -6,20 +6,43 @@ permalink: /publications/
 
 {% include toc %}
 
- ([Inspire](https://inspirehep.net/author/profile/M.Bies.1),
- [arXiv](https://arxiv.org/search/hep-th?searchtype=author&query=Bies%2C+M))
 
 
 ## Paper
 
-Look at [Inspire](https://inspirehep.net/author/profile/M.Bies.1) to see my papers.
+You can find all my publications on ([inspire](https://inspirehep.net/author/profile/M.Bies.1) or on the
+[arXiv](https://arxiv.org/search/hep-th?searchtype=author&query=Bies%2C+M)). Publications include:
 
-<!--## Or that way?
-2 | Mohamed Barakat, [*jets. A MAPLE-package for formal differential geometry*](http://www.algebra.mathematik.uni-siegen.de/barakat/casc/casc.pdf). Computer algebra in scientific computing, (EACA Konstanz), Springer, Berlin (2001), 1-12. 
-1 | Mohamed Barakat and Martin Oberlack, Reduction and long time behaviour of homogeneous turbulence under spatially constant mean-velocity gradient. Advances in turbulence VIII: Proc. of the 8th European Turbulence Conference, Barcelona, Spain (2000), 865-868.-->
+4 |, Martin Bies, [*Cohomologies of coherent sheaves and massless spectra in F-theory*](https://arxiv.org/abs/1802.08860)
+
+3 |, Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Algebraic Cycles and Local Anomalies in F-theory*](https://arxiv.org/abs/1706.08528)
+
+2 |, Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Gauge Backgrounds and Zero-Mode Counting in F-theory*](https://arxiv.org/abs/1706.04616)
+
+1 |, Martin Bies, Christoph Mayrhofer, Christian Pehle and Timo Weigand, [*Chow groups, Deligne cohomology and massless matter in F-theory*](https://arxiv.org/abs/1402.5144})
+
+
 
 ## Software
-You can find my software at [GitHub](https://github.com/herearound).
+You can find the latest updates on my software at my [github-page](https://github.com/herearound). I am author and maintainer of the following *CAP*- and *gap*-packages:
+
+* [*CAPCategoryOfProjectiveGradedModules*](https://github.com/HereAround/CAPCategoryOfProjectiveGradedModules)
+* [*CAPPresentationCategory*](https://github.com/HereAround/CAPPresentationCategory)
+* [*PresentationsByProjectiveGradedModules*](https://github.com/HereAround/PresentationsByProjectiveGradedModules)
+* [*TruncationsOfPresentationsByProjectiveGradedModules*](https://github.com/HereAround/TruncationsOfPresentationsByProjectiveGradedModules)
+* [*FreydCategoriesForCAP*](https://github.com/HereAround/CAP_project/tree/master/FreydCategoriesForCAP)
+* [*ToricVarieties*](https://github.com/homalg-project/homalg_project/tree/master/ToricVarieties)
+* [*SheafCohomologyOnToricVarieties*](https://github.com/HereAround/SheafCohomologyOnToricVarieties)
+* [*TopcomInterface*](https://github.com/HereAround/TopcomInterface)
+* [*TriangulationsAndBlowupsForToricVarieties*](https://github.com/HereAround/TriangulationsAndBlowupsForToricVarieties)
+
+I am currently developing the
+
+* [*cohomCalgInterface*](https://github.com/HereAround/cohomCalgInterface)
+
+and intend to extend it, so that the *Koszul-extension* of [*cohomCalg*](https://benjaminjurke.com/academia-and-research/cohomcalg) becomes directly available to gap.
+
+
 
 ## Theses
 * [*Cohomologies of coherent sheaves and massless spectra in F-theory*](https://arxiv.org/abs/1802.08860). Doctoral thesis, Department of theoretical physics, University of Heidelberg (February 2018).

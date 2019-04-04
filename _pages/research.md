@@ -82,7 +82,7 @@ Once the above software packages and gap are installed, the latest version of th
 * Navigate into the *doc* subfolder of the package folder
 * You should find the file *manual.pdf* with the latest documentation.
 
-For convenience, you can also download these documentations (version: 4 april 2019) from the list below:
+For convenience, you can also download these documentations (latest update on 4 april 2019) from the list below:
 
 * [CAPCategoryOfProjectiveGradedModules](/CAPCategoryOfProjectiveGradedModules.pdf)
 * [CAPPresentationCategory](/CAPPresentationCategory.pdf)
@@ -94,4 +94,4 @@ For convenience, you can also download these documentations (version: 4 april 20
 * [TopcomInterface](/TopcomInterface.pdf)
 * [TriangulationsAndBlowupsOfToricVarieties](/TriangulationsAndBlowupsOfToricVarieties.pdf)
 
-The following image summarises the dependencies of the packages among each other.
+Soon, here will be an image which shows the dependency of these packages among each other...

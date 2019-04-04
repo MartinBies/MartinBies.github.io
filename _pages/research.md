@@ -35,7 +35,7 @@ By know, the concept of a *PresentationCategory* has been well understood in a [
 
 
 
-## Software to compute sheaf cohomologies on toric varieties
+## Software to compute sheaf cohomologies
 
 To make use of finitely-presented graded S-modules as models for coherent sheaves and to compute sheaf cohomologies based on these models, I have made extensions to the package
 
@@ -59,7 +59,7 @@ I plan to extend this package soon to make the functionality of the *Koszul-exte
 
 
 
-## Further software developments regarding toric geometry
+## Software for triangulations and blowups of toric varieties
 
 Recently, triangulations of toric varieties have been increasingly important to me. I have thus written the package
 

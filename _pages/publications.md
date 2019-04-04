@@ -13,13 +13,13 @@ permalink: /publications/
 You can find all my publications on ([inspire](https://inspirehep.net/author/profile/M.Bies.1) or on the
 [arXiv](https://arxiv.org/search/hep-th?searchtype=author&query=Bies%2C+M)). Publications include:
 
-4 |, Martin Bies, [*Cohomologies of coherent sheaves and massless spectra in F-theory*](https://arxiv.org/abs/1802.08860)
+4 | Martin Bies, [*Cohomologies of coherent sheaves and massless spectra in F-theory*](https://arxiv.org/abs/1802.08860)
 
-3 |, Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Algebraic Cycles and Local Anomalies in F-theory*](https://arxiv.org/abs/1706.08528)
+3 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Algebraic Cycles and Local Anomalies in F-theory*](https://arxiv.org/abs/1706.08528)
 
-2 |, Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Gauge Backgrounds and Zero-Mode Counting in F-theory*](https://arxiv.org/abs/1706.04616)
+2 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Gauge Backgrounds and Zero-Mode Counting in F-theory*](https://arxiv.org/abs/1706.04616)
 
-1 |, Martin Bies, Christoph Mayrhofer, Christian Pehle and Timo Weigand, [*Chow groups, Deligne cohomology and massless matter in F-theory*](https://arxiv.org/abs/1402.5144})
+1 | Martin Bies, Christoph Mayrhofer, Christian Pehle and Timo Weigand, [*Chow groups, Deligne cohomology and massless matter in F-theory*](https://arxiv.org/abs/1402.5144})
 
 
 

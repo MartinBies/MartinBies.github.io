@@ -6,12 +6,12 @@ permalink: /research/
 
 {% include toc %}
 
-### Physics
+## Physics
 
 By upbringing, I am a physicist interested in theoretical high energy physics -- in particular string theory. Currently, my focus rests on F-theory, which utilizes geometry to investigate the properties of solutions to string theory.
 
 
-### Mathematics
+## Mathematics
 
 In studying F-theory, I have more and more developed an interest in the underlying mathematics. I am fairly interested in studying the role of Chow groups to F-theory (e.g. in anomaly cancellations). 
 
@@ -20,7 +20,7 @@ In taking string theory seriously, one may also wonder if there is a solution to
 Within the frameworks of F-theory, type IIB string theory, the topological B-model and heterotic string theory, zero modes can be counted by sheaf cohomologies of coherent sheaves. For this reason, it is interesting to study these cohomologies groups and means to compute them. Given the vast number of string theory solutions, a computer implementation for these computations comes handy. Consequently, we are lead to...
 
 
-### Software to model finitely-presented graded S-modules
+## Software to model finitely-presented graded S-modules
 
 Toric geometry is easily accessible to computers. As shown in [*Gabriel morphisms and the computability of Serre quotients with applications to coherent sheaves*](https://arxiv.org/abs/1409.2028), one can then utilise the category of finitely-presented graded S-modules (S being the Cox ring of the toric variety of interest) to model coherent sheaves in the computer. Therefore, I have collaborated on both the 
 [*homalg_project*](http://homalg-project.github.io/) and the [*CAP_project*](https://homalg-project.github.io/CAP_project/) and have written the following four packages, which can be used to model the category of finitely-presented graded S-modules in the computer:
@@ -35,7 +35,7 @@ By know, the concept of a *PresentationCategory* has been well understood in a [
 
 
 
-### Software to compute sheaf cohomologies on toric varieties
+## Software to compute sheaf cohomologies on toric varieties
 
 To make use of finitely-presented graded S-modules as models for coherent sheaves and to compute sheaf cohomologies based on these models, I have made extensions to the package
 
@@ -59,7 +59,7 @@ I plan to extend this package soon to make the functionality of the *Koszul-exte
 
 
 
-### Further developments regarding toric geometry
+## Further software developments regarding toric geometry
 
 Recently, triangulations of toric varieties have been increasingly important to me. I have thus written the package
 
@@ -73,7 +73,7 @@ allows to compute triangulations and blowups of toric varieties.
 
 
 
-### Overview and documentation
+## Overview and documentation of software packages
 
 
 Here is a image which describes the current dependencies among the above mentioned packages.

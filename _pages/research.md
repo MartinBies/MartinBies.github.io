@@ -85,17 +85,15 @@ Once the above software packages and gap are installed, the latest version of th
 For convenience, you can also download these documentations (version: 4 april 2019) from the list below:
 
 * [CAPCategoryOfProjectiveGradedModules](/CAPCategoryOfProjectiveGradedModules.pdf)
-* CAPCategoryOfProjectiveGradedModules 
-* CAPPresentationCategory
-* PresentationsByProjectiveGradedModules
-* FreydCategoriesForCAP
-* TruncatinosOfPresentationsOfProjectiveGradedModules
-* cohomCalg-Interface
-* SheafCohomologiesOnToricVarieties
-* TopcomInterface
-* TriangulationsAndBlowupsOfToricVarieties
-* ToricVarieties
+* [CAPPresentationCategory](/CAPPresentationCategory.pdf)
+* [PresentationsByProjectiveGradedModules](/PresentationsByProjectiveGradedModules.pdf)
+* [TruncatinosOfPresentationsOfProjectiveGradedModules](/TruncatinosOfPresentationsOfProjectiveGradedModules.pdf)
+* [FreydCategoriesForCAP](/FreydCategoriesForCAP.pdf)
+
+* [ToricVarieties](/ToricVarieties.pdf)
+* [SheafCohomologiesOnToricVarieties](/SheafCohomologiesOnToricVarieties.pdf)
+* [TopcomInterface](/TopcomInterface.pdf)
+* [TriangulationsAndBlowupsOfToricVarieties](/TriangulationsAndBlowupsOfToricVarieties.pdf)
 
 Here is a image which describes the current dependencies among the above mentioned packages.
-
 ...

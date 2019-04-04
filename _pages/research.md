@@ -4,6 +4,7 @@ title: "Research"
 permalink: /research/
 ---
 
+{% include toc %}
 
 ### Physics
 

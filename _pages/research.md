@@ -14,7 +14,9 @@ By upbringing, I am a physicist interested in theoretical high energy physics --
 
 In studying F-theory, I have more and more developed an interest in the underlying mathematics. I am fairly interested in studying the role of Chow groups to F-theory (e.g. in anomaly cancellations). 
 
-In taking string theory seriously, one may wonder if there is a solution to string theory (or F-theory), which exactly resembles the features of our universe. Zero modes can be used to distinguish plausible solutions from solutions, whose features are clearly distinct from the ones of our universe. In turn, it can be argued that zero modes can be counted by the so-called sheaf cohomologies of coherent sheaves. This conclusion does not only hold true in F-theory, but also extends for example to type IIB, the topological B-string and heterotic string vacua. With this motivation, I have studied the computation of cohomology groups of coherent sheaves. Given the vast number of string solutions, one is lead to look for an automation of these computations, which consequently led to \dots
+In taking string theory seriously, one may also wonder if there is a solution to string theory (or F-theory), which exactly resembles the features of our universe. Zero modes can be used to distinguish plausible solutions from solutions, whose features are clearly distinct from the ones of our universe.
+
+Within the frameworks of F-theory, type IIB string theory, the topological B-model and heterotic string theory, zero modes can be counted by sheaf cohomologies of coherent sheaves. For this reason, it is interesting to study these cohomologies groups and means to compute them. Given the vast number of string theory solutions, a computer implementation for these computations comes handy. Consequently, we are lead to \dots
 
 
 ### Software

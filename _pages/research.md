@@ -6,12 +6,9 @@ permalink: /research/
 
 {% include toc %}
 
-## Physics
+## Physics and mathematics
 
 By upbringing, I am a physicist interested in theoretical high energy physics -- in particular string theory. Currently, my focus rests on F-theory, which utilizes geometry to investigate the properties of solutions to string theory.
-
-
-## Mathematics
 
 In studying F-theory, I have more and more developed an interest in the underlying mathematics. I am fairly interested in studying the role of Chow groups to F-theory (e.g. in anomaly cancellations). 
 

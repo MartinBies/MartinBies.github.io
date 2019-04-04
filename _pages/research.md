@@ -19,46 +19,61 @@ In taking string theory seriously, one may also wonder if there is a solution to
 Within the frameworks of F-theory, type IIB string theory, the topological B-model and heterotic string theory, zero modes can be counted by sheaf cohomologies of coherent sheaves. For this reason, it is interesting to study these cohomologies groups and means to compute them. Given the vast number of string theory solutions, a computer implementation for these computations comes handy. Consequently, we are lead to...
 
 
-### Software
+### Software to model finitely-presented graded S-modules
 
 Toric geometry is easily accessible to computers. As shown in [*Gabriel morphisms and the computability of Serre quotients with applications to coherent sheaves*](https://arxiv.org/abs/1409.2028), one can then utilise the category of finitely-presented graded S-modules (S being the Cox ring of the toric variety of interest) to model coherent sheaves in the computer. Therefore, I have collaborated on both the 
 [*homalg_project*](http://homalg-project.github.io/) and the [*CAP_project*](https://homalg-project.github.io/CAP_project/) and have written the following four packages, which can be used to model the category of finitely-presented graded S-modules in the computer:
 
-* package 1
-* package 2
-* package 3
-* package 4
+* [*CAPCategoryOfProjectiveGradedModules*](https://github.com/HereAround/CAPCategoryOfProjectiveGradedModules)
+* [*CAPPresentationCategory*](https://github.com/HereAround/CAPPresentationCategory)
+* [*PresentationsByProjectiveGradedModules*](https://github.com/HereAround/PresentationsByProjectiveGradedModules)
 
-These packages are based on the package
+By know, the concept of a *PresentationCategory* has been well understood in a [*A constructive approach to Freyd categories*](https://arxiv.org/abs/1712.03492). Together with *Sebastian Posur*, I am therefore currently implementing the above structures in the package
 
-* Toric Varieties
+* [*FreydCategoriesForCAP*](https://github.com/HereAround/CAP_project/tree/master/FreydCategoriesForCAP)
 
-which I have also extended since. All of these are then used in 
 
-* SheafCohomologies
 
-The latter includes implementations on computing sheaf cohomologies. In particular, the algorithm described in my PhD thesis is implemented in this package.
+### Software to compute sheaf cohomologies on toric varieties
 
-By know, the concept of 'presentations' has been studied in a more general context in 'Sepps Freyd categories'. Along these lines, I am currently implementing the above categories into the package
+To make use of finitely-presented graded S-modules as models for coherent sheaves and to compute sheaf cohomologies based on these models, I have made extensions to the package
 
-* FreydCategoriesForCAP
+* [*ToricVarieties*](https://github.com/homalg-project/homalg_project/tree/master/ToricVarieties)
 
-Also, the SheafCohomologies package is undergoing further developement. For example, I am writing the packages
+and have also implemented truncations of finitely-presented graded S-modules in
 
-* cohomCalgInterface
-* topcomInterface
+* [*TruncationsOfPresentationsByProjectiveGradedModules*](https://github.com/HereAround/TruncationsOfPresentationsByProjectiveGradedModules)
 
-to establish well-furnished interfaces to cohomCalg and topcom. 
+These packages then finally allow to load the functionality of my package
 
-The cohomCalgInterface will soon be extended by a KoszulExtensionPackage. The latter will resemble the existing MathematicaScript-extension of cohomCalg. The aim is to make these algorithms available directly inside gap/CAP.
+* [*SheafCohomologyOnToricVarieties*](https://github.com/HereAround/SheafCohomologyOnToricVarieties)
 
-The topcomInterface is used for triangulations of toric varieties (corresponding to phases of QFTs - see Witten paper on GLSM). The latter is currently implemented in the package
+It provides implementations of various algorithms to compute sheaf cohomologies. Among others, the algorithm described in the appendix of [*cohomologies of coherent sheaves and massless spectra in F-theory*](https://arxiv.org/abs/1802.08860) is implemented there.
 
-* BlowupsAndTriangulationsOfToricVarieties
+Note that this algorithms depends on [*cohomCalg*](https://benjaminjurke.com/academia-and-research/cohomcalg). To organize this dependence efficiently, I am currently developing the package
 
-The latter also makes blowup computations available within gap/CAP.
+* [*cohomCalgInterface*](https://github.com/HereAround/cohomCalgInterface)
 
-All of these furnish extensions of the above mentioned ToricVarieties package, and will ultimately all be used in an updated version of my SheafCohomologies package.
+I plan to extend this package soon to make the functionality of the *Koszul-extension* of *cohomCalg* directly accessible to gap.
+
+
+
+### Further developments regarding toric geometry
+
+Recently, triangulations of toric varieties have been increasingly important to me. I have thus written the package
+
+* [*TopcomInterface*](https://github.com/HereAround/TopcomInterface)
+
+It establishes an interface to the software [*Topcom*](http://www.rambau.wm.uni-bayreuth.de/TOPCOM/). Based on this, my package
+
+* [*TriangulationsAndBlowupsForToricVarieties*](https://github.com/HereAround/TriangulationsAndBlowupsForToricVarieties)
+
+allows to compute triangulations and blowups of toric varieties.
+
+
+
+### Overview and documentation
+
 
 Here is a image which describes the current dependencies among the above mentioned packages.
 

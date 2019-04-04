@@ -55,7 +55,7 @@ Note that this algorithms depends on [*cohomCalg*](https://benjaminjurke.com/aca
 
 * [*cohomCalgInterface*](https://github.com/HereAround/cohomCalgInterface)
 
-I plan to extend this package soon to make the functionality of the *Koszul-extension* of *cohomCalg* directly accessible to gap.
+Once this package is ready, I plan to extend it to make the functionality of the *Koszul-extension* of *cohomCalg* directly accessible to gap.
 
 
 
@@ -87,13 +87,11 @@ For convenience, you can also download these documentations (version: 4 april 20
 * [CAPCategoryOfProjectiveGradedModules](/CAPCategoryOfProjectiveGradedModules.pdf)
 * [CAPPresentationCategory](/CAPPresentationCategory.pdf)
 * [PresentationsByProjectiveGradedModules](/PresentationsByProjectiveGradedModules.pdf)
-* [TruncatinosOfPresentationsOfProjectiveGradedModules](/TruncatinosOfPresentationsOfProjectiveGradedModules.pdf)
+* [TruncationsOfPresentationsOfProjectiveGradedModules](/TruncationsOfPresentationsOfProjectiveGradedModules.pdf)
 * [FreydCategoriesForCAP](/FreydCategoriesForCAP.pdf)
-
 * [ToricVarieties](/ToricVarieties.pdf)
 * [SheafCohomologiesOnToricVarieties](/SheafCohomologiesOnToricVarieties.pdf)
 * [TopcomInterface](/TopcomInterface.pdf)
 * [TriangulationsAndBlowupsOfToricVarieties](/TriangulationsAndBlowupsOfToricVarieties.pdf)
 
-Here is a image which describes the current dependencies among the above mentioned packages.
-...
+The following image summarises the dependencies of the packages among each other.

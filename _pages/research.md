@@ -16,7 +16,7 @@ In studying F-theory, I have more and more developed an interest in the underlyi
 
 In taking string theory seriously, one may also wonder if there is a solution to string theory (or F-theory), which exactly resembles the features of our universe. Zero modes can be used to distinguish plausible solutions from solutions, whose features are clearly distinct from the ones of our universe.
 
-Within the frameworks of F-theory, type IIB string theory, the topological B-model and heterotic string theory, zero modes can be counted by sheaf cohomologies of coherent sheaves. For this reason, it is interesting to study these cohomologies groups and means to compute them. Given the vast number of string theory solutions, a computer implementation for these computations comes handy. Consequently, we are lead to \dots
+Within the frameworks of F-theory, type IIB string theory, the topological B-model and heterotic string theory, zero modes can be counted by sheaf cohomologies of coherent sheaves. For this reason, it is interesting to study these cohomologies groups and means to compute them. Given the vast number of string theory solutions, a computer implementation for these computations comes handy. Consequently, we are lead to...
 
 
 ### Software

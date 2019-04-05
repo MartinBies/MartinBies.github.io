@@ -26,7 +26,7 @@ Toric geometry is easily accessible to computers. As shown in [*Gabriel morphism
 * [*CAPPresentationCategory*](https://github.com/HereAround/CAPPresentationCategory)
 * [*PresentationsByProjectiveGradedModules*](https://github.com/HereAround/PresentationsByProjectiveGradedModules)
 
-By now, the concept of a *PresentationCategory* has been well understood in a [*A constructive approach to Freyd categories*](https://arxiv.org/abs/1712.03492). Together with *Sebastian Posur*, I am therefore currently implementing the above structures in the package
+By now, the concept of a *PresentationCategory* has been well understood in [*A constructive approach to Freyd categories*](https://arxiv.org/abs/1712.03492). Together with *Sebastian Posur*, I am therefore currently implementing the above structures in the package
 
 * [*FreydCategoriesForCAP*](https://github.com/HereAround/CAP_project/tree/master/FreydCategoriesForCAP)
 

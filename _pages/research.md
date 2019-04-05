@@ -94,5 +94,6 @@ For convenience, you can also download these documentations (latest update on 4 
 [TriangulationsAndBlowupsOfToricVarieties](/SoftwarePackages.pdf)
 
 <embed src="/SoftwarePackages.pdf" type="application/pdf" width="100%" height="600px" />
+<embed src="https://martinbies.github.io/SoftwarePackages.pdf" type="application/pdf" />
 
 Soon, here will be an image which shows the dependency of these packages among each other...

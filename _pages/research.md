@@ -92,7 +92,7 @@ For convenience, you can also download these documentations (latest update on 4 
 * [TriangulationsAndBlowupsOfToricVarieties](/TriangulationsAndBlowupsOfToricVarieties.pdf)
 
 
-## Overview over the dependencies among my software packages
+## Dependencies among my software packages
 
 <embed src="/SoftwarePackages.pdf" type="application/pdf"/>
 

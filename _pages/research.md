@@ -94,6 +94,6 @@ For convenience, you can also download these documentations (latest update on 4 
 
 ## Overview over the dependencies among my software packages
 
-<embed src="/SoftwarePackages.pdf" type="application/pdf" width="100%"/>
+<embed src="/SoftwarePackages.pdf" type="application/pdf"/>
 
 Alternatively, you may download this overview by clicking [here](/SoftwarePackages.pdf).

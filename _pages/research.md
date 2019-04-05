@@ -91,9 +91,8 @@ For convenience, you can also download these documentations (latest update on 4 
 * [TopcomInterface](/TopcomInterface.pdf)
 * [TriangulationsAndBlowupsOfToricVarieties](/TriangulationsAndBlowupsOfToricVarieties.pdf)
 
-[TriangulationsAndBlowupsOfToricVarieties](/SoftwarePackages.pdf)
+Here is an overview over the dependencies among these software packages:
 
-<embed src="/SoftwarePackages.pdf" type="application/pdf" width="100%" height="600px" />
-<embed src="https://martinbies.github.io/SoftwarePackages.pdf" type="application/pdf" />
+<embed src="/SoftwarePackages.pdf" type="application/pdf" width="100%"/>
 
-Soon, here will be an image which shows the dependency of these packages among each other...
+Alternatively, you may download this overview by clicking [here](/SoftwarePackages.pdf).

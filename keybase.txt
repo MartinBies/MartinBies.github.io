@@ -4,7 +4,7 @@ https://keybase.io/barakat
 
 I hereby claim:
 
-  * I am an admin of https://mohamed-barakat.github.io
+  * I am an admin of https://martinbies.github.io
   * I am barakat (https://keybase.io/barakat) on keybase.
   * I have a public key with fingerprint 6802 9BB0 4E56 4F6A EBBA  55CF 850B 4C46 308D 222B
 

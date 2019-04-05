@@ -91,7 +91,8 @@ For convenience, you can also download these documentations (latest update on 4 
 * [TopcomInterface](/TopcomInterface.pdf)
 * [TriangulationsAndBlowupsOfToricVarieties](/TriangulationsAndBlowupsOfToricVarieties.pdf)
 
-Here is an overview over the dependencies among these software packages:
+
+## Overview over the dependencies among my software packages
 
 <embed src="/SoftwarePackages.pdf" type="application/pdf" width="100%"/>
 

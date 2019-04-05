@@ -20,13 +20,13 @@ Within the frameworks of F-theory, type IIB string theory, the topological B-mod
 ## Software to model finitely-presented graded S-modules
 
 Toric geometry is easily accessible to computers. As shown in [*Gabriel morphisms and the computability of Serre quotients with applications to coherent sheaves*](https://arxiv.org/abs/1409.2028), one can then utilise the category of finitely-presented graded S-modules (S being the Cox ring of the toric variety of interest) to model coherent sheaves in the computer. Therefore, I have collaborated on both the 
-[*homalg_project*](http://homalg-project.github.io/) and the [*CAP_project*](https://homalg-project.github.io/CAP_project/) and have written the following four packages, which can be used to model the category of finitely-presented graded S-modules in the computer:
+[*homalg_project*](http://homalg-project.github.io/) and the [*CAP_project*](https://homalg-project.github.io/CAP_project/) and have written the following ur packages, which can be used to model the category of finitely-presented graded S-modules in the computer:
 
 * [*CAPCategoryOfProjectiveGradedModules*](https://github.com/HereAround/CAPCategoryOfProjectiveGradedModules)
 * [*CAPPresentationCategory*](https://github.com/HereAround/CAPPresentationCategory)
 * [*PresentationsByProjectiveGradedModules*](https://github.com/HereAround/PresentationsByProjectiveGradedModules)
 
-By know, the concept of a *PresentationCategory* has been well understood in a [*A constructive approach to Freyd categories*](https://arxiv.org/abs/1712.03492). Together with *Sebastian Posur*, I am therefore currently implementing the above structures in the package
+By now, the concept of a *PresentationCategory* has been well understood in a [*A constructive approach to Freyd categories*](https://arxiv.org/abs/1712.03492). Together with *Sebastian Posur*, I am therefore currently implementing the above structures in the package
 
 * [*FreydCategoriesForCAP*](https://github.com/HereAround/CAP_project/tree/master/FreydCategoriesForCAP)
 

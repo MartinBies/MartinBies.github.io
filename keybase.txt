@@ -1,70 +1,81 @@
-==================================================================
-https://keybase.io/barakat
---------------------------------------------------------------------
+### Keybase proof
 
 I hereby claim:
 
-  * I am an admin of https://martinbies.github.io
-  * I am barakat (https://keybase.io/barakat) on keybase.
-  * I have a public key with fingerprint 6802 9BB0 4E56 4F6A EBBA  55CF 850B 4C46 308D 222B
+  * I am HereAround on github.
+  * I am martinbies (https://keybase.io/martinbies) on keybase.
+  * I have a public key whose fingerprint is 3D3F AD16 8F35 7543 D006  7CB4 B98B 65FA 470C 22ED
 
-To do so, I am signing this object:
+To claim this, I am signing this object:
 
+```json
 {
   "body": {
     "key": {
-      "eldest_kid": "01209a233ede9a73098b1b139b45d4d25a67608ff07e9d08abf8ade4c8e286ba97270a",
-      "fingerprint": "68029bb04e564f6aebba55cf850b4c46308d222b",
+      "eldest_kid": "01013465f0822b865c2e1b4939b2987962cfaee7238010e3673c23795934440e5a4d0a",
+      "fingerprint": "3d3fad168f357543d0067cb4b98b65fa470c22ed",
       "host": "keybase.io",
-      "key_id": "850b4c46308d222b",
-      "kid": "01019fffe8d0166fab7c544b28f2b06b9f0db1ea983f5ed0fd637748bf98a4fe5a950a",
-      "uid": "19191413809ef53cc725e69f3ea64f00",
-      "username": "barakat"
+      "key_id": "b98b65fa470c22ed",
+      "kid": "01013465f0822b865c2e1b4939b2987962cfaee7238010e3673c23795934440e5a4d0a",
+      "uid": "38d470daece7e3519f4835e6119c9a19",
+      "username": "martinbies"
     },
     "service": {
-      "hostname": "mohamed-barakat.github.io",
-      "protocol": "https:"
+      "name": "github",
+      "username": "HereAround"
     },
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1502722086,
+  "ctime": 1554539951,
   "expire_in": 157680000,
-  "prev": "2e65422a7ff4d9f8d82425c26994606d96a7e8724769d675411b5e9be24737f5",
-  "seqno": 7,
+  "prev": "62a768af3d5d4d8bf5f778cb1e45ce5e99e166ba0c6ca3a90fab7e026c7c863b",
+  "seqno": 2,
   "tag": "signature"
 }
+```
 
-which yields the signature:
+with the key [3D3F AD16 8F35 7543 D006  7CB4 B98B 65FA 470C 22ED](https://keybase.io/martinbies), yielding the signature:
 
+```
 -----BEGIN PGP MESSAGE-----
-Version: GnuPG v1.4.3 (Darwin)
-
-owFtkl1sFUUUx1uaIgGboEl5MEGSTYjSljI7O59XUkmrNREJwYgBHriZ2TnTu7a9
-e7l329rUkmpTAmlJIAHBShSD8CAfAQKI4ctQUBue/CToC8bwgIFAi5SgJjh7rTw5
-8zAzJ7/zP/9zMttqqipmVA7Nea0VbfXqK6/c1BVrt59e2ufp2PR6mT6vHcoHdBgo
-Jdn2yHgZD/kYSYWDAAxIxQMkhfa1H0hNqCEGU8U4Q8JaxEEaJJS2QhkgoQAsmFaS
-Y46U1+DZKN8GxUIxyidOlgmEpdaIAGXEMgVaK0pDKyjSJCQsQMJgjLVLzMWlNMOZ
-06oEjVHsYu6RLdv7H/4/38iX1loQBvmMWaV5SAnRWFisEdPSIqN9UFIEloJB1rCA
-cyK0lUIRC1RJWvbdVZbzpdvEDwSSYGkQhhxTYNIGoJx/hFKwBMW86gRHa1VU7Srx
-+hs8F+yOQkjnmjYyDXTGOXcxi6fBxrYoyXXpf3srFOMkDuMOh+WSpFDKpDJJbyHN
-6wGdnVbM6ihv3ExdRjcUS1Gc9zK+I8MkSkv4FGGOMRKswYO3C1ERslFKUO5G71Za
-x0C308TAKMFYcWuJkVYYgQmmIWZSEoaYkUxxEBwTzqRhnBLf1xSkBhcJuKVe2uSG
-fOxluPOp2pxkKWrLq6SrCF7/7C2VtVXV5Y/2+OfN+OXzWRW79TDf+vHTd46/07K3
-7sDAi7nZxxaP/35sfP7ogoPnf/jjctXzN0beOrp89eSjlnD4xGf3B1u/wy+9u/69
-+/MeTX31YFfh24mHu79sPnWhMHPhQljxwSWqPjm6aE0V7ek40nX6bl3z+3c23shX
-X5bL6gZf3Xv2ou2/9MTL99Z9PReNe2O/3Wyqn4g37u8be3JwT+/O+a+8MLntm6fU
-xVXDYdPKNXs+arz2Zs/gXz91PjdVM3Z8aujWj3M/XT/v13M1E3/Xr9q0edfaJbXV
-J5u+X7B639JnYKR584dXbs2ZPDwEbzzou3tqe+5ecL6WDQ+ceTiyf2rTytHbZ/f9
-2XvmaqHl+hfP7hhd8bNqfX3W9YFD/wA=
-=zS/C
+owGtkmtQVGUYx5eLCSuYNMgolqNHoRGBzv1CopAaomUMbqGOsHMu78HDwtntnN1N
+Qu4icTPQNAGNQECKTCsSd0gYP+iYMMqUJbt8SLzmMJgsAmYBnWX0QzN97P3yzvt/
+/7/n+c8zT3Wgj07v5agATxMCoBGv3gecblcb6MyBOLOQDcXkQCYwe4FMAahWo0kS
+oBgIRmAEw0lChGkU5WiS4FGAcDiDMRzK0BRDorzIAkChGK1ZAUZSGI9iFEMwGI7j
+MCBYXIBZKBISJTkdKBZFkq1aWUzARFZASFrECIrAMQGGSYrncI6hOa0Zi1Mwj6JA
+0MDdZtVDaOE4VgXRklnTtIdxNt5/+P/n3LbZchgtaC0EFvCAAhiBMCJOYwQgEYTh
+GRZhPEYVKDKbBTR3FqtYJZmTgArlRkKabpd44Bnts/90ybrbxv2b2QQUEK+YbbLg
+YazZFo/4AeCMz3AjJ8mCNkONsgNFlcwyFINoTt4qeXiEIHACYxgCiYTAHoukAKPk
+cRAUScPaiYQsCrBrJUmU1SRWxATCIOACzYmESFE0zyEAJ3hAAIYBCElyLMyTPIux
+DCyyHAVglOQpniYxT2wVvC+boRhUy8mmazVVKV1mrTYFQLn6Mm/MV+el170Sstw3
+dt2pkI8J2/r+F/Z2PN+7Od6epdPp/Rc8Vw4+WqBr7H/4MCv4ybToE1ewQ+0u1ed0
+0VMGvwd/pundaZtT0YToo/Hzd6SVjdeHrZHf9E9qOnbCZ+ji7/UFle2RWeFDpa2h
+a9X8LYbbSwemmqvvHbLN8VIuLD7fb4h11eOjPlPSzR7OvDP5iKE5ubMmZcy1Wr9w
+a4ZzpjAlPMJZ894u36KSfFPg1rU/ep/rabln6pi7ul7HFScPf/2OscHqV3tsw0+u
+4yHb1Ndsqaan1c7Ut6JaHLV9zu7Nl/Lc5UJu0Zb+9VlvjBeVsAfrInrdV4ydM5c3
+Pc5r5gTjD2GZrslzL31zRbp1uGnFXcfKP4qTW0barlLHwevtwl/L76/onV86Zjmg
+XpsLoqL2Nep8i+IbBra//KqBGH3Raj9y2Zx0aGLnhc++bLu1Z+jG7dCfJ2pP+40m
+npkObirMszwxBJf0fXFiwDFvQ0B34JoKe/TGv+NG6k9GJ3Y9cl6tmoqQEyc6Ct9d
+VUF/enhhR01tRmVr6NvEkpK48qq6r0z+l2TH0X2B7TVj2QeW7L/ZeH0w485G12/L
+wmKHJ1NONQlVI4ZB97Xv1y27P/lRvpMo7Ar6/JOg8sxx5+DJs0GPQxp+7VwZnpTQ
+H3DnYoG3f2tZrWWotHLRMLlYnMee8bo7OtS81D7muP5Lvt18g552L9K1bCvY6+pL
++PbDs6vquBjKXLz9vPt0a3Niz3czXNA/
+=c0kz
 -----END PGP MESSAGE-----
+```
 
-And finally, I am proving ownership of this host by posting or
-appending to this document.
+And finally, I am proving ownership of the github account by posting this as a gist.
 
-View my publicly-auditable identity here: https://keybase.io/barakat
+### My publicly-auditable identity:
 
-==================================================================
+https://keybase.io/martinbies
 
+### From the command line:
 
+Consider the [keybase command line program](https://keybase.io/download).
+
+```bash
+# look me up
+keybase id martinbies
+```

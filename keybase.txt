@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/martinbies
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://martinbies.github.io
+  * I am martinbies (https://keybase.io/martinbies) on keybase.
+  * I have a public key with fingerprint 3D3F AD16 8F35 7543 D006  7CB4 B98B 65FA 470C 22ED
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01013465f0822b865c2e1b4939b2987962cfaee7238010e3673c23795934440e5a4d0a",
+      "fingerprint": "3d3fad168f357543d0067cb4b98b65fa470c22ed",
+      "host": "keybase.io",
+      "key_id": "b98b65fa470c22ed",
+      "kid": "01013465f0822b865c2e1b4939b2987962cfaee7238010e3673c23795934440e5a4d0a",
+      "uid": "38d470daece7e3519f4835e6119c9a19",
+      "username": "martinbies"
+    },
+    "service": {
+      "hostname": "martinbies.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1554543262,
+  "expire_in": 157680000,
+  "prev": "af3e388786f62c91cda8efc02a97a399195b7ce5a521d23328fec86b01bd3639",
+  "seqno": 13,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtkmtQVGUYxxdYSRgsiAY1Zwc4gW4TC+ec91xXbqYQFNOFnchbbefyHjgse+mc
+w03YUKMRMpMobHGoIUccmlARaxyCKSkEiaYSYwIlbVJDUEEGoYvD0FnKT/Wx98s7
+7zO/5//8n/+8dSuCDKEBnXvhn0+EIbcCBid4w/ZW5XAFwrvFcsRagTjg0gWLRKhq
+docsIlYExVAMEBQpoQyO8wxFCjjEeIIFLI+zDM1SuCBxENI4YHQUAooGAg5olmQB
+QRAoJDlCRDkkAZFkVz5UPIrs0nRZIAKJEzGKkQBJkwQQUZSiBZ7gWYbXh3EEjQo4
+DkW9scCt+jt0czynwkTZrdf0h33J3n/w/7Pv4iU5wIj6CJGDAqQhIDFWIhhAQgrD
+WIHlMNYPqlBxcU6o005O0WQXL0MV8SYger1EFqA/Wv8u/2IS82WtoJj/ezOP4tbc
+grtIJwo0zaNa/QpaucffUgp5+z9idl52iXqiekcJVFTZ7UKsmE4KmuxXx0iS0FPF
+KTwBgWUeWYF22U+QNMWg+vHPgSWCrslJAAKGoRlK0iNhMUHkGCgJKM6xNAdYFmNJ
+nhb0OEgcE3EAcEaCAkPxKMaLgAL+xVX4isutiwPdKJeva6pyvovTihWIeENrA4HR
+EBBqMEXFGlPSjkbtJ4s3fh9c+cm9b7gs0P8HDaEh4fcqEQXhhtfPPnttzDLuzcy0
+mOvCrPbab75oehE09d1+fGS0ZWsQdiVyd3BRq6+nepyYDkyRjI6agfKr9QeqJVH7
+dkNRpTU+7YypLD1nqPf9ZdTsueie49fdb/fSm/iymG2rdix/rM9bOFORPrW+u7d5
+Pu/NzM0UMDU//Pvq6GjTMvhG9+am4vO5ax+syt5zQfXY+lvMs6/VtWXErrLts16K
+T57a5t55LszuC4mbH2v8LNLnvNw9p1yKvd/50wnbo9eDXb5f7htJ7TvqG+pP9g77
+vHWLzl13A3PH1pGfDhyxZ12ZTIqIxA9WivEfdCRnPFSdXZ7cEb7efKOhr/NwzJDp
+gY/rp8N+a+q6U4+ezpg4o8Zu2aQOHMpqH6mdqbk5SpLp302OBwSeDBnu+vm8+dSc
+85Ah7d3S/W3zFZdt/Q2xMX3aHa/j1Ftbfl05OdnZnpf69IWF3D1xZbU77iLZCTdG
+9+5yrE2JwR95IfXDmxbj1ls515R3TgafNjTvq7GldBWaffbGqGc6ppUf6OiFqVfT
+n5/J+WhuIvvlnQsBG37Me7IWXWR6Gr9c8fnV5GHUezEvsaN5jdUWZK46MWFRKnff
+Xlldd9AkRTqMa9o3js1POIaDZ0M7F4Orjhx/Lqv+j2NPyessSS/llEZ0DS4svygb
+C5W4r1qcbdlnx1vpA4wziV/dUPnesa8HlZntFuwv
+=B/k4
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/martinbies
+
+==================================================================

@@ -1,14 +1,15 @@
-### Keybase proof
+==================================================================
+https://keybase.io/martinbies
+--------------------------------------------------------------------
 
 I hereby claim:
 
-  * I am HereAround on github.
+  * I am an admin of https://martinbies.github.io
   * I am martinbies (https://keybase.io/martinbies) on keybase.
-  * I have a public key whose fingerprint is 3D3F AD16 8F35 7543 D006  7CB4 B98B 65FA 470C 22ED
+  * I have a public key with fingerprint 3D3F AD16 8F35 7543 D006  7CB4 B98B 65FA 470C 22ED
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
-```json
 {
   "body": {
     "key": {
@@ -21,61 +22,51 @@ To claim this, I am signing this object:
       "username": "martinbies"
     },
     "service": {
-      "name": "github",
-      "username": "HereAround"
+      "hostname": "martinbies.github.io",
+      "protocol": "https:"
     },
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1554539951,
+  "ctime": 1554541663,
   "expire_in": 157680000,
-  "prev": "62a768af3d5d4d8bf5f778cb1e45ce5e99e166ba0c6ca3a90fab7e026c7c863b",
-  "seqno": 2,
+  "prev": "4dcb0e91abe0f80a560b002dcecfa1c105ac93740b6254c1b0325adea3c55156",
+  "seqno": 11,
   "tag": "signature"
 }
-```
 
-with the key [3D3F AD16 8F35 7543 D006  7CB4 B98B 65FA 470C 22ED](https://keybase.io/martinbies), yielding the signature:
+which yields the signature:
 
-```
 -----BEGIN PGP MESSAGE-----
-owGtkmtQVGUYx5eLCSuYNMgolqNHoRGBzv1CopAaomUMbqGOsHMu78HDwtntnN1N
-Qu4icTPQNAGNQECKTCsSd0gYP+iYMMqUJbt8SLzmMJgsAmYBnWX0QzN97P3yzvt/
-/7/n+c8zT3Wgj07v5agATxMCoBGv3gecblcb6MyBOLOQDcXkQCYwe4FMAahWo0kS
-oBgIRmAEw0lChGkU5WiS4FGAcDiDMRzK0BRDorzIAkChGK1ZAUZSGI9iFEMwGI7j
-MCBYXIBZKBISJTkdKBZFkq1aWUzARFZASFrECIrAMQGGSYrncI6hOa0Zi1Mwj6JA
-0MDdZtVDaOE4VgXRklnTtIdxNt5/+P/n3LbZchgtaC0EFvCAAhiBMCJOYwQgEYTh
-GRZhPEYVKDKbBTR3FqtYJZmTgArlRkKabpd44Bnts/90ybrbxv2b2QQUEK+YbbLg
-YazZFo/4AeCMz3AjJ8mCNkONsgNFlcwyFINoTt4qeXiEIHACYxgCiYTAHoukAKPk
-cRAUScPaiYQsCrBrJUmU1SRWxATCIOACzYmESFE0zyEAJ3hAAIYBCElyLMyTPIux
-DCyyHAVglOQpniYxT2wVvC+boRhUy8mmazVVKV1mrTYFQLn6Mm/MV+el170Sstw3
-dt2pkI8J2/r+F/Z2PN+7Od6epdPp/Rc8Vw4+WqBr7H/4MCv4ybToE1ewQ+0u1ed0
-0VMGvwd/pundaZtT0YToo/Hzd6SVjdeHrZHf9E9qOnbCZ+ji7/UFle2RWeFDpa2h
-a9X8LYbbSwemmqvvHbLN8VIuLD7fb4h11eOjPlPSzR7OvDP5iKE5ubMmZcy1Wr9w
-a4ZzpjAlPMJZ894u36KSfFPg1rU/ep/rabln6pi7ul7HFScPf/2OscHqV3tsw0+u
-4yHb1Ndsqaan1c7Ut6JaHLV9zu7Nl/Lc5UJu0Zb+9VlvjBeVsAfrInrdV4ydM5c3
-Pc5r5gTjD2GZrslzL31zRbp1uGnFXcfKP4qTW0barlLHwevtwl/L76/onV86Zjmg
-XpsLoqL2Nep8i+IbBra//KqBGH3Raj9y2Zx0aGLnhc++bLu1Z+jG7dCfJ2pP+40m
-npkObirMszwxBJf0fXFiwDFvQ0B34JoKe/TGv+NG6k9GJ3Y9cl6tmoqQEyc6Ct9d
-VUF/enhhR01tRmVr6NvEkpK48qq6r0z+l2TH0X2B7TVj2QeW7L/ZeH0w485G12/L
-wmKHJ1NONQlVI4ZB97Xv1y27P/lRvpMo7Ar6/JOg8sxx5+DJs0GPQxp+7VwZnpTQ
-H3DnYoG3f2tZrWWotHLRMLlYnMee8bo7OtS81D7muP5Lvt18g552L9K1bCvY6+pL
-+PbDs6vquBjKXLz9vPt0a3Niz3czXNA/
-=c0kz
+
+owGtkm1QVFUYx3cBMTZRLFGHxhFvjkKSc+8999wXCBgBY5jaMjSdpgW6L2d3L6x7
+cd/Al61hmmiIRC1sHMIkhpfFpNSBNSBApdSBXHBHIAwshyhpomhCGcqkeyk/1cfO
+lzPnmf//9/yfZ87hyFCdQd9Wjn7PXIJN6fsmBZ3JZ7PuxwRF2osl7scK0MKFbBJy
+uvIKZAlLxHACJwBFQzPOkqTA0lAkESFQHOAEkmMZjiZFM48QQwJWlSJAM0AkAcNB
+DlAUhSPIUxLOYwmYWbZbkKPQIdtdKhZIwMxLBM2aAWQgBSQcpxlRoASOFdRmPMXg
+IkkiSTVaFafmUMMJvBNtlhW1pj7yFuL9h/5/zu1ewAFWUltIPBIRgwAkODPFAoho
+guBEjic4TehEDju/G6nq3bzDJdsFGTkxbwKm1j2yiLTVarP8S7PZIrusbuHvyQod
+iksRFZuqsLpchc5EjeDaW6hZipCQ9w8sT5DtkrpR1eFBDqes2LFEQlWKLlmjExBS
+kCJoGiRgqLhQdqA8WVNAhmZx9Wh9kEdUmZQkCjjiCF5AuJnFeUjjAo6TkojU/RAi
+gUNe5ABD4QJNQkokBByQkJcQD0QICUhj2nx77IoKJ9SgvEVlOmWLnXe5HQjzGspC
+QJhOb9CtWbkuLDm1eeUh6E4fCD/Q8uAbLgrR/qDOEBH1oFJLROnKRwxJ3agtq/bz
+ol05Vf11GRei0l8bLkgNN4+tOHPC/9J8Vn96xZmAect5oiclNHDgbnyjXGZt89+r
+vn96MK7hnYsPzemLwo59c9Iy1/dI+5MppvGr5fEhic0vrh2Ie8M9PZGxemtHffQ4
+eWTmha7wRwuOvmr7/rufbLd1yTWG/N/6xz6wrOEZp2koJu0578MXjh0k3pqJy5y4
+W3txqixN5p65Ke0ybQku+7Cyzv/6wJFmb8707PGOje2zQUPqTGjP0MvSucZXGpRF
+oTENKV+27uw/dL/r51WX3fMllYHxnDrjtaobQ1djYyI961Ivt0ckTP+BjNvTez66
+k2s//Mn2Rmvsx39ulMP7b/1w5UQsuzOIexfzgS+eHr1+tvqJ84v9lzqbtnHBcGVq
+6cTSIdwbW5Klu9k0ve+K9+v3u7v6LJZAw5tx58qmRjfN6DNXtB4NLG+8EX2y5rP6
+7OQ92MicscJ4605pS2lFEvgq3vnup6eefay21FM/UlMfObovInIiuCG7zpM9Pr4V
++DKb/Gi2sw4ubzWmGZesF3NzTy0bLvKNtHxLmkq6u8CkdzB/8r3qt+c7Ojet+jV3
+W/G108PyGNjRNO2rxKN7TdzaXv9Tvsr5oZ6++tu9+WLc+rEZ2NqqRB1f3TZ/z/dj
+8uDZ4PWkS7Vdc9Zi2+Nwx/MZ0oZBE0yVf8GqTN1/AQ==
+=eaM0
 -----END PGP MESSAGE-----
-```
 
-And finally, I am proving ownership of the github account by posting this as a gist.
+And finally, I am proving ownership of this host by posting or
+appending to this document.
 
-### My publicly-auditable identity:
+View my publicly-auditable identity here: https://keybase.io/martinbies
 
-https://keybase.io/martinbies
-
-### From the command line:
-
-Consider the [keybase command line program](https://keybase.io/download).
-
-```bash
-# look me up
-keybase id martinbies
-```
+==================================================================

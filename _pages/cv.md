@@ -23,7 +23,6 @@ Mar 2014 - Feb 2018
     
 Sept 2012 - Feb. 2014
 :   Master student at [University of Heidelberg](https://www.thphys.uni-heidelberg.de/index.php?lang=e&n1=bsm_group)
-
 :   Supervisor [Timo Weigand](https://www.thphys.uni-heidelberg.de/~weigand/)
 
 Okt. 2008 - Aug. 2012

@@ -67,13 +67,12 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   #links: # An array of links to social media profiles
-  #  - "https://twitter.com/math_barakat"
 
 # Analytics
 analytics:
   provider               : "google-universal"
   google:
-    tracking_id          : "UA-6797136-2"
+    #tracking_id          : 
 
 
 # Site Author
@@ -84,7 +83,7 @@ author:
   location         : "Université Libre Bruxelles"
   email            : "MartinBies@ulb.ac.be"
   uri              :
-  bitbucket        : # "math_barakat"
+  bitbucket        : 
   codepen          :
   dribbble         :
   flickr           :

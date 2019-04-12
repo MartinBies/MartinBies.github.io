@@ -1,6 +1,6 @@
 Things to know:
 
-(*) config.yml: 
+(*) config.xml: 
     - personal data
 (*) _pages:
     - here you want to fill in all your data/details

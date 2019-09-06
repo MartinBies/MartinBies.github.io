@@ -6,7 +6,7 @@ permalink: /conferences/
 
 {% include toc title = "Subject of conference"%}
 
-## Physics
+## Physics, Mathematics and Software
 
  Date | Conference 
  ---------    :|-----------

@@ -10,8 +10,10 @@ permalink: /publications/
 
 ## Paper
 
-You can find all my publications on [inspire](https://inspirehep.net/author/profile/M.Bies.1) or on the
+You can find all my physics publications on [inspire](https://inspirehep.net/author/profile/M.Bies.1). All publications are listed on the
 [arXiv](https://arxiv.org/search/hep-th?searchtype=author&query=Bies%2C+M). Publications include:
+
+5 | Martin Bies, Sebastian Posur [*Tensor products of finitely presented functors*](https://arxiv.org/abs/1909.00172)
 
 4 | Martin Bies, [*Cohomologies of coherent sheaves and massless spectra in F-theory*](https://arxiv.org/abs/1802.08860)
 

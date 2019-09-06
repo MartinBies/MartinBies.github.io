@@ -11,7 +11,7 @@ permalink: /publications/
 ## Paper
 
 You can find all my physics publications on [inspire](https://inspirehep.net/author/profile/M.Bies.1). A complete list of publications is available on the
-[arXiv](https://arxiv.org/search/hep-th?searchtype=author&query=Bies%2C+M). Publications include:
+[arXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50). Publications include:
 
 5 | Martin Bies, Sebastian Posur [*Tensor products of finitely presented functors*](https://arxiv.org/abs/1909.00172)
 

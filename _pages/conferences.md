@@ -10,6 +10,9 @@ permalink: /conferences/
 
  Date | Conference 
  ---------    :|-----------
+ Sept. 2019   | [geometry and strings](https://sites.google.com/view/geometryandstrings2019/home) (Oxford, UK) [poster](/PosterOxford2019.pdf)
+ Aug. 2019   | [gap singular meeting and school](https://opendreamkit.org/meetings/2019-04-02-GAPSingularMeeting/) (Lambrecht, Germany) [presentation](/GapSingularMeeting.pdf)
+ July 2019   | [Strings](https://sis-pc15.ulb.ac.be/event/2/) (Brussels, Belgium)
  Aug 2018   | [CAP Days 2018](https://homalg-project.github.io/capdays-2018/) (Siegen, Germany) [presentation](/CAP18_presentation.pdf)
  March 2018 | [string_data 2018](https://indico.mpp.mpg.de/event/5578/) (Munich, Germany)
  July 2017  | [String Pheno 2017](http://www.cpe.vt.edu/stringpheno17/index.html) (Virginia, USA) [presentation](/StringPheno17_presentation.pdf)

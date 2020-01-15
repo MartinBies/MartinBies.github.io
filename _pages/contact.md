@@ -6,31 +6,32 @@ permalink: /contact/
 
 ## Address
 
-<a class="social-btn" style="white-space: nowrap" href="https://www.google.de/maps/place/ULB+Physique+Mathematique+des+Interactions+Fondamentales/@50.8159481,4.3804556,15z/data=!4m8!1m2!2m1!1sulb+physics!3m4!1s0x0:0x73e4c0f1aa862cc5!8m2!3d50.8200724!4d4.3977258" rel="noopener noreferrer">
+<a class="social-btn" style="white-space: nowrap" href="https://www.google.de/maps/place/Mathematical+Institute/@51.7605919,-1.2649562,17z/data=!3m1!4b1!4m5!3m4!1s0x4876c6a76879a4eb:0x14fcdb0deacb3a22!8m2!3d51.7605886!4d-1.2627675" rel="noopener noreferrer">
 <i class="fa fa-fw fa-map-marker" aria-hidden="true">
-Université Libre de Bruxelles<br>
-Physique Théorique et Mathématique<br>
-Campus Plaine - CP 231<br>
-Building NO - Level 6 - Office O.6.111
-Boulevard du Triomphe<br>
-1050 Brussels<br>
-Belgium
+Mathematical Institute<br>
+University of Oxford<br>
+Andrew Wiles Building<br>
+Radcliffe Observatory Quarter<br>
+Woodstock Road<br>
+Oxford OX2 6GG<br>
+United Kingdom
 </i>
 </a>
 <br>
 
-([How to reach the campus?](http://www.ulb.ac.be/sciences/physth/directions.html))
+
+([How to reach the mathematical institute?](https://www.maths.ox.ac.uk/about-us/travel-maps))
 
 ### Email
 
-[Martin.Bies(at)ulb.ac.be](mailto:Martin.Bies@ulb.ac.be)
+[bies(at)maths.ox.ac.uk](mailto:bies@maths.ox.ac.uk)
 
 ### Room
 
-O.6.111
+N1.16
 
-### Phone (secretary)
+### Phone
 
-<a class="social-btn" style="white-space: nowrap" href="tel:+32 (0)2 650 58 16" target="_blank" rel="noopener noreferrer">
-  <i class="fa fa-fw fa-phone">+32 (0)2 650 58 16 </i>
+<a class="social-btn" style="white-space: nowrap" href="tel:+44 (0)1865 611 514" target="_blank" rel="noopener noreferrer">
+  <i class="fa fa-fw fa-phone">+44 (0)1865 611 514</i>
 </a> 

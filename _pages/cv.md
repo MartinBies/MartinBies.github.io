@@ -6,7 +6,10 @@ permalink: /cv/
 
 ([Longer version as PDF](/CV_MartinBies.pdf))
 
-since Oct. 2018
+since Oct. 2019
+:   Postdoc at [Université of Oxford](https://www.maths.ox.ac.uk/people/martin.bies)
+
+Oct. 2018 - Sept. 2019
 :   Postdoc at [Université Libre Bruxelles](http://www.ulb.ac.be/sciences/ptm/pmif/)
 
 Feb 2018 - Sept. 2018

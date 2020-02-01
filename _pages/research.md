@@ -98,13 +98,13 @@ Below, you can find the documentations of my software packages (last update 01/0
 
 ## Installation instructions
 
-For Debian9 and Ubuntu18.04, you can find installation instructions [here](/Instructions.txt). They assume that you do not have a running version of gap yet. It will download the script [homalg_clone](/homalg_clone.sh), which is used to clone a selection of gap-packages from github.
+Installation instructions, that have been tested for Debian9 and Ubuntu 18.04 (on 01/02/2020) can be found [here](/Instructions.txt). Among others, they will download the script [homalg_clone.sh](/homalg_clone.sh), which is used to clone a selection of gap-packages from github.
 
-Once the installation is complete, you can navigate into the individual package folders to create the latest documentation and test the installation. To create the latest documentation do the following:
+Once the installation is complete, you can create the latest documentation as follows:
 
 * Navigate into the package folder and locate the file makedoc.g.
-* Now issue *gap makedoc.g*, to create the documentation. It will be placed in the *doc* subfolder.
-* In case you have a running version of LaTeX, the documentation will be provided by the file manual.pdf.
+* Issue *gap makedoc.g*.
+* The documentation will be created and placed in the *doc* subfolder. If you have a running version of LaTeX, the documentation will be printed to the file manual.pdf.
 
 To test your installation perform the following steps:
 
@@ -114,4 +114,4 @@ To test your installation perform the following steps:
 
 A first simple input file for gap, which computes some sheaf cohomologies, can be found [here](/example.gi). More examples are provided in the manual [SheafCohomologiesOnToricVarieties](/SheafCohomologiesOnToricVarieties.pdf).
 
-Note that these computations can become very demanding, both in terms of required computational time but also in terms of required computational ressources. Whenever this happens, you may wish to try the command *H0ParallelBySpasm*. It will use the software *Spasm* and perform the necessary computations modulo a prime number. As such they are no longer guaranteed to match the results over the integers. However, for not too involved examples, this will be the case. In addition, the ressources required for performing this computations are significantly reduced.
+Note that these computations can become very demanding, both in terms of required computational time but also in terms of required computational ressources. Whenever this happens, you may wish to try the command *H0ParallelBySpasm*. It use the software *Spasm* and performs the necessary computations modulo a prime number (by default 42013). Consequently, it is no longer guaranteed that the so-obtained results match the results obtained over the integers or rational numbers. However, for not too involved examples, this will be the case. In addition, Spasm demands and consumes only very few computational ressources.

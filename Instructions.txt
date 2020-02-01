@@ -165,6 +165,6 @@ Note that in this command, libspasm.so.0 has been removed from the path obtain a
 
 
 
-(7) Have fun
+(8) Have fun
 ------------
 That is it - installation complete. Have fun!

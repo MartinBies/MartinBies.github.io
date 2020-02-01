@@ -60,7 +60,7 @@ which extend the functionality of the finitely-presented graded S-modules, as im
 
 * [*TruncationsOfPresentationsByProjectiveGradedModules*](https://github.com/homalg-project/TruncationsOfPresentationsByProjectiveGradedModules)
 
-Next, provide interfaces to [*cohomCalg*](https://benjaminjurke.com/academia-and-research/cohomcalg) and [*spasm*](https://github.com/cbouilla/spasm). This is done via
+Next, we provide interfaces to [*cohomCalg*](https://benjaminjurke.com/academia-and-research/cohomcalg) and [*spasm*](https://github.com/cbouilla/spasm):
 
 * [*cohomCalgInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/cohomCalgInterface)
 * [*SpasmInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SpasmInterface)
@@ -75,7 +75,7 @@ Finally, all of these enter the central package
 
 It provides implementations of various algorithms to compute sheaf cohomologies. Among others, the algorithm described in the appendix of [*cohomologies of coherent sheaves and massless spectra in F-theory*](https://arxiv.org/abs/1802.08860) is implemented there. 
 
-A visualisation of the dependencies among the above packages is provided [here](/SoftwarePackages.pdf).
+[Here](/SoftwarePackages.pdf) is a visualisation of the dependencies among my packages.
 
 
 ## Documentation of my software packages

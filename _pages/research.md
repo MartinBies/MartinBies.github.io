@@ -112,6 +112,6 @@ To test your installation perform the following steps:
 * Issue *gap makedoc.g*.
 * Issue *gap maketest.g*
 
-A first simple input file for gap, which computes some sheaf cohomologies, can be found [here](/example.gi). More examples are provided in the manual [SheafCohomologiesOnToricVarieties](/SheafCohomologiesOnToricVarieties.pdf).
+A first simple input file for gap, which computes some sheaf cohomologies, can be found [here](/example.g). More examples are provided in the manual [SheafCohomologiesOnToricVarieties](/SheafCohomologiesOnToricVarieties.pdf).
 
 Note that these computations can become very demanding, both in terms of required computational time but also in terms of required computational ressources. Whenever this happens, you may wish to try the command *H0ParallelBySpasm*. It use the software *Spasm* and performs the necessary computations modulo a prime number (by default 42013). Consequently, it is no longer guaranteed that the so-obtained results match the results obtained over the integers or rational numbers. However, for not too involved examples, this will be the case. In addition, Spasm demands and consumes only very few computational ressources.

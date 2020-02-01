@@ -25,7 +25,7 @@ Together with *Sebastian Gutsche*, I have developed the package
 
 which makes elementary operations on toric varieties accessible within gap. More recently, it has been extended by the package
 
-* [*TopcomInterface*](https://github.com/HereAround/TopcomInterface)
+* [*TopcomInterface*](https://github.com/homalg-project/TopcomInterface)
 
 This functions as interface to the software [*Topcom*](http://www.rambau.wm.uni-bayreuth.de/TOPCOM/) and allows to construct toric varieties based on their triangulations (or in physics language, based on their GLSM charges). This functionality is available via the package
 

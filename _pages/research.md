@@ -1,12 +1,12 @@
 ---
 layout: single
-title: "Research"
+title: "Research and software"
 permalink: /research/
 ---
 
 {% include toc %}
 
-## Physics and mathematics
+## Physics and Mathematics
 
 By upbringing, I am a theoretical high energy physicist with a focus on string theory. In the past years, I have been working on a framework of string theory, called F-theory. It strongly utilizes geometric tools to investigate solutions to string theory.
 
@@ -17,7 +17,7 @@ This analogy extends beyond F-theory. Namely, also in type IIB string theory, th
 In a very harsh first order approximation, merely counting sheaf cohomologies allows to tell good and bad string theory solutions apart. To facilitate such types of computations for a large number of geometries, I have developped software packages ranging from toric geometry to category theory. This software is part of the [*homalg_project](https://github.com/homalg-project).
 
 
-## Software on toric varieties
+## Software on Toric Varieties
 
 Together with *Sebastian Gutsche*, I have developed the package
 
@@ -33,7 +33,7 @@ This functions as interface to the software [*Topcom*](http://www.rambau.wm.uni-
 
 
 
-## Software on Freyd categories
+## Software on Freyd Categories
 
 The first implementations of a *PresentationCategory* category in the language of the [*CAP_project*](https://homalg-project.github.io/CAP_project/) are available in the packages
 
@@ -47,7 +47,7 @@ By now, this concept has been much better understood in [*A constructive approac
 
 
 
-## Software to compute sheaf cohomologies
+## Software on Sheaf Cohomologies
 
 For toric varieties, the category of coherent sheaves can be modelled by the category of finitely-presented graded S-modules (S being the Cox ring of the toric variety of interest) (c.f. [*Gabriel morphisms and the computability of Serre quotients with applications to coherent sheaves*](https://arxiv.org/abs/1409.2028)). The latter is a special instance of a Freyd category. This is the reason why we can use the above packages to model coherent sheaves in the computer.
 
@@ -78,7 +78,7 @@ It provides implementations of various algorithms to compute sheaf cohomologies.
 [Here](/SoftwarePackages.pdf) is a visualisation of the dependencies among my packages.
 
 
-## Documentation of my software packages
+## Documentation
 
 Below, you can find the documentations of my software packages (last update 01/02/2020):
 
@@ -96,9 +96,9 @@ Below, you can find the documentations of my software packages (last update 01/0
 * [SheafCohomologiesOnToricVarieties](/SheafCohomologiesOnToricVarieties.pdf)
 
 
-## Installation and first steps
+## Installation instructions
 
-Installation instructions for Debian9 and Ubuntu18.04 can be found [here](/Instructions.txt). They assume that you do not have a running version of gap yet and make, among others, use of the script [homalg_clone](/homalg_clone.sh) which clones a selection of gap-packages.
+For Debian9 and Ubuntu18.04, you can find installation instructions [here](/Instructions.txt). They assume that you do not have a running version of gap yet. It will download the script [homalg_clone](/homalg_clone.sh), which is used to clone a selection of gap-packages from github.
 
 Once the installation is complete, you can navigate into the individual package folders to create the latest documentation and test the installation. To create the latest documentation do the following:
 

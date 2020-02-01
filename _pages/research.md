@@ -14,7 +14,7 @@ Of ample importance for string phenomenology is the number of Higgs fields in a 
 
 This analogy extends beyond F-theory. Namely, also in type IIB string theory, the topological B-model and heterotic string theory, such zero mode countings can be phrased in terms of cohomologies of coherent sheaves. Even more, homological mirror symmetry is a categorical equivalence of the category of coherent sheaves (on a certain Calabi-Yau manifold) and the Fukaya category (on the dual Calabi-Yau manifold). This underlines the geometric importance of coherent sheaves, and is why I am very interested in studying these objects.
 
-In a very harsh first order approximation, merely counting sheaf cohomologies allows to tell good and bad string theory solutions apart. To facilitate such types of computations for a large number of geometries, I have developped software packages ranging from toric geometry to category theory. This software is part of the [*homalg_project](https://github.com/homalg-project) of [*Mohamed Barakat](https://github.com/mohamed-barakat).
+In a very harsh first order approximation, merely counting sheaf cohomologies allows to tell good and bad string theory solutions apart. To facilitate such types of computations for a large number of geometries, I have developped software packages ranging from toric geometry to category theory. This software is part of the [*homalg_project](https://github.com/homalg-project).
 
 
 ## Software on toric varieties

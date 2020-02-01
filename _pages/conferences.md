@@ -9,6 +9,7 @@ permalink: /conferences/
  Date | Place
  ---------    :|-----------
  10 Dec. 2019   | Pennsylvania, USA [slides](/TalkUPenn19.pdf)
+ 10 Oct. 2018   | Brussels, Belgium [slides](/Brussels.pdf)
  3 July 2014   | Aachen, Germany [slides](/PresentationAachen.pdf)
  
  

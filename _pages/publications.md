@@ -26,24 +26,21 @@ You can find all my physics publications on [inspire](https://inspirehep.net/aut
 
 
 ## Software
-You can find the latest updates on my software at my [github-page](https://github.com/herearound). I am author and maintainer of the following *CAP*- and *gap*-packages:
+You can find the latest updates on my software at my [github-page](https://github.com/herearound). Among others, I am author and maintainer of the following *CAP*- and *gap*-packages:
 
-* [*CAPCategoryOfProjectiveGradedModules*](https://github.com/HereAround/CAPCategoryOfProjectiveGradedModules)
-* [*CAPPresentationCategory*](https://github.com/HereAround/CAPPresentationCategory)
-* [*PresentationsByProjectiveGradedModules*](https://github.com/HereAround/PresentationsByProjectiveGradedModules)
-* [*TruncationsOfPresentationsByProjectiveGradedModules*](https://github.com/HereAround/TruncationsOfPresentationsByProjectiveGradedModules)
-* [*FreydCategoriesForCAP*](https://github.com/HereAround/CAP_project/tree/master/FreydCategoriesForCAP)
 * [*ToricVarieties*](https://github.com/homalg-project/homalg_project/tree/master/ToricVarieties)
-* [*SheafCohomologyOnToricVarieties*](https://github.com/HereAround/SheafCohomologyOnToricVarieties)
-* [*TopcomInterface*](https://github.com/HereAround/TopcomInterface)
-* [*TriangulationsAndBlowupsForToricVarieties*](https://github.com/HereAround/TriangulationsAndBlowupsForToricVarieties)
-
-I am currently developing the
-
-* [*cohomCalgInterface*](https://github.com/HereAround/cohomCalgInterface)
-
-and intend to extend it, so that the *Koszul-extension* of [*cohomCalg*](https://benjaminjurke.com/academia-and-research/cohomcalg) becomes directly available to gap.
-
+* [*TopcomInterface*](https://github.com/homalg_project/TopcomInterface)
+* [*CAPCategoryOfProjectiveGradedModules*](https://github.com/homalg-project/CAPCategoryOfProjectiveGradedModules)
+* [*CAPPresentationCategory*](https://github.com/homalg-project/CAPPresentationCategory)
+* [*PresentationsByProjectiveGradedModules*](https://github.com/homalg-project/PresentationsByProjectiveGradedModules)
+* [*TruncationsOfPresentationsByProjectiveGradedModules*](https://github.com/homalg-project/TruncationsOfPresentationsByProjectiveGradedModules)
+* [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP)
+* [*ToolsForFPGradedModules*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/ToolsForFPGradedModules)
+* [*TruncationsOfFPGradedModules*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/TruncationsOfFPGradedModules)
+* [*cohomCalgInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/cohomCalgInterface)
+* [*SpasmInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SpasmInterface)
+* [*AdditionsForToricVarieties*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/AdditionsForToricVarieties)
+* [*SheafCohomologyOnToricVarieties*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SheafCohomologyOnToricVarieties)
 
 
 ## Theses

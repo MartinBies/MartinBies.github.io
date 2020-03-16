@@ -1,7 +1,9 @@
 # main links
 main:
-  - title: "Research and Software"
+  - title: "Research"
     url: /research/
+  - title: "Software"
+    url: /software/
   - title: "Publications"
     url: /publications/
   - title: "Conferences"
@@ -10,8 +12,6 @@ main:
     url: /teaching/
 #  - title: "Students"
 #    url: /students/
-  - title: "Software"
-    url: /software/
   - title: "CV"
     url: /cv/
 #  - title: "Links"

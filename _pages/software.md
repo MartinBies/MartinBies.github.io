@@ -87,7 +87,9 @@ Below, you can find the documentations of my software packages (last update 01/0
 
 ## Installation instructions
 
-Installation instructions, that have been tested for Debian9 and Ubuntu 18.04 (on 01/02/2020) can be found [here](/Instructions.txt). Among others, these instructions install [gap-4.10.2](https://www.gap-system.org/Releases/4.10.2.html) and use the script [homalg_clone.sh](/homalg_clone.sh), which clones a selection of gap-packages from github. I provide a script, which attempts to install this software and all dependencies automatically. This script can be found [here](/Install.sh). This script has been tested on Debian9 and Ubuntu 18.04 (on 16/03/2020).
+I provide a script, which attempts to install this software and all dependencies automatically. This script can be found [here](/Install.sh). This script has been tested on Debian9 and Ubuntu 18.04 (on 16/03/2020).
+
+Alternatively, installation instructions for Debian9 and Ubuntu 18.04 (tested on 01/02/2020) can be found [here](/Instructions.txt). Note that, among others, these instructions install [gap-4.10.2](https://www.gap-system.org/Releases/4.10.2.html) and use the script [homalg_clone.sh](/homalg_clone.sh) to clone a selection of gap-packages from github.
 
 Once the installation is complete, you can create the latest documentation as follows:
 
@@ -103,4 +105,4 @@ To test your installation perform the following steps:
 
 A first simple input file for gap, which computes some sheaf cohomologies, can be found [here](/example.g). More examples are provided in the manual [SheafCohomologiesOnToricVarieties](/SheafCohomologiesOnToricVarieties.pdf).
 
-Note that these computations can become very demanding, both in terms of required computational time but also in terms of required computational ressources. Whenever this happens, you may wish to try the command *H0ParallelBySpasm*. It use the software *Spasm* and performs the necessary computations modulo a prime number (by default 42013). Consequently, it is no longer guaranteed that the so-obtained results match the results obtained over the integers or rational numbers. However, for not too involved examples, this will be the case. In addition, Spasm demands and consumes only very few computational ressources.
+Note that these computations can become very demanding, both in terms of required computational time but also in terms of required computational ressources. Whenever this happens, you may wish to try the command *H0ParallelBySpasm*. It uses the software *Spasm* and performs the necessary computations modulo a prime number (by default 42013). Consequently, it is no longer guaranteed that the so-obtained results match the results obtained over the integers or rational numbers. However, for not too involved examples, this will be the case. In addition, Spasm demands and consumes only very few computational ressources.

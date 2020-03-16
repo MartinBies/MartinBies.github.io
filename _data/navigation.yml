@@ -10,8 +10,8 @@ main:
     url: /teaching/
 #  - title: "Students"
 #    url: /students/
-#  - title: "Software"
-#    url: /software/
+  - title: "Software"
+    url: /software/
   - title: "CV"
     url: /cv/
 #  - title: "Links"

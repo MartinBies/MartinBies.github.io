@@ -98,7 +98,7 @@ Below, you can find the documentations of my software packages (last update 01/0
 
 ## Installation instructions
 
-Installation instructions, that have been tested for Debian9 and Ubuntu 18.04 (on 01/02/2020) can be found [here](/Instructions.txt). Among others, they will download the script [homalg_clone.sh](/homalg_clone.sh), which is used to clone a selection of gap-packages from github.
+Installation instructions, that have been tested for Debian9 and Ubuntu 18.04 (on 01/02/2020) can be found [here](/Instructions.txt). Among others, these instructions install [gap-4.10.2](https://www.gap-system.org/Releases/4.10.2.html) and download the script [homalg_clone.sh](/homalg_clone.sh), which clones a selection of gap-packages from github.
 
 Once the installation is complete, you can create the latest documentation as follows:
 

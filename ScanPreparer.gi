@@ -36,7 +36,7 @@ threads := 1;
 choices := [ 0, 1 ];
 
 # Restart interval (in minutes)
-lapse := 30; # once every half hour we restart all scans
+lapse := 20; # once every half hour we restart all scans
 
 # --------------------------------------------------------------------
 # (2) Create the scan superfolder
@@ -680,6 +680,7 @@ fi;
 SetPrintFormattingStatus( output, false );
 
 WriteLine( output, """/usr/bin/pkill screen""" );
+WriteLine( output, """rm -rf /tmp/*""" );
 WriteLine( output, Concatenation( """/usr/bin/gap """, absolute_path, """/Controlers/Start.gi""" ) );
 
 # close the stream
@@ -698,7 +699,7 @@ Exec( Concatenation( "chmod +x ", absolute_path, "/Controlers/restart.sh" ) );
 Exec( """crontab -l > mycron""" );
 
 #echo new cron into cron file
-command := Concatenation( """echo """, "\"", """*/""", String( lapse ), """ * * * * """, absolute_path, """/Controlers/restart.sh > /dev/null""", "\"", """>> mycron""" );
+command := Concatenation("""echo """, "\"","""*/""", String( lapse ),""" * * * * """, absolute_path, """/Controlers/restart.sh > """, absolute_path, """/.scan.log 2>&1""", "\"", """>> mycron""" );
 Exec( command );
 
 #install new cron file
@@ -737,4 +738,13 @@ Print( "\n" );
 # --------------------------------------------------------------------
 QUIT;
 
-#screen -ls | grep Detached | cut -d. -f1 | awk '{print $1}' | xargs kill
+# Useful 1: End all screens
+# pkill screen
+
+# Useful 2: Display CRON log
+# grep CRON /var/log/syslog
+
+# Latest changes:
+# (*) sudo apt-get install postfix
+# (*) Redirecting output of cron to log file
+# (*) Deleting temporary files once cronjob is being executed

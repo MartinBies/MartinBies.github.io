@@ -28,7 +28,7 @@ echo "(*) 4ti2"
 echo "(*) singular"
 echo ""
 
-sudo apt-get postfix htop install autoconf build-essential libgmp-dev libtool git libatlas-base-dev libblas-dev liblapack-dev screen libcdd-dev 4ti2 singular
+sudo apt-get install postfix htop autoconf build-essential libgmp-dev libtool git libatlas-base-dev libblas-dev liblapack-dev screen libcdd-dev 4ti2 singular
 
 echo ""
 echo ""

@@ -3,28 +3,16 @@
 # (0) Parameters for the scan, which encode line bundle and curve
 
 # class of curve (in basis [H,E1,E2,E3])
-deg_curve := [4,-1,-2,-1];
+deg_C := [4,-1,-2,-1];
 
 # class of curve (in basis [H,E1,E2,E3])
-deg_bundle := [1,1,-4,2];
+deg_L := [1,1,-4,2];
 
 
 # --------------------------------------------------------------------
 # (1) Technical input parameters
 # (1) Technical input parameters
 # --------------------------------------------------------------------
-
-# Define hyperplane class etc.
-H := [1,1,0,1];
-E1 := [1,0,0,0];
-E2 := [1,1,-1,0];
-E3 := [0,0,0,1];
-
-# Degree of the polynomial in dP3 which defines the curve C
-deg_curve := deg_curve[ 1 ] * H + deg_curve[ 2 ] * E1 + deg_curve[ 3 ] * E2 + deg_curve[ 4 ] * E3;
-
-# Degree of the line bundle on dP3 of which we consider the pullback to C
-deg_bundle := deg_bundle[ 1 ] * H + deg_bundle[ 2 ] * E1 + deg_bundle[ 3 ] * E2 + deg_bundle[ 4 ] * E3;
 
 # Number of allowed parallel threads is [ 1,2,4,8 ]
 allowed_threads := [ 1, 2, 4, 8 ];
@@ -54,7 +42,7 @@ CloseStream(a);
 RemoveCharacters( date_str, " \n\t\r:" );
 
 # And create the scan superfolder
-path := Concatenation( "PullbackOfBundle", String( deg_bundle ), "ToDeformedCurveDefinedBy", String( deg_curve ), "-", date_str );
+path := Concatenation( "PullbackOfBundle", String( deg_L ), "ToDeformedCurveDefinedBy", String( deg_C ), "-", date_str );
 RemoveCharacters(path, " \n\t\r");
 path := ReplacedString( path, "[", "-" );
 path := ReplacedString( path, "]", "-" );
@@ -80,6 +68,7 @@ Exec( Concatenation( "mkdir ", subpath ) );
 # for scripts to control the scan
 subpath := Concatenation( path, "/Controlers" );
 Exec( Concatenation( "mkdir ", subpath ) );
+
 
 # --------------------------------------------------------------------
 # (4) Find absolute path to scan superfolder and copy cohomCalg
@@ -123,6 +112,16 @@ fixed_coeffs := Tuples( choices, fixed_coeffs_per_thread );
 if Length( fixed_coeffs ) <> threads then
     Error( "Inconsistency detected - number of threads does not match number of tuples of fixed coefficients" );
 fi;
+
+# Define hyperplane class etc.
+H := [1,1,0,1];
+E1 := [1,0,0,0];
+E2 := [1,1,-1,0];
+E3 := [0,0,0,1];
+
+# Express deg_curve and deg_bundle in terms of the degrees used by gap
+deg_curve := deg_C[ 1 ] * H + deg_C[ 2 ] * E1 + deg_C[ 3 ] * E2 + deg_C[ 4 ] * E3;
+deg_bundle := deg_L[ 1 ] * H + deg_L[ 2 ] * E1 + deg_L[ 3 ] * E2 + deg_L[ 4 ] * E3;
 
 # identify how many coefficients the polynomial, which defines the curve, does have
 LoadPackage( "SheafC" );
@@ -330,8 +329,8 @@ for coeff_choice in fixed_coeffs do
         WriteLine( output, Concatenation( """   		  s := Concatenation( s, String( Float( coeffs[ """, String( i ), """ ] ) ), "," );""" ) );
    od;
    WriteLine( output, Concatenation( """   		  s := Concatenation( s, String( Float( coeffs[ """, String( number_of_monoms ), """ ] ) ), "\"," );""" ) );
-   WriteLine( output, Concatenation( """   		  s := Concatenation( s, "\"", String( """, String( deg_curve ), """ ), "\"," );""" ) );
-   WriteLine( output, Concatenation( """   		  s := Concatenation( s, "\"", String( """, String( deg_bundle ), """ ), "\"," );""" ) );
+   WriteLine( output, Concatenation( """   		  s := Concatenation( s, "\"", String( """, String( deg_C ), """ ), "\"," );""" ) );
+   WriteLine( output, Concatenation( """   		  s := Concatenation( s, "\"", String( """, String( deg_L ), """ ), "\"," );""" ) );
    WriteLine( output, """   		  s := Concatenation( s, "\"", String( res[ 1 ] ), "\"," );""" );
    WriteLine( output, """   		  s := Concatenation( s, "\"", String( res[ 2 ][ 1 ] ), "\"," );""" );
    WriteLine( output, """   		  s := Concatenation( s, "\"", String( res[ 2 ][ 2 ] ), "\"," );""" );
@@ -488,7 +487,7 @@ WriteLine( output, """# (1) initialise the target.csv file""" );
 WriteLine( output, """############################################################################""" );
 AppendTo( output, "\n" );
 WriteLine( output, """# open the target file (delete if already exists)""" );
-WriteLine( output, """target_name := Concatenation( "SummaryOfResults-PullbackOfBundle", String( deg_bundle ), "ToDeformedCurveDefinedBy", String( deg_curve ), "-", date_str, ".csv" );""" );
+WriteLine( output, """target_name := Concatenation( "SummaryOfResults-PullbackOfBundle", String( deg_L ), "ToDeformedCurveDefinedBy", String( deg_C ), "-", date_str, ".csv" );""" );
 WriteLine( output, Concatenation( """target_directory := Directory( Concatenation( """, "\"", String( absolute_path ), "\"", """, "/SummaryOfResults" ) );""") );
 WriteLine( output, """target := OutputTextFile( Filename( target_directory, target_name ), false );""" );
 AppendTo( output, "\n" );

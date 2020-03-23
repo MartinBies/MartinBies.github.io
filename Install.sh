@@ -14,6 +14,7 @@ echo "------------------------------------------------------------------------"
 echo "Step1: Install dependencies shipped with Ubuntu/Debian"
 echo "------------------------------------------------------------------------"
 echo ""
+echo "(*) htop"
 echo "(*) autoconf"
 echo "(*) build-essential"
 echo "(*) libgmp-dev"
@@ -28,7 +29,7 @@ echo "(*) 4ti2"
 echo "(*) singular"
 echo ""
 
-sudo apt-get install postfix htop autoconf build-essential libgmp-dev libtool git libatlas-base-dev libblas-dev liblapack-dev screen libcdd-dev 4ti2 singular
+sudo apt-get install htop autoconf build-essential libgmp-dev libtool git libatlas-base-dev libblas-dev liblapack-dev screen libcdd-dev 4ti2 singular
 
 echo ""
 echo ""

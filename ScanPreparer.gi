@@ -30,13 +30,14 @@ deg_bundle := deg_bundle[ 1 ] * H + deg_bundle[ 2 ] * E1 + deg_bundle[ 3 ] * E2 
 allowed_threads := [ 1, 2, 4, 8 ];
 
 # Set threads to your desired number of threads
+# For now, I suggest to stick to just one thread
 threads := 1;
 
 # Choices for the values of the coefficients
 choices := [ 0, 1 ];
 
 # Restart interval (in minutes)
-lapse := 20; # once every half hour we restart all scans
+lapse := 20; # once every 'lapse'-minutes, restart the gap computations (prevent memory leak + overall quicker)
 
 # --------------------------------------------------------------------
 # (2) Create the scan superfolder
@@ -323,23 +324,14 @@ for coeff_choice in fixed_coeffs do
    WriteLine( output, """   		  # (ii) perform the computation""" );
    WriteLine( output, """   		  res := TOOLS_FOR_HOMALG_GET_REAL_TIME_OF_FUNCTION_CALL( compute_spectrum, coeffs );""" );
    AppendTo( output, "\n" );
-   WriteLine( output, """   		  # (iv) write results to .txt file""" );
-   WriteLine( output, """   		  s := Concatenation( String( coeffs ), "\t", String( res[1] ), "\t", String( res[2][1] ), "\t", String( res[2][2] ), "\t", String( res[2][3] ), "\n" );""" );
-   WriteLine( output, """   		  output := OutputTextFile( name, true );""" );
-   WriteLine( output, """   		  SetPrintFormattingStatus( output, false );""" );
-   WriteLine( output, """   		  if output = fail then""" );
-   WriteLine( output, """   		  	Error( "failed to set up file-stream" );""" );
-   WriteLine( output, """   		  	return;""" );
-   WriteLine( output, """   		  fi;""" );
-   WriteLine( output, """   		  AppendTo( output, s );""" );
-   WriteLine( output, """   		  CloseStream(output);""" );
-   AppendTo( output, "\n" );
    WriteLine( output, """   		  # (v) write to CSV-file""" );
    WriteLine( output, """   		  s := Concatenation( "\"", String( Float( coeffs[ 1 ] ) ), "," );""" );
    for i in [ 2 .. number_of_monoms - 1 ] do
         WriteLine( output, Concatenation( """   		  s := Concatenation( s, String( Float( coeffs[ """, String( i ), """ ] ) ), "," );""" ) );
    od;
    WriteLine( output, Concatenation( """   		  s := Concatenation( s, String( Float( coeffs[ """, String( number_of_monoms ), """ ] ) ), "\"," );""" ) );
+   WriteLine( output, Concatenation( """   		  s := Concatenation( s, "\"", String( """, String( deg_curve ), """ ), "\"," );""" ) );
+   WriteLine( output, Concatenation( """   		  s := Concatenation( s, "\"", String( """, String( deg_bundle ), """ ), "\"," );""" ) );
    WriteLine( output, """   		  s := Concatenation( s, "\"", String( res[ 1 ] ), "\"," );""" );
    WriteLine( output, """   		  s := Concatenation( s, "\"", String( res[ 2 ][ 1 ] ), "\"," );""" );
    WriteLine( output, """   		  s := Concatenation( s, "\"", String( res[ 2 ][ 2 ] ), "\"," );""" );
@@ -396,44 +388,6 @@ for coeff_choice in fixed_coeffs do
    WriteLine( output, """# signal that scan terminated...""" );
    WriteLine( output, """Print( "Scan completed! \n\n" );""" );
    WriteLine( output, """Print( "--------------------------------------------------------------------\n\n" );""" );
-   AppendTo( output, "\n \n" );
-
-   WriteLine( output, """##################################################################################################""" );
-   WriteLine( output, """# 8: copy the result""" );
-   WriteLine( output, """# 8: copy the result""" );
-   WriteLine( output, """##################################################################################################""" );
-   AppendTo( output, "\n" );
-   WriteLine( output, """Print( "Copy results in .txt of scan to summary folder...\n" );""" );
-   AppendTo( output, "\n" );
-   WriteLine( output, """# prepare original and final file path""" );
-   WriteLine( output, Concatenation( """old_file := Filename( scan_directory, "ResultOfRun""", String(thread_counter), """.txt" );""" ) );
-   WriteLine( output, Concatenation( """new_file := Filename( result_directory, "ResultOfRun""", String(thread_counter), """.txt" );""" ) );
-   WriteLine( output, """old_file_string := ReplacedString( String( old_file ), " ", "\\ " );""" );
-   WriteLine( output, """new_file_string := ReplacedString( String( new_file ),  " ", "\\ ");""" );
-   AppendTo( output, "\n" );
-   WriteLine( output, """# now issue copy command""" );
-   WriteLine( output, """Exec( Concatenation( "cp ", old_file_string, " ", new_file_string ) );""" );
-   WriteLine( output, """Print( "...done\n\n" );""" );
-   WriteLine( output, """Print( "--------------------------------------------------------------------\n\n" );""" );
-   AppendTo( output, "\n" );
-   WriteLine( output, """Print( "Copy results in .csv of scan to summary folder...\n" );""" );
-   AppendTo( output, "\n" );
-   WriteLine( output, """# prepare original and final file path""" );
-   WriteLine( output, Concatenation( """old_file := Filename( scan_directory, "ResultOfRun""", String(thread_counter), """.csv" );""" ) );
-   WriteLine( output, Concatenation( """new_file := Filename( result_directory, "ResultOfRun""", String(thread_counter), """.csv" );""" ) );
-   WriteLine( output, """old_file_string := ReplacedString( String( old_file ), " ", "\\ " );""" );
-   WriteLine( output, """new_file_string := ReplacedString( String( new_file ),  " ", "\\ ");""" );
-   AppendTo( output, "\n" );
-   WriteLine( output, """# now issue copy command""" );
-   WriteLine( output, """Exec( Concatenation( "cp ", old_file_string, " ", new_file_string ) );""" );
-   WriteLine( output, """Print( "...done\n\n" );""" );
-   WriteLine( output, """Print( "--------------------------------------------------------------------\n\n" );""" );
-   AppendTo( output, "\n\n" );
-
-   WriteLine( output, """##################################################################################################""" );
-   WriteLine( output, """# 9: close session""" );
-   WriteLine( output, """# 9: close session""" );
-   WriteLine( output, """##################################################################################################""" );
    AppendTo( output, "\n" );
    WriteLine( output, """QUIT;""" );
 
@@ -529,12 +483,12 @@ SetPrintFormattingStatus( output, false );
 
 # write the contents
 WriteLine( output, """############################################################################""" );
-WriteLine( output, """# (1) initialise the target.txt file""" );
-WriteLine( output, """# (1) initialise the target.txt file""" );
+WriteLine( output, """# (1) initialise the target.csv file""" );
+WriteLine( output, """# (1) initialise the target.csv file""" );
 WriteLine( output, """############################################################################""" );
 AppendTo( output, "\n" );
 WriteLine( output, """# open the target file (delete if already exists)""" );
-WriteLine( output, """target_name := "SummaryOfResults.txt";""" );
+WriteLine( output, """target_name := Concatenation( "SummaryOfResults-PullbackOfBundle", String( deg_bundle ), "ToDeformedCurveDefinedBy", String( deg_curve ), "-", date_str, ".csv" );""" );
 WriteLine( output, Concatenation( """target_directory := Directory( Concatenation( """, "\"", String( absolute_path ), "\"", """, "/SummaryOfResults" ) );""") );
 WriteLine( output, """target := OutputTextFile( Filename( target_directory, target_name ), false );""" );
 AppendTo( output, "\n" );
@@ -550,62 +504,7 @@ WriteLine( output, """# (2) iterate over the result files""" );
 WriteLine( output, """# (2) iterate over the result files""" );
 WriteLine( output, """############################################################################""" );
 AppendTo( output, "\n" );
-WriteLine( output, Concatenation( """for i in [ 1 .. """, String( threads ), """ ] do""" ) );
-AppendTo( output, "\n" );
-WriteLine( output, """	# open source_file""" );
-WriteLine( output, Concatenation( """	source_directory := Directory( Concatenation( """, "\"", String( absolute_path ), "\"", """, "/Scan", String( i ) ) );""") );
-WriteLine( output, """	source := InputTextFile( Filename( source_directory, Concatenation( "ResultOfRun", String ( i ), ".txt" ) ) );""" );
-AppendTo( output, "\n" );
-WriteLine( output, """	# check if the stream works""" );
-WriteLine( output, """	if source = fail then""" );
-WriteLine( output, """		Error( "failed to set up file-stream" );""" );
-WriteLine( output, """		return;""" );
-WriteLine( output, """	elif IsReadableFile( Filename( source_directory, Concatenation( "ResultOfRun", String ( i ), ".txt" ) ) ) = false then""" );
-WriteLine( output, """		Error( Concatenation( "cannot read from file 'ResultOfRun", String ( i ), ".txt'" )  );""" );
-WriteLine( output, """		return;""" );
-WriteLine( output, """	fi;""" );
-AppendTo( output, "\n" );
-WriteLine( output, """	# read source file and add its contents to the target file""" );
-WriteLine( output, """	WriteLine( target, ReadAll( source ) );""" );
-AppendTo( output, "\n" );
-WriteLine( output, """	# close the source_file""" );
-WriteLine( output, """	CloseStream( source );""" );
-AppendTo( output, "\n" );
-WriteLine( output, """od;""" );
-AppendTo( output, "\n\n" );
-
-WriteLine( output, """############################################################################""" );
-WriteLine( output, """# (3) close the target stream""" );
-WriteLine( output, """# (3) close the target stream""" );
-WriteLine( output, """############################################################################""" );
-AppendTo( output, "\n" );
-WriteLine( output, """CloseStream( target );""" );
-AppendTo( output, "\n\n" );
-
-# write the contents
-WriteLine( output, """############################################################################""" );
-WriteLine( output, """# (4) initialise the target.csv file""" );
-WriteLine( output, """# (4) initialise the target.csv file""" );
-WriteLine( output, """############################################################################""" );
-AppendTo( output, "\n" );
-WriteLine( output, """# open the target file (delete if already exists)""" );
-WriteLine( output, """target_name := "SummaryOfResults.csv";""" );
-WriteLine( output, Concatenation( """target_directory := Directory( Concatenation( """, "\"", String( absolute_path ), "\"", """, "/SummaryOfResults" ) );""") );
-WriteLine( output, """target := OutputTextFile( Filename( target_directory, target_name ), false );""" );
-AppendTo( output, "\n" );
-WriteLine( output, """# check if the stream works""" );
-WriteLine( output, """if target = fail then""" );
-WriteLine( output, """	Error( Concatenation( "failed to set up file-stream to target file", target_name ) );""" );
-WriteLine( output, """	return;""" );
-WriteLine( output, """fi;""" );
-AppendTo( output, "\n\n" );
-
-WriteLine( output, """############################################################################""" );
-WriteLine( output, """# (5) iterate over the result files""" );
-WriteLine( output, """# (5) iterate over the result files""" );
-WriteLine( output, """############################################################################""" );
-AppendTo( output, "\n" );
-WriteLine( output, """WriteLine( target, Concatenation( "\"", "coeffs", "\"", ",", "\"", "time", "\"", ",", "\"", "h0", "\"", ",", "\"", "h1", "\"", ",", "\"", "splits", "\"" ) );""" );
+WriteLine( output, """WriteLine( target, Concatenation( "\"", "coeffs", "\"", ",", "\"", "curve", "\"", ",", "\"", "bundle", "\"", ",", "\"", "time", "\"", ",", "\"", "h0", "\"", ",", "\"", "h1", "\"", ",", "\"", "splits", "\"" ) );""" );
 AppendTo( output, "\n" );
 WriteLine( output, Concatenation( """for i in [ 1 .. """, String( threads ), """ ] do""" ) );
 AppendTo( output, "\n" );
@@ -632,24 +531,24 @@ WriteLine( output, """od;""" );
 AppendTo( output, "\n\n" );
 
 WriteLine( output, """############################################################################""" );
-WriteLine( output, """# (6) close the target stream""" );
-WriteLine( output, """# (6) close the target stream""" );
+WriteLine( output, """# (3) close the target stream""" );
+WriteLine( output, """# (3) close the target stream""" );
 WriteLine( output, """############################################################################""" );
 AppendTo( output, "\n" );
 WriteLine( output, """CloseStream( target );""" );
 AppendTo( output, "\n\n" );
 
 WriteLine( output, """############################################################################""" );
-WriteLine( output, """# (7) remove all cronjobs""" );
-WriteLine( output, """# (7) remove all cronjobs""" );
+WriteLine( output, """# (4) remove all cronjobs""" );
+WriteLine( output, """# (4) remove all cronjobs""" );
 WriteLine( output, """############################################################################""" );
 AppendTo( output, "\n" );
 WriteLine( output, """Exec( "crontab -r" );""" );
 AppendTo( output, "\n\n" );
 
 WriteLine( output, """############################################################################""" );
-WriteLine( output, """#### (8) Close session""" );
-WriteLine( output, """#### (8) Close session""" );
+WriteLine( output, """#### (5) Close session""" );
+WriteLine( output, """#### (5) Close session""" );
 WriteLine( output, """############################################################################""" );
 AppendTo( output, "\n" );
 WriteLine( output, """QUIT;""" );
@@ -660,14 +559,11 @@ CloseStream(output);
 
 # --------------------------------------------------------------------
 # (9) Set up script to restart the scan
-# (9) Set up script to restart the scanc
+# (9) Set up script to restart the scan
 # --------------------------------------------------------------------
 
-# initialise the directory and the filename
+# initialise restart.sh
 name := Filename( Directory( Concatenation( path, "/Controlers" ) ), "restart.sh" );
-
-# initialize a list of processes
-process_list := List( [ 1 .. threads ], i -> Concatenation( "Scan", date_str, "\_", String( i ) ) );
 
 # open filestream
 output := OutputTextFile( name, true );
@@ -679,8 +575,24 @@ fi;
 # turn off ugly line breaks etc.
 SetPrintFormattingStatus( output, false );
 
+# write opening of script
+WriteLine( output, """#!/bin/sh""" );
+AppendTo( output, "\n" );
+
+# write time/date and status of individual runs to log file
+WriteLine( output, Concatenation( """/bin/date >> """, absolute_path, """/MyScan.log""" ) );
+for i in [ 1 .. threads ] do
+    WriteLine( output, Concatenation( "echo \"", """Scan""", String( i ), """: """, "\"", """ >> """, absolute_path, """/MyScan.log""" ) );
+    WriteLine( output, Concatenation( """cat """, absolute_path, """/Scan""", String( i ), """/StatusOfRun""", String( i ), """.txt""", """ >> """, absolute_path, """/MyScan.log""" ) );
+od;
+WriteLine( output, Concatenation( "echo \"", """\n""", "\"", """ >> """,  absolute_path, """/MyScan.log""" ) );
+
+# next kill all screens and delete tmp files
+AppendTo( output, "\n" );
 WriteLine( output, """/usr/bin/pkill screen""" );
 WriteLine( output, """rm -rf /tmp/*""" );
+
+# and restart the screens again
 WriteLine( output, Concatenation( """/usr/bin/gap """, absolute_path, """/Controlers/Start.gi""" ) );
 
 # close the stream
@@ -699,7 +611,7 @@ Exec( Concatenation( "chmod +x ", absolute_path, "/Controlers/restart.sh" ) );
 Exec( """crontab -l > mycron""" );
 
 #echo new cron into cron file
-command := Concatenation("""echo """, "\"","""*/""", String( lapse ),""" * * * * """, absolute_path, """/Controlers/restart.sh > """, absolute_path, """/.scan.log 2>&1""", "\"", """>> mycron""" );
+command := Concatenation("""echo """, "\"","""*/""", String( lapse ),""" * * * * """, absolute_path, """/Controlers/restart.sh > """, absolute_path, """/MyCronJob.log 2>&1""", "\"", """>> mycron""" );
 Exec( command );
 
 #install new cron file

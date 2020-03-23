@@ -25,7 +25,7 @@ threads := 1;
 choices := [ 0, 1 ];
 
 # Restart interval (in minutes)
-lapse := 20; # once every 'lapse'-minutes, restart the gap computations (prevent memory leak + overall quicker)
+lapse := 5; # once every 'lapse'-minutes, restart the gap computations (prevent memory leak + overall quicker)
 
 # --------------------------------------------------------------------
 # (2) Create the scan superfolder

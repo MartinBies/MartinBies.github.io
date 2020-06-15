@@ -64,6 +64,10 @@ Finally, all of these enter the central package
 
 It provides implementations of various algorithms to compute sheaf cohomologies. Among others, the algorithm described in the appendix of [*cohomologies of coherent sheaves and massless spectra in F-theory*](https://arxiv.org/abs/1802.08860) is implemented there. 
 
+* [*H0Approximator*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/H0Approximator)
+
+On a hypersurface curve in a del-Pezzo 3 surface, we consider the pullback of a line bundle from the dP3. This package approximates the allowed global section values for this line bundle on the moduli space of all deformations of this curve. This approximation systematically underestimates the number of sections. However, it provides this estimate over the entire moduli space. Furthermore, as this estimate is based mostly on topological data, the algorithms terminate quickly.
+
 [Here](/SoftwarePackages.pdf) is a visualisation of the dependencies among my packages.
 
 
@@ -83,7 +87,7 @@ Below, you can find the documentations of my software packages (last update 01/0
 * [cohomCalgInterface](/cohomCalgInterface.pdf)
 * [SpasmInterface](/SpasmInterface.pdf)
 * [SheafCohomologiesOnToricVarieties](/SheafCohomologiesOnToricVarieties.pdf)
-
+* [H0Approximator](/H0Approximator.pdf) (added on 15/06/2020)
 
 ## Installation instructions
 

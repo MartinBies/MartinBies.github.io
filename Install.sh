@@ -197,7 +197,7 @@ echo "(*) Clone SheafCohomologyOnToricVarieties"
 
 git clone https://github.com/homalg-project/SheafCohomologyOnToricVarieties
 cd SheafCohomologyOnToricVarieties
-git reset --hard 5f2be41c528cefd2c5aaf0604ceb2445d68e4a8f
+git reset --hard c66a936c0327d6cfc1d4320ffe30ce53f4f80eb5
 cd ..
 
 echo "(*) Cloning complete"

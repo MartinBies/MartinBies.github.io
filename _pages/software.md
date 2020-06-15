@@ -91,7 +91,7 @@ Below, you can find the documentations of my software packages (last update 01/0
 
 ## Installation instructions
 
-I provide a script, which attempts to install this software and all dependencies automatically. This script can be found [here](/Install.sh). This script has been tested on Debian9 and Ubuntu 18.04 (last update 15/06/2020). Note that, among others, this script install [gap-4.10.2](https://www.gap-system.org/Releases/4.10.2.html).
+I provide a script, which attempts to install this software and all dependencies automatically. This script can be found [here](/Install.sh). It has been tested on Debian9 and Ubuntu 18.04 (last update 15/06/2020). Among others, [gap-4.10.2](https://www.gap-system.org/Releases/4.10.2.html) will be installed.
 
 Once the installation is complete, you can create the latest documentation as follows:
 

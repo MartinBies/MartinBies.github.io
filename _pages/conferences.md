@@ -8,6 +8,7 @@ permalink: /conferences/
 
  Date | Place
  ---------    :|-----------
+ 16 June 2020   | [Summer series on string phenomenology](https://stringphenoseminars.github.io/) [slides](/PresentationSummerSeries.pdf)
  10 Dec. 2019   | Pennsylvania, USA [slides](/TalkUPenn19.pdf)
  10 Oct. 2018   | Brussels, Belgium [slides](/Brussels.pdf)
  3 July 2014   | Aachen, Germany [slides](/PresentationAachen.pdf)
@@ -20,6 +21,7 @@ permalink: /conferences/
 
  Date | Conference 
  ---------    :|-----------
+ June. 2020   | [String Pheno 2020](https://web.northeastern.edu/het/string_pheno/)
  Sept. 2019   | [geometry and strings](https://sites.google.com/view/geometryandstrings2019/home) (Oxford, UK) [poster](/PosterOxford2019.pdf)
  Aug. 2019   | [gap singular meeting and school](https://opendreamkit.org/meetings/2019-04-02-GAPSingularMeeting/) (Lambrecht, Germany) [presentation](/GapSingularMeeting.pdf)
  July 2019   | [Strings](https://sis-pc15.ulb.ac.be/event/2/) (Brussels, Belgium)

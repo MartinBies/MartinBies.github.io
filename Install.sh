@@ -102,7 +102,7 @@ echo "(*) Clone AutoDoc"
 
 git clone https://github.com/homalg-project/AutoDoc.git
 cd AutoDoc
-git reset --hard 573359e2ae0cf78cdcf958512491c9c4aec04447
+git reset --hard 7e97a446f7f2fb80da4b61d405bbeb5097f8299a
 cd ..
 
 echo""
@@ -110,7 +110,7 @@ echo "(*) Clone CAP_project"
 
 git clone https://github.com/homalg-project/CAP_project.git
 cd CAP_project
-git reset --hard e307b000639297bc91b48720f3c92cf6a3a0c293
+git reset --hard ef59e655106c5e1c55ce089d20994949d8a128b7
 cd ..
 
 echo ""
@@ -118,14 +118,14 @@ echo "(*) Clone CddInterface"
 
 git clone https://github.com/homalg-project/CddInterface.git
 cd CddInterface
-git reset --hard a4ca998b630bb8974655d933ca0a52eec1b5b99a
+git reset --hard bb26d2ddc904e1b7d2f09b6b77abd9e3add4ca21
 cd ..
 
 echo ""
 echo "(*) Clone ComplexesForCAP"
 git clone https://github.com/homalg-project/ComplexesForCAP.git
 cd ComplexesForCAP
-git reset --hard 4a9fd3fa05e815e465df719284573f7bc1609900
+git reset --hard ae81be83b7d447325e2d4db8d7687429b64e9c59
 cd ..
 
 echo ""
@@ -133,7 +133,7 @@ echo "(*) Clone homalg_project"
 
 git clone https://github.com/homalg-project/homalg_project.git
 cd homalg_project
-git reset --hard 74337def45def6e2ef9b89dcc92f931633fbdb35
+git reset --hard fa276d813e1538ae7a1f4e4a6f77eba09b0e5ba1
 cd ..
 
 echo ""
@@ -141,7 +141,7 @@ echo "(*) Clone LessGenerators"
 
 git clone https://github.com/homalg-project/LessGenerators.git
 cd LessGenerators
-git reset --hard 9d93bbd66a0e72f4ac649ffc88e25f92307e727d
+git reset --hard b91e90a947e78c795b82169fca80d6fd196fbcc9
 cd ..
 
 echo ""
@@ -149,7 +149,7 @@ echo "(*) Clone NConvex"
 
 git clone https://github.com/homalg-project/NConvex.git
 cd NConvex
-git reset --hard 54eb7e97eea194917c5344ea6060df174d444c66
+git reset --hard dea0ffc7f8953bfda48c0e431e9d0d2bf023402b
 cd ..
 
 echo ""
@@ -157,7 +157,7 @@ echo "(*) Clone PrimaryDecomposition"
 
 git clone https://github.com/homalg-project/PrimaryDecomposition.git
 cd PrimaryDecomposition
-git reset --hard 35586160803534bb5930400952947aabca744fa4
+git reset --hard ad6f85fd11af4143fca4ea1c74245f9e1b9e8895
 cd ..
 
 echo ""
@@ -165,7 +165,7 @@ echo "(*) Clone QPA2"
 
 git clone https://github.com/homalg-project/QPA2.git
 cd QPA2
-git reset --hard b5467696b6929e28ac86ba31c213ea629962ff40
+git reset --hard dba4bb100afeedb851be5ae87f5208d15ef245c6
 cd ..
 
 echo ""
@@ -173,7 +173,7 @@ echo "(*) Clone SingularForHomalg"
 
 git clone https://github.com/homalg-project/SingularForHomalg.git
 cd SingularForHomalg
-git reset --hard bd4e30e09c22cdf0b5431cb2a18e9df7e58e450b
+git reset --hard e034ca41ad7b0f1a48a6134ccfd45ddd9a44a11f
 cd ..
 
 echo ""
@@ -181,7 +181,7 @@ echo "(*) Clone TriangulatedCategoriesForCAP"
 
 git clone https://github.com/homalg-project/TriangulatedCategoriesForCAP.git
 cd TriangulatedCategoriesForCAP
-git reset --hard 32ad6e7115dfcd8ef7a1ab54c183f4eede58971c
+git reset --hard 7d26b61be3d0f474c115aa9811b8058215726cba
 cd ..
 
 echo ""
@@ -189,15 +189,15 @@ echo "(*) Clone NormalizInterface"
 
 git clone https://github.com/gap-packages/NormalizInterface.git
 cd NormalizInterface
-git reset --hard cd69a42b2b3f554ebe0946212bf93302abfc8b21 
+git reset --hard f02a1a7803481b349c754379ab3ca64563875e65 
 cd ..
 
 echo ""
-echo "(*) Clone SheafCohomologyOnToricVarieties"
+echo "(*) Clone ToricVarieties_project"
 
-git clone https://github.com/homalg-project/SheafCohomologyOnToricVarieties
-cd SheafCohomologyOnToricVarieties
-git reset --hard 8d0c2fb4ab4133a54250d9c52b0dc9f5ffaed75a
+git clone https://github.com/homalg-project/ToricVarieties_project
+cd ToricVarieties_project
+git reset --hard 7c7658ae69d340985209e5f1777ff713b4c60b51
 cd ..
 
 echo "(*) Cloning complete"
@@ -284,8 +284,8 @@ echo "Step6: Test installation"
 echo "------------------------------------------------------------------------"
 echo ""
 
-echo "Test SheafCohomologiesOnToricVarieties"
-cd gap-4.10.2/local/pkg/SheafCohomologyOnToricVarieties/SheafCohomologyOnToricVarieties/
+echo "Test ToricVarieties_project"
+cd gap-4.11.0/local/pkg/ToricVarieties_project/SheafCohomologyOnToricVarieties/
 gap makedoc.g
 gap maketest.g
 

@@ -38,15 +38,15 @@ echo "Step2: Install gap"
 echo "------------------------------------------------------------------------"
 echo ""
 
-echo "(*) Download gap 4.10.2"
+echo "(*) Download gap 4.11.0"
 echo ""
-curl -O https://www.gap-system.org/pub/gap/gap-4.10/tar.gz/gap-4.10.2.tar.gz
-tar xf gap-4.10.2.tar.gz
+curl -O https://www.gap-system.org/pub/gap/gap-4.11/tar.gz/gap-4.11.0.tar.gz
+tar xf gap-4.11.0.tar.gz
 
 echo ""
 echo "(*) Configure and install gap"
 echo ""
-cd gap-4.10.2
+cd gap-4.11.0
 ./configure --with-gmp=system
 make -j4
 

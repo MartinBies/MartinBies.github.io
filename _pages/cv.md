@@ -6,7 +6,10 @@ permalink: /cv/
 
 ([Longer version as PDF](/CV_MartinBies.pdf))
 
-since Oct. 2019
+Since Sept. 2020
+:   Simons Postdoctoral Fellow at [University of Pennsylvania](https://www.math.upenn.edu/people/martin-bies)
+
+Oct. 2019 -- Sept. 2020
 :   Postdoc at [University of Oxford](https://www.maths.ox.ac.uk/people/martin.bies)
 
 Oct. 2018 - Sept. 2019

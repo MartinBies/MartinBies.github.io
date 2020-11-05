@@ -23,7 +23,7 @@ You can find all my physics publications on [inspire](https://inspirehep.net/aut
 
 2 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Gauge Backgrounds and Zero-Mode Counting in F-theory*](https://arxiv.org/abs/1706.04616)
 
-1 | Martin Bies, Christoph Mayrhofer, Christian Pehle and Timo Weigand, [*Chow groups, Deligne cohomology and massless matter in F-theory*](https://arxiv.org/abs/1402.5144})
+1 | Martin Bies, Christoph Mayrhofer, Christian Pehle and Timo Weigand, [*Chow groups, Deligne cohomology and massless matter in F-theory*](https://arxiv.org/abs/1402.5144)
 
 
 

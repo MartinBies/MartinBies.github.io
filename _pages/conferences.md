@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Conferences and talks"
-permalink: /conferencesandtalks/
+title: "Conferences"
+permalink: /conferences/
 ---
 
 ## Talks

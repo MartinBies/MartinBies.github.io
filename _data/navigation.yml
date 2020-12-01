@@ -6,8 +6,8 @@ main:
     url: /software/
   - title: "Publications"
     url: /publications/
-  - title: "Conferences and talks"
-    url: /conferencesandtalks
+  - title: "Conferences"
+    url: /conferences
   - title: "Teaching"
     url: /teaching/
 #  - title: "Students"

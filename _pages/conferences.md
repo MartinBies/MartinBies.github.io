@@ -8,6 +8,7 @@ permalink: /conferences/
 
  Date | Place
  ---------    :|-----------
+ 19 Oct. 2020 | Pennsylvania, USA [slides](/TalkUpennOctober19-2020.pdf)
  16 June 2020   | [Summer series on string phenomenology](https://stringphenoseminars.github.io/) [slides](/PresentationSummerSeries.pdf)
  10 Dec. 2019   | Pennsylvania, USA [slides](/TalkUPenn19.pdf)
  10 Oct. 2018   | Brussels, Belgium [slides](/Brussels.pdf)

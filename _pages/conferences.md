@@ -22,6 +22,7 @@ permalink: /conferences/
 
  Date | Conference 
  ---------    :|-----------
+ Dec. 2020    | [String data 2020](https://indico.cern.ch/event/958074/overview) [presentation](/StringData2020MartinBies.pdf)
  June. 2020   | [String Pheno 2020](https://web.northeastern.edu/het/string_pheno/)
  Sept. 2019   | [geometry and strings](https://sites.google.com/view/geometryandstrings2019/home) (Oxford, UK) [poster](/PosterOxford2019.pdf)
  Aug. 2019   | [gap singular meeting and school](https://opendreamkit.org/meetings/2019-04-02-GAPSingularMeeting/) (Lambrecht, Germany) [presentation](/GapSingularMeeting.pdf)

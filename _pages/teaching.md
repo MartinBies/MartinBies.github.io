@@ -6,6 +6,13 @@ permalink: /teaching/
 
 <!--{% include toc title = "Teaching at the"%}-->
 
+## University of Pennsylvania
+
+ Semester | Function | Course
+---------    :|---------- | --------
+ Spring 2021    | Instructor | Computational linear algebra via [Canvas](canvas.upenn.edu)
+
+
 ## University of Heidelberg
 
  Semester | Function | Course

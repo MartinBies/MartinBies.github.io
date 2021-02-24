@@ -8,11 +8,11 @@ permalink: /software/
 
 ## Software on Toric Varieties
 
-Together with *Sebastian Gutsche*, I have developed the package
+Together with [*Sebastian Gutsche*](https://sebasguts.github.io/), I have developed the package
 
-* [*ToricVarieties*](https://github.com/homalg-project/homalg_project/tree/master/ToricVarieties)
+* [*ToricVarieties*](https://github.com/homalg-project/ToricVarieties_project/tree/master/ToricVarieties)
 
-which makes elementary operations on toric varieties accessible within gap. More recently, it has been extended by the package
+which makes operations on toric varieties accessible within gap (and hopefully very soon also in Julia as part of the [*Oscar*](https://oscar.computeralgebra.de/)). Among others, this package has been extended by the package
 
 * [*TopcomInterface*](https://github.com/homalg-project/TopcomInterface)
 
@@ -26,11 +26,11 @@ This functions as interface to the software [*Topcom*](http://www.rambau.wm.uni-
 
 The first implementations of a *PresentationCategory* category in the language of the [*CAP_project*](https://homalg-project.github.io/CAP_project/) are available in the packages
 
-* [*CAPCategoryOfProjectiveGradedModules*](https://github.com/homalg-project/CAPCategoryOfProjectiveGradedModules)
-* [*CAPPresentationCategory*](https://github.com/homalg-project/CAPPresentationCategory)
-* [*PresentationsByProjectiveGradedModules*](https://github.com/homalg-project/PresentationsByProjectiveGradedModules)
+* [*CAPCategoryOfProjectiveGradedModules*](https://github.com/HereAround/CAPCategoryOfProjectiveGradedModules)
+* [*CAPPresentationCategory*](https://github.com/HereAround/CAPPresentationCategory)
+* [*PresentationsByProjectiveGradedModules*](https://github.com/HereAround/PresentationsByProjectiveGradedModules)
 
-By now, this concept has been much better understood in [*A constructive approach to Freyd categories*](https://arxiv.org/abs/1712.03492) and [*Tensor products of finitely presented functors*](https://arxiv.org/abs/1909.00172). Together with *Sebastian Posur*, I have therefore remodelled these packages. The latest implementation is now available in the package
+By now, this concept has been much better understood in [*A constructive approach to Freyd categories*](https://arxiv.org/abs/1712.03492) and [*Tensor products of finitely presented functors*](https://arxiv.org/abs/1909.00172). Together with [*Sebastian Posur*](https://sebastianpos.github.io/), I have therefore remodelled these packages. The latest implementation is now available in the package
 
 * [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP)
 

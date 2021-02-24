@@ -41,12 +41,12 @@ You can find the latest updates on my software at my [github-page](https://githu
 * [*SpasmInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/SpasmInterface)
 * [*H0Approximator*](https://github.com/homalg-project/ToricVarieties_project/tree/master/H0Approximator)
 
-Other packages to which I contributed are:
+Other packages to which I contributed include:
 
 * [*TopcomInterface*](https://github.com/homalg_project/TopcomInterface)
 * [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP)
 
-For historic reasons, let me also list the first implementations of graded modules as FreydCategories. By now these packages are deprecated and their functionality is provided by the above packages *FreydCategoriesForCAP*:
+For historic reasons, let me also list the first implementation of f.p. graded modules as FreydCategories. By now these packages are deprecated and their functionality is provided by the above packages *FreydCategoriesForCAP*:
 
 * [*CAPCategoryOfProjectiveGradedModules*](https://github.com/HereAround/CAPCategoryOfProjectiveGradedModules)
 * [*CAPPresentationCategory*](https://github.com/HereAround/CAPPresentationCategory)

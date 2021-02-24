@@ -30,23 +30,28 @@ You can find all my physics publications on [inspire](https://inspirehep.net/aut
 
 
 ## Software
-You can find the latest updates on my software at my [github-page](https://github.com/herearound). Among others, I am author and maintainer of the following *CAP*- and *gap*-packages:
+You can find the latest updates on my software at my [github-page](https://github.com/herearound). Among others, I am author and maintainer of the [*ToricVarieties_project*](https://github.com/homalg-project/ToricVarieties_project), which includes (but is not limited to) the following packages:
 
-* [*ToricVarieties*](https://github.com/homalg-project/homalg_project/tree/master/ToricVarieties)
-* [*TopcomInterface*](https://github.com/homalg_project/TopcomInterface)
-* [*CAPCategoryOfProjectiveGradedModules*](https://github.com/homalg-project/CAPCategoryOfProjectiveGradedModules)
-* [*CAPPresentationCategory*](https://github.com/homalg-project/CAPPresentationCategory)
-* [*PresentationsByProjectiveGradedModules*](https://github.com/homalg-project/PresentationsByProjectiveGradedModules)
-* [*TruncationsOfPresentationsByProjectiveGradedModules*](https://github.com/homalg-project/TruncationsOfPresentationsByProjectiveGradedModules)
-* [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP)
-* [*ToolsForFPGradedModules*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/ToolsForFPGradedModules)
-* [*TruncationsOfFPGradedModules*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/TruncationsOfFPGradedModules)
-* [*cohomCalgInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/cohomCalgInterface)
-* [*SpasmInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SpasmInterface)
-* [*AdditionsForToricVarieties*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/AdditionsForToricVarieties)
-* [*SheafCohomologyOnToricVarieties*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SheafCohomologyOnToricVarieties)
+* [*ToricVarieties*](https://github.com/homalg-project/ToricVarieties_project/tree/master/ToricVarieties)
+* [*AdditionsForToricVarieties*](https://github.com/homalg-project/ToricVarieties_project/tree/master/AdditionsForToricVarieties)
+* [*ToolsForFPGradedModules*](https://github.com/homalg-project/ToricVarieties_project/tree/master/ToolsForFPGradedModules)
+* [*TruncationsOfFPGradedModules*](https://github.com/homalg-project/ToricVarieties_project/tree/master/TruncationsOfFPGradedModules)
+* [*SheafCohomologyOnToricVarieties*](https://github.com/homalg-project/ToricVarieties_project/tree/master/SheafCohomologyOnToricVarieties)
+* [*cohomCalgInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/cohomCalgInterface)
+* [*SpasmInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/SpasmInterface)
 * [*H0Approximator*](https://github.com/homalg-project/ToricVarieties_project/tree/master/H0Approximator)
 
+Other packages to which I contributed are:
+
+* [*TopcomInterface*](https://github.com/homalg_project/TopcomInterface)
+* [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP)
+
+For historic reasons, let me also list the first implementations of graded modules as FreydCategories. By now these packages are deprecated and their functionality is provided by the above packages *FreydCategoriesForCAP*:
+
+* [*CAPCategoryOfProjectiveGradedModules*](https://github.com/HereAround/CAPCategoryOfProjectiveGradedModules)
+* [*CAPPresentationCategory*](https://github.com/HereAround/CAPPresentationCategory)
+* [*PresentationsByProjectiveGradedModules*](https://github.com/HereAround/PresentationsByProjectiveGradedModules)
+* [*TruncationsOfPresentationsByProjectiveGradedModules*](https://github.com/HereAround/TruncationsOfPresentationsByProjectiveGradedModules)
 
 ## Theses
 * [*Cohomologies of coherent sheaves and massless spectra in F-theory*](https://arxiv.org/abs/1802.08860). Doctoral thesis, Department of theoretical physics, University of Heidelberg (February 2018).

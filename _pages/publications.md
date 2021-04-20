@@ -13,6 +13,8 @@ permalink: /publications/
 You can find all my physics publications on [inspire](https://inspirehep.net/author/profile/M.Bies.1). A complete list of publications is available on the
 [arXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50). Publications include:
 
+8 | Martin Bies, Mirjam Cvetič, Muyang Liu [*Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs*](https://arxiv.org/abs/2104.08297)
+
 7 | Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [*Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs*](https://arxiv.org/abs/2102.10115)
 
 6 | Martin Bies, Mirjam Cvetič, Ron Donagi, Ling Lin, Muyang Liu, Fabian Rühle [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://arxiv.org/abs/2007.00009)

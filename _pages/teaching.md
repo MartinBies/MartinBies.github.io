@@ -10,8 +10,7 @@ permalink: /teaching/
 
  Semester | Function | Course
 ---------    :|---------- | --------
- Spring 2021    | Instructor | Computational linear algebra via [Canvas](https://infocanvas.upenn.edu/canvas-login/)
-
+ Spring 2021    | Instructor | Computational linear algebra ([notes](/ComputationalLinearAlgebra-2021.pdf))
 
 ## University of Heidelberg
 

@@ -8,12 +8,12 @@ permalink: /conferences/
 
  Date | Place
  ---------    :|-----------
+ 21 Sept. 2021   | [Summer series on string phenomenology](https://sites.google.com/view/string-pheno-seminars/) [slides](/MartinBies-RootBundle-StringSummerSeriesAPresentation.pdf)
  19 Oct. 2020 | Pennsylvania, USA [slides](/TalkUpennOctober19-2020.pdf)
  16 June 2020   | [Summer series on string phenomenology](https://stringphenoseminars.github.io/) [slides](/PresentationSummerSeries.pdf)
  10 Dec. 2019   | Pennsylvania, USA [slides](/TalkUPenn19.pdf)
  10 Oct. 2018   | Brussels, Belgium [slides](/Brussels.pdf)
  3 July 2014   | Aachen, Germany [slides](/PresentationAachen.pdf)
- 
  
 
 {% include toc title = "Subject of conference"%}
@@ -22,6 +22,9 @@ permalink: /conferences/
 
  Date | Conference 
  ---------    :|-----------
+ July 2021   | [String Pheno 2021](https://indico.cern.ch/event/1034944/)
+ June 2021   | [Strings 2021](https://www.ictp-saifr.org/strings2021/)
+ June 2021   | [String Math 2021](https://impa.br/en_US/eventos-do-impa/2021-2/string-math-2021/)
  Dec. 2020    | [String data 2020](https://indico.cern.ch/event/958074/overview) [presentation](/StringData2020MartinBies.pdf)
  June. 2020   | [String Pheno 2020](https://web.northeastern.edu/het/string_pheno/)
  Sept. 2019   | [geometry and strings](https://sites.google.com/view/geometryandstrings2019/home) (Oxford, UK) [poster](/PosterOxford2019.pdf)

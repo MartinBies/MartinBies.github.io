@@ -10,7 +10,7 @@ permalink: /teaching/
 
  Semester | Function | Course
 ---------    :|---------- | --------
- Spring 2021    | Instructor | Computational linear algebra ([notes](/ComputationalLinearAlgebra-2021.pdf))
+ Spring 2021    | Instructor | Computational linear algebra ([Syllabus](/Syllabus-Math313.pdf), [notes](/ComputationalLinearAlgebra-2021.pdf))
 
 ## University of Heidelberg
 

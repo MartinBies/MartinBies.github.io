@@ -18,14 +18,14 @@ Consequently, in a very harsh first order approximation, by counting sheaf cohom
 
 Generally speaking, a brute-force computation of the relevant sheaf cohomologies for (almost) realistic F-theory compactifications is not practical (at least not with the current technology). In part, this is because the spectrum of the corresponding F-theory compactification strongly depends on the geometry of the compactifiaction space. This complex structure dependence has been recently analyzed in:
 
-(*) Martin Bies, Mirjam Cvetič, Ron Donagi, Ling Lin, Muyang Liu, Fabian Rühle [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196)
+* Martin Bies, Mirjam Cvetič, Ron Donagi, Ling Lin, Muyang Liu, Fabian Rühle [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196)
 
 In an attempt to apply these insights to the [Quadrillion F-theory Standard Models](https://arxiv.org/abs/1903.00009) -- the largest currently known class of F-theory Standard Models without *chiral* exotics and gauge coupling unifications -- we noticed that the zero modes localized on a matter curve are counted by the cohomologies of rather special line bundle on this very matter, namely a root bundle:
 
-(*) Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076)
+* Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076)
 
 By deforming the smooth, irreducible matter curve into a nodal curve, we could argue for the absence of vector-like exotics. We have taken this one step further:
 
-(*) Martin Bies, Mirjam Cvetič, Muyang Liu [Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903)
+* Martin Bies, Mirjam Cvetič, Muyang Liu [Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903)
 
 In this work, we have systematically counted root bundles to gauge how likely it is that these compactification geometries lead to the absence of exotic vector-like pairs. To establish the existence of the Higgs field in the Quadrillion F-theory Standard Models, I am currently investigating equi-dimensional deformations from smooth, irreducible curves to nodal curves. 

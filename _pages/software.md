@@ -41,20 +41,20 @@ We extend this functionality with interfaces to [*cohomCalg*](https://benjaminju
 * [*SpasmInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SpasmInterface): Faster sheaf cohomology algorithm modulo a high prime number. This can be used as approximation.
 
 
-#### F-theory vacua
+#### [H0Approximator](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/H0Approximator)
 
-* [*H0Approximator*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/H0Approximator)
+On a hypersurface curve in a del-Pezzo 3 surface, we consider the pullback of a line bundle from the dP3. This package approximates the allowed values of global sections of this line bundle on the moduli space of all deformations of this curve. This implementation is the result of the paper [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196).
 
-On a hypersurface curve in a del-Pezzo 3 surface, we consider the pullback of a line bundle from the dP3. This package approximates the allowed global section values for this line bundle on the moduli space of all deformations of this curve. This approximation systematically underestimates the number of sections. However, it provides this estimate over the entire moduli space. Furthermore, as this estimate is based mostly on topological data, we could easily implement the necessary algorithms in C++, so that they terminate rather quickly. This implementation is the result [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196).
 
-* [*QSMExplorer*](https://github.com/homalg-project/ToricVarieties_project/tree/master/QSMExplorer)
+#### [Quadrillion F-theory Standard Models](https://arxiv.org/abs/1903.00009)
 
 The largest currently known class of F-theory Standard Models without *chiral* exotics and gauge coupling unifications was described in [Quadrillion F-theory Standard Models](https://arxiv.org/abs/1903.00009). For short, we term these solutions *QSM*s. All of these geometries are given in terms of toric 3-folds. We have investigated these geometries in much detail in
 
 * Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076)
 * Martin Bies, Mirjam Cvetič, Muyang Liu [Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903)
 
-The *QSMExplorer* -- implemented together with [Muyang Liu](https://katalog.uu.se/empinfo/?id=N21-1557) -- reflects these attempts to understand these solutions. It allows to directly list the defining toric data and Hodge numbers for these computations. In addition, as we describe in the above works, we study certain canonical nodal curves, to learn more about these F-theory solutions. The data of these nodal curves and, most importantly, algorithm to count so-called limit root bundles (as introduced in [*Moduli of roots of line bundles on curves*](https://arxiv.org/abs/math/0404078)) are available via this package. Extensions of the above works are currently my most active research focus. Therefore, in particular the package *QSMExplorer* is subject to major changes.
+The [*QSMExplorer*](https://github.com/homalg-project/ToricVarieties_project/tree/master/QSMExplorer) -- implemented together with [Muyang Liu](https://katalog.uu.se/empinfo/?id=N21-1557) -- reflects these efforts and allows to list data of these vacua very easily. Each vacuum comes with canonical nodal curves, which we use to learn more about these F-theory vacua. Most importantly, we provide algorithms to count limit root bundles (as introduced in [*Moduli of roots of line bundles on curves*](https://arxiv.org/abs/math/0404078)).
+
 
 
 #### Visualisation of dependencies

@@ -15,7 +15,7 @@ I work on open-source software on [github](https://github.com/herearound), where
 
 ### Overview
 
-This software is primarily written in [GAP-4](https://www.gap-system.org/Releases/4.11.1.html) and C++. It is part of the [homalg_project](https://github.com/homalg-project) of [Mohamed Barakat](https://github.com/mohamed-barakat) and uses the [CAP_project](https://github.com/homalg-project/CAP_project).
+This software is written in [GAP-4](https://www.gap-system.org/Releases/4.11.1.html) and C++, is part of the [homalg_project](https://github.com/homalg-project) of [Mohamed Barakat](https://github.com/mohamed-barakat) and uses the [CAP_project](https://github.com/homalg-project/CAP_project).
 
 
 ### Content
@@ -23,37 +23,22 @@ This software is primarily written in [GAP-4](https://www.gap-system.org/Release
 #### Toric Varieties
 
 * [*ToricVarieties*](https://github.com/homalg-project/ToricVarieties_project/tree/master/ToricVarieties) (together with [*Sebastian Gutsche*](https://sebasguts.github.io/)): General functionality for toric varieties.
-* [*TopcomInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/TopcomInterface): Interface to [*Topcom*](https://www.wm.uni-bayreuth.de/de/team/rambau_joerg/TOPCOM/index.html), so that toric varieties can be constructed from triangulations (or GLSM charges, in physics lingo).
+* [*TopcomInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/TopcomInterface): Interface to [*Topcom*](https://www.wm.uni-bayreuth.de/de/team/rambau_joerg/TOPCOM/index.html), so that toric varieties can be constructed from triangulations.
 
 #### Coherent sheaves
 
-For toric varieties, the category of coherent sheaves can be modelled by the category of finitely-presented graded S-modules (S being the Cox ring of the toric variety of interest) (c.f. [*Gabriel morphisms and the computability of Serre quotients with applications to coherent sheaves*](https://arxiv.org/abs/1409.2028)). The latter is a special instance of a Freyd category which is implemented in
+Coherent sheaves on toric varieties can be modelled by f.p. graded S-modules (S being the Cox ring of the toric variety of interest) (c.f. [*Gabriel morphisms and the computability of Serre quotients with applications to coherent sheaves*](https://arxiv.org/abs/1409.2028)). Based on this, we provide the following packages:
 
-* [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP)
+* [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP): Efficient modeling of f.p. graded S-modules and thereby coherent sheaves.
+* [*ToolsForFPGradedModules*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/ToolsForFPGradedModules): Resolutions and smaller presentations.
+* [*TruncationsOfFPGradedModules*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/TruncationsOfFPGradedModules) (replaces the deprecated [*TruncationsOfPresentationsByProjectiveGradedModules*](https://github.com/HereAround/TruncationsOfPresentationsByProjectiveGradedModules)): Truncations, which are heavily used in the computation of sheaf cohomologies.
+* [*SheafCohomologyOnToricVarieties*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SheafCohomologyOnToricVarieties): Various algorithms for sheaf cohomologies, in particular those described in [*cohomologies of coherent sheaves and massless spectra in F-theory*](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/).
 
-More details on FreydCategories are listed below. We use this implementation in the [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project) to model coherent sheaves on toric varieties. In order to compute the associated sheaf cohomologies, a number of extensions are necessary. First, there are the packages
+We extend this functionality with interfaces to [*cohomCalg*](https://benjaminjurke.com/academia-and-research/cohomcalg) and [*spasm*](https://github.com/cbouilla/spasm):
 
-* [*ToolsForFPGradedModules*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/ToolsForFPGradedModules)
-* [*TruncationsOfFPGradedModules*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/TruncationsOfFPGradedModules)
-
-which extend the functionality of the finitely-presented graded S-modules, as implemented in the package *FreydCategories*. Note that the latter replaces the by now deprecated package
-
-* [*TruncationsOfPresentationsByProjectiveGradedModules*](https://github.com/HereAround/TruncationsOfPresentationsByProjectiveGradedModules)
-
-Next, we provide interfaces to [*cohomCalg*](https://benjaminjurke.com/academia-and-research/cohomcalg) and [*spasm*](https://github.com/cbouilla/spasm):
-
-* [*cohomCalgInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/cohomCalgInterface)
-* [*SpasmInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SpasmInterface)
-
-Based on *cohomCalgInterface*, we extend the available functionalities for toric varieties in
-
-* [*AdditionsForToricVarieties*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/AdditionsForToricVarieties)
-
-Finally, all of these enter the central package
-
-* [*SheafCohomologyOnToricVarieties*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SheafCohomologyOnToricVarieties)
-
-It provides implementations of various algorithms to compute sheaf cohomologies. Among others, the algorithm described in the appendix of [*cohomologies of coherent sheaves and massless spectra in F-theory*](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/) is implemented there. 
+* [*cohomCalgInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/cohomCalgInterface): Line bundle cohomologies via the famous *cohomCalg* algorithm.
+* [*AdditionsForToricVarieties*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/AdditionsForToricVarieties): Vanishing sets, based on *cohomCalg*.
+* [*SpasmInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SpasmInterface): Faster sheaf cohomology algorithm modulo a high prime number. This can be used as approximation.
 
 
 #### F-theory vacua
@@ -74,22 +59,22 @@ The *QSMExplorer* -- implemented together with [Muyang Liu](https://katalog.uu.s
 
 #### Visualisation of dependencies
 
-A visualisation of the dependencies among my packages can be found [here](/SoftwarePackages.pdf).
+A visualisation of the *ToricVarieties_project* can be found [here](/SoftwarePackages.pdf).
 
 
 
 ### Documentation (last update 01/01/2022)
 
-* [AdditionsForToricVarieties](/AdditionsForToricVarieties.pdf)
-* [cohomCalgInterface](/cohomCalgInterface.pdf)
-* [H0Approximator](/H0Approximator.pdf)
-* [QSMExplorer](/QSMExplorer.pdf)
-* [SheafCohomologiesOnToricVarieties](/SheafCohomologiesOnToricVarieties.pdf)
-* [SpasmInterface](/SpasmInterface.pdf)
-* [ToolsForFPGradedModules](/ToolsForFPGradedModules.pdf)
-* [TopcomInterface](/TopcomInterface.pdf)
-* [ToricVarieties](/ToricVarieties.pdf)
-* [TruncationsForFPGradedModules](/TruncationsForFPGradedModules.pdf)
+* [AdditionsForToricVarieties](/AdditionsForToricVarieties.pdf),
+* [cohomCalgInterface](/cohomCalgInterface.pdf),
+* [H0Approximator](/H0Approximator.pdf),
+* [QSMExplorer](/QSMExplorer.pdf),
+* [SheafCohomologiesOnToricVarieties](/SheafCohomologiesOnToricVarieties.pdf),
+* [SpasmInterface](/SpasmInterface.pdf),
+* [ToolsForFPGradedModules](/ToolsForFPGradedModules.pdf),
+* [TopcomInterface](/TopcomInterface.pdf),
+* [ToricVarieties](/ToricVarieties.pdf),
+* [TruncationsForFPGradedModules](/TruncationsForFPGradedModules.pdf).
 
 For the latest package documentation, visit [github](https://github.com/homalg-project/ToricVarieties_project).
 
@@ -97,10 +82,10 @@ For the latest package documentation, visit [github](https://github.com/homalg-p
 
 ### Installation
 
-I provide an installation script for the [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project) [here](/Install.sh). It has been tested on Debian9 and Ubuntu 18.04 (last updated on January 2, 2022) and will, among others, install [gap-4.11.1](https://www.gap-system.org/Releases/4.11.1.html). Once complete, navigate into the *ToricVarieties_project* folder:
+I provide an installation script [here](/Install.sh). It has been tested on *Debian9* and *Ubuntu18.04* (last updated on January 2, 2022). Once complete, navigate into *gap4.11.1/local/pkg/ToricVarieties_project*:
 
 * Build documentation: *make doc*.
-* Execute tests: *make test* (see [here](https://github.com/homalg-project/ToricVarieties_project/actions/workflows/test.yml) for the daily tests of *github*).
+* Execute tests: *make test* ([latest daily tests on github](https://github.com/homalg-project/ToricVarieties_project/actions/workflows/test.yml)).
 
 
 ## Freyd Categories (as part of the [CAP_project](https://github.com/homalg-project/CAP_project))

@@ -9,26 +9,21 @@ permalink: /software/
 
 ## Overview
 
-I work on open-source software on [github](https://github.com/), have added about 500.000 lines of codes and modified about another 500.000 lines of code. My coding experience includes gap, python, julia and C++. The latest news on my software are to be found at my [github-page](https://github.com/herearound).
+I work on open-source software on [github](https://github.com/herearound), where I have added about 500.000 lines of codes and modified about another 500.000 lines of code. My coding experience includes gap, python, julia and C++.
 
 ## [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project)
+
+### Overview
+
+This software is primarily written in [GAP-4](https://www.gap-system.org/Releases/4.11.1.html) and C++. It is part of the [homalg_project](https://github.com/homalg-project) of [Mohamed Barakat](https://github.com/mohamed-barakat) and uses the [CAP_project](https://github.com/homalg-project/CAP_project).
+
 
 ### Content
 
 #### Toric Varieties
 
-Together with [*Sebastian Gutsche*](https://sebasguts.github.io/), I have developed the package
-
-* [*ToricVarieties*](https://github.com/homalg-project/ToricVarieties_project/tree/master/ToricVarieties)
-
-which makes operations on toric varieties accessible within gap (and hopefully very soon also in Julia as part of the [*Oscar*](https://oscar.computeralgebra.de/)). Among others, this package has been extended by the package
-
-* [*TopcomInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/TopcomInterface)
-
-This package provides an interface to the software [*Topcom*](https://www.wm.uni-bayreuth.de/de/team/rambau_joerg/TOPCOM/index.html) and allows to construct toric varieties based on their triangulations (or in physics language, based on their GLSM charges). This functionality is available via the package
-
-* [*NConvex*](https://github.com/homalg-project/NConvex)
-
+* [*ToricVarieties*](https://github.com/homalg-project/ToricVarieties_project/tree/master/ToricVarieties) (together with [*Sebastian Gutsche*](https://sebasguts.github.io/)): General functionality for toric varieties.
+* [*TopcomInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/TopcomInterface): Interface to [*Topcom*](https://www.wm.uni-bayreuth.de/de/team/rambau_joerg/TOPCOM/index.html), so that toric varieties can be constructed from triangulations (or GLSM charges, in physics lingo).
 
 #### Coherent sheaves
 

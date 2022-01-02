@@ -15,7 +15,7 @@ I work on open-source software on [github](https://github.com/), have added abou
 
 ### Content
 
-#### General functionality for Toric Varieties
+#### Toric Varieties
 
 Together with [*Sebastian Gutsche*](https://sebasguts.github.io/), I have developed the package
 
@@ -30,7 +30,7 @@ This package provides an interface to the software [*Topcom*](https://www.wm.uni
 * [*NConvex*](https://github.com/homalg-project/NConvex)
 
 
-#### Cohomologies of coherent sheaves
+#### Coherent sheaves
 
 For toric varieties, the category of coherent sheaves can be modelled by the category of finitely-presented graded S-modules (S being the Cox ring of the toric variety of interest) (c.f. [*Gabriel morphisms and the computability of Serre quotients with applications to coherent sheaves*](https://arxiv.org/abs/1409.2028)). The latter is a special instance of a Freyd category which is implemented in
 
@@ -61,7 +61,7 @@ Finally, all of these enter the central package
 It provides implementations of various algorithms to compute sheaf cohomologies. Among others, the algorithm described in the appendix of [*cohomologies of coherent sheaves and massless spectra in F-theory*](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/) is implemented there. 
 
 
-#### Study of F-theory vacua
+#### F-theory vacua
 
 * [*H0Approximator*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/H0Approximator)
 
@@ -76,7 +76,11 @@ The largest currently known class of F-theory Standard Models without *chiral* e
 
 The *QSMExplorer* -- implemented together with [Muyang Liu](https://katalog.uu.se/empinfo/?id=N21-1557) -- reflects these attempts to understand these solutions. It allows to directly list the defining toric data and Hodge numbers for these computations. In addition, as we describe in the above works, we study certain canonical nodal curves, to learn more about these F-theory solutions. The data of these nodal curves and, most importantly, algorithm to count so-called limit root bundles (as introduced in [*Moduli of roots of line bundles on curves*](https://arxiv.org/abs/math/0404078)) are available via this package. Extensions of the above works are currently my most active research focus. Therefore, in particular the package *QSMExplorer* is subject to major changes.
 
+
+#### Visualisation of dependencies
+
 A visualisation of the dependencies among my packages can be found [here](/SoftwarePackages.pdf).
+
 
 
 ### Documentation (last update 01/01/2022)
@@ -95,7 +99,8 @@ A visualisation of the dependencies among my packages can be found [here](/Softw
 For the latest package documentation, please visit the *github* page of the [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project).
 
 
-### Installation instructions
+
+### Installation
 
 I provide an installation script for the *GAP*-based [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project), which attempts to install this software and all dependencies automatically. This script can be found [here](/Install.sh). It has been tested on Debian9 and Ubuntu 18.04 (last updated on January 2, 2022). Among others, [gap-4.11.1](https://www.gap-system.org/Releases/4.11.1.html) will be installed. Once the installation is complete, you can create the latest documentation as follows:
 
@@ -107,32 +112,19 @@ Note that tests are run on a daily bases on *github*. See [here](https://github.
 
 
 
-
 ## Freyd Categories (as part of the [CAP_project](https://github.com/homalg-project/CAP_project))
 
-The first implementations of a *PresentationCategory* category in the language of the [*CAP_project*](https://homalg-project.github.io/CAP_project/) were available in the GAP-packages
+The first implementations of a *PresentationCategory* category in the language of the [*CAP_project*](https://homalg-project.github.io/CAP_project/) were available via
 
-* [*CAPCategoryOfProjectiveGradedModules*](https://github.com/HereAround/CAPCategoryOfProjectiveGradedModules)
-* [*CAPPresentationCategory*](https://github.com/HereAround/CAPPresentationCategory)
-* [*PresentationsByProjectiveGradedModules*](https://github.com/HereAround/PresentationsByProjectiveGradedModules)
+* [*CAPCategoryOfProjectiveGradedModules*](https://github.com/HereAround/CAPCategoryOfProjectiveGradedModules) -- [documentation](/CAPCategoryOfProjectiveGradedModules.pdf)
+* [*CAPPresentationCategory*](https://github.com/HereAround/CAPPresentationCategory) -- [documentation](/CAPPresentationCategory.pdf)
+* [*PresentationsByProjectiveGradedModules*](https://github.com/HereAround/PresentationsByProjectiveGradedModules) -- [documentation](/PresentationsByProjectiveGradedModules.pdf)
 
-The latest documentation of these packages is as follows:
-
-* [CAPCategoryOfProjectiveGradedModules](/CAPCategoryOfProjectiveGradedModules.pdf)
-* [CAPPresentationCategory](/CAPPresentationCategory.pdf)
-* [PresentationsByProjectiveGradedModules](/PresentationsByProjectiveGradedModules.pdf)
-
-Please note however, that these packages are by now deprecated. This is because this concept has been much better understood in [*A constructive approach to Freyd categories*](https://arxiv.org/abs/1712.03492) and [*Tensor products of finitely presented functors*](https://www.worldscientific.com/doi/abs/10.1142/S0219498822501869). Together with [*Sebastian Posur*](https://sebastianpos.github.io/), I have therefore remodelled these packages in the package
-
-* [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP)
+These packages are by now deprecated because the concept has been much better understood in [*A constructive approach to Freyd categories*](https://arxiv.org/abs/1712.03492) and [*Tensor products of finitely presented functors*](https://www.worldscientific.com/doi/abs/10.1142/S0219498822501869). Together with [*Sebastian Posur*](https://sebastianpos.github.io/), I have remodelled these packages in the package [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP).
 
 
 
 
 ## OSCAR Computer algebra
 
-Most recently, I have started to migrate the functionality of the [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project) into
-
-* [OSCAR Computer Algebra System](https://github.com/oscar-system/Oscar.jl)
-
-The latter uses the modern programming language [Julia](https://julialang.org/). The documentation of the [OSCAR Computer Algebra System](https://github.com/oscar-system/Oscar.jl) is available [here](https://oscar-system.github.io/Oscar.jl/dev/). Details on the *toric varieties* functionality can be found [here](https://oscar-system.github.io/Oscar.jl/dev/ToricVarieties/NormalToricVarieties/).
+Currently, the [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project) is being integrated into the [OSCAR Computer Algebra System](https://github.com/oscar-system/Oscar.jl), which uses the modern programming language [Julia](https://julialang.org/). The documentation of the [OSCAR Computer Algebra System](https://github.com/oscar-system/Oscar.jl) is available [here](https://oscar-system.github.io/Oscar.jl/dev/). Details on the *toric varieties* functionality can be found [here](https://oscar-system.github.io/Oscar.jl/dev/ToricVarieties/NormalToricVarieties/).

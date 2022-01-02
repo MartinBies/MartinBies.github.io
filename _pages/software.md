@@ -9,7 +9,7 @@ permalink: /software/
 
 ## Overview
 
-I work on open-source software on [github](https://github.com/), I have added about 500.000 lines of codes and modified another 500.000. My coding experience includes gap, python, julia and C++. The latest news on my software are to be found at my [github-page](https://github.com/herearound).
+I work on open-source software on [github](https://github.com/), have added about 500.000 lines of codes and modified about another 500.000 lines of code. My coding experience includes gap, python, julia and C++. The latest news on my software are to be found at my [github-page](https://github.com/herearound).
 
 
 ## Software on Toric Varieties
@@ -22,9 +22,9 @@ which makes operations on toric varieties accessible within gap (and hopefully v
 
 * [*TopcomInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/TopcomInterface)
 
-This package provides an interface to the software [*Topcom*](http://www.rambau.wm.uni-bayreuth.de/TOPCOM/) and allows to construct toric varieties based on their triangulations (or in physics language, based on their GLSM charges). This functionality is available via the package
+This package provides an interface to the software [*Topcom*](https://www.wm.uni-bayreuth.de/de/team/rambau_joerg/TOPCOM/index.html) and allows to construct toric varieties based on their triangulations (or in physics language, based on their GLSM charges). This functionality is available via the package
 
-* [*NConvex*](https://github.com/homalg-project/NConvex/graphs/contributors)
+* [*NConvex*](https://github.com/homalg-project/NConvex)
 
 Most recently, I focus on migrating the functionality of the [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project) into
 
@@ -76,16 +76,22 @@ Finally, all of these enter the central package
 
 It provides implementations of various algorithms to compute sheaf cohomologies. Among others, the algorithm described in the appendix of [*cohomologies of coherent sheaves and massless spectra in F-theory*](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/) is implemented there. 
 
+## Software for F-theory vacua
+
+### H0Approximator
+
 * [*H0Approximator*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/H0Approximator)
 
 On a hypersurface curve in a del-Pezzo 3 surface, we consider the pullback of a line bundle from the dP3. This package approximates the allowed global section values for this line bundle on the moduli space of all deformations of this curve. This approximation systematically underestimates the number of sections. However, it provides this estimate over the entire moduli space. Furthermore, as this estimate is based mostly on topological data, we could easily implement the necessary algorithms in C++, so that they terminate rather quickly. This implementation is the result [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196).
+
+### QSMExplorer
 
 * [*QSMExplorer*](https://github.com/homalg-project/ToricVarieties_project/tree/master/QSMExplorer)
 
 The largest currently known class of F-theory Standard Models without *chiral* exotics and gauge coupling unifications was described in [Quadrillion F-theory Standard Models](https://arxiv.org/abs/1903.00009). For short, we term these solutions *QSM*s. All of these geometries are given in terms of toric 3-folds. We have investigated these geometries in much detail in
 
-(*) Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076)
-(*) Martin Bies, Mirjam Cvetič, Muyang Liu [Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903)
+* Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076)
+* Martin Bies, Mirjam Cvetič, Muyang Liu [Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903)
 
 The *QSMExplorer* -- implemented together with [Muyang Liu](https://katalog.uu.se/empinfo/?id=N21-1557) -- reflects these attempts to understand these solutions. It allows to directly list the defining toric data and Hodge numbers for these computations. In addition, as we describe in the above works, we study certain canonical nodal curves, to learn more about these F-theory solutions. The data of these nodal curves and, most importantly, algorithm to count so-called limit root bundles (as introduced in [*Moduli of roots of line bundles on curves*](https://arxiv.org/abs/math/0404078)) are available via this package. Extensions of the above works are currently my most active research focus. Therefore, in particular the package *QSMExplorer* is subject to major changes.
 
@@ -121,9 +127,7 @@ The following packages are deprecated. I provide documentation merely for comple
 
 ## Installation instructions
 
-I provide an installation script for the *GAP* based [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project), which attempts to install this software and all dependencies automatically. This script can be found [here](/Install.sh). It has been tested on Debian9 and Ubuntu 18.04 (last update 15/06/2020). Among others, [gap-4.11.0](https://www.gap-system.org/Releases/4.11.0.html) will be installed.
-
-Once the installation is complete, you can create the latest documentation as follows:
+I provide an installation script for the *GAP* based [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project), which attempts to install this software and all dependencies automatically. This script can be found [here](/Install.sh). It has been tested on Debian9 and Ubuntu 18.04 (last updated on January 2, 2022). Among others, [gap-4.11.1](https://www.gap-system.org/Releases/4.11.1.html) will be installed. Once the installation is complete, you can create the latest documentation as follows:
 
 * Navigate into the package folder and issue *make doc*.
 * Tests can be executed by issuing *make test* inside the *ToricVarieties_project* folder.

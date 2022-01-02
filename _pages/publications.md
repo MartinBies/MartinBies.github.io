@@ -10,8 +10,7 @@ permalink: /publications/
 
 ## Paper
 
-You can find all my physics publications on [inspire](https://inspirehep.net/author/profile/M.Bies.1). A complete list of publications is available on the
-[arXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50). Publications include:
+You can find all my publications on [inspire](https://inspirehep.net/author/profile/M.Bies.1), on [arXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50) and on [orcid](https://orcid.org/0000-0002-9609-1693):
 
 7 | Martin Bies, Mirjam Cvetič, Muyang Liu [*Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs*](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903) (Physical Review D)
 
@@ -40,30 +39,4 @@ You can find all my physics publications on [inspire](https://inspirehep.net/aut
 
 According to [github](https://github.com/), I have added about 500.000 lines of codes and modified another 500.000. My coding experience includes gap, python, julia and C++. The latest news on my software are to be found at my [github-page](https://github.com/herearound).
 
-I am author and maintainer of the [*ToricVarieties_project*](https://github.com/homalg-project/ToricVarieties_project), which includes the following packages:
-
-* [*ToricVarieties*](https://github.com/homalg-project/ToricVarieties_project/tree/master/ToricVarieties)
-* [*AdditionsForToricVarieties*](https://github.com/homalg-project/ToricVarieties_project/tree/master/AdditionsForToricVarieties)
-* [*ToolsForFPGradedModules*](https://github.com/homalg-project/ToricVarieties_project/tree/master/ToolsForFPGradedModules)
-* [*TruncationsOfFPGradedModules*](https://github.com/homalg-project/ToricVarieties_project/tree/master/TruncationsOfFPGradedModules)
-* [*SheafCohomologyOnToricVarieties*](https://github.com/homalg-project/ToricVarieties_project/tree/master/SheafCohomologyOnToricVarieties)
-* [*cohomCalgInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/cohomCalgInterface)
-* [*SpasmInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/SpasmInterface)
-* [*H0Approximator*](https://github.com/homalg-project/ToricVarieties_project/tree/master/H0Approximator)
-* [*QSMExplorer*](https://github.com/homalg-project/ToricVarieties_project/tree/master/QSMExplorer)
-
-This software project is currently being migrated into the
-
-* [*OSCAR Computer Algebra System*](https://github.com/oscar-system/Oscar.jl)
-
-I have also contributed to
-
-* [*TopcomInterface*](https://github.com/homalg_project/TopcomInterface)
-* [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP)
-
-The latter has absorbed the first implementations of f.p. graded modules via FreydCategories, which I provided in the following repositories:
-
-* [*CAPCategoryOfProjectiveGradedModules*](https://github.com/HereAround/CAPCategoryOfProjectiveGradedModules)
-* [*CAPPresentationCategory*](https://github.com/HereAround/CAPPresentationCategory)
-* [*PresentationsByProjectiveGradedModules*](https://github.com/HereAround/PresentationsByProjectiveGradedModules)
-* [*TruncationsOfPresentationsByProjectiveGradedModules*](https://github.com/HereAround/TruncationsOfPresentationsByProjectiveGradedModules)
+I am author and maintainer of the [*ToricVarieties_project*](https://github.com/homalg-project/ToricVarieties_project). Most recently, I have begun to migrate/integrate this software into the [*OSCAR Computer Algebra System*](https://github.com/oscar-system/Oscar.jl).

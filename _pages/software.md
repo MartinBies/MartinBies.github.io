@@ -78,7 +78,7 @@ For the latest package documentation, visit [github](https://github.com/homalg-p
 
 ### Installation
 
-I provide an installation script [here](/Install.sh). It has been tested on *Debian9* and *Ubuntu18.04* (last updated on January 2, 2022). Once complete, navigate into *gap4.11.1/local/pkg/ToricVarieties_project*:
+I provide an installation script [here](/Install.sh) for *Debian9* and *Ubuntu18.04* (last updated on January 2, 2022). Once complete, navigate to *gap4.11.1/local/pkg/ToricVarieties_project*:
 
 * Build documentation: *make doc*.
 * Execute tests: *make test* ([latest daily tests on github](https://github.com/homalg-project/ToricVarieties_project/actions/workflows/test.yml)).

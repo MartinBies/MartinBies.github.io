@@ -20,7 +20,7 @@ Together with [*Sebastian Gutsche*](https://sebasguts.github.io/), I have develo
 
 which makes operations on toric varieties accessible within gap (and hopefully very soon also in Julia as part of the [*Oscar*](https://oscar.computeralgebra.de/)). Among others, this package has been extended by the package
 
-* [*TopcomInterface*](https://github.com/homalg-project/TopcomInterface)
+* [*TopcomInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/TopcomInterface)
 
 This package provides an interface to the software [*Topcom*](http://www.rambau.wm.uni-bayreuth.de/TOPCOM/) and allows to construct toric varieties based on their triangulations (or in physics language, based on their GLSM charges). This functionality is available via the package
 

@@ -1,4 +1,4 @@
-echo ""
+ho ""
 echo "------------------------------------------------------------------------"
 echo "Welcome!"
 echo "This is an automated script to install SheafCohomologiesOnToricVarieties"
@@ -40,7 +40,7 @@ echo ""
 
 echo "(*) Download gap 4.11.1"
 echo ""
-curl -O https://www.gap-system.org/pub/gap/gap-4.11/tar.gz/gap-4.11.1.tar.gz
+curl -O -L https://github.com/gap-system/gap/releases/download/v4.11.1/gap-4.11.1.tar.gz
 tar xf gap-4.11.1.tar.gz
 
 echo ""
@@ -48,7 +48,7 @@ echo "(*) Configure and install gap"
 echo ""
 cd gap-4.11.1
 ./configure --with-gmp=system
-make -j4
+make -j$(nproc)
 
 echo ""
 echo "(*) Test installation of gap"
@@ -70,7 +70,7 @@ echo "(*) Install IO-package"
 echo ""
 cd pkg/io*
 ./configure
-make -j4
+make -j$(nproc)
 cd ../..
 
 echo ""
@@ -146,7 +146,7 @@ echo "(*) Install Gauss"
 echo ""
 cd homalg_project/Gauss/
 ./configure ../../../../
-make -j$$(nproc)
+make -j$(nproc)
 cd ../..
 
 echo ""
@@ -157,31 +157,7 @@ cd CddInterface/
 cd ..
 
 echo ""
-echo "(*) Install NormalizInterface"
-echo ""
-cd NormalizInterface/
-./build-normaliz.sh ../../..
-./autogen.sh ../../..
-./configure --with-gaproot=../../..
-make -j$$(nproc)
-cd
-
-
-echo ""
-echo "(*) Install ToricVarieties_project"
+echo "(*) Install and test ToricVarieties_project"
 echo ""
 cd ToricVarieties_project/
 make install
-cd
-
-
-echo ""
-echo ""
-echo "------------------------------------------------------------------------"
-echo "Step6: Test installation"
-echo "------------------------------------------------------------------------"
-echo ""
-
-echo "Test ToricVarieties_project"
-cd gap-4.11.0/local/pkg/ToricVarieties_project/
-make test

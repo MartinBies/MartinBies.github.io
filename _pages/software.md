@@ -91,20 +91,16 @@ A visualisation of the dependencies among my packages can be found [here](/Softw
 * [ToricVarieties](/ToricVarieties.pdf)
 * [TruncationsForFPGradedModules](/TruncationsForFPGradedModules.pdf)
 
-For the latest package documentation, please visit the *github* page of the [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project).
+For the latest package documentation, visit [github](https://github.com/homalg-project/ToricVarieties_project).
 
 
 
 ### Installation
 
-I provide an installation script for the *GAP*-based [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project), which attempts to install this software and all dependencies automatically. This script can be found [here](/Install.sh). It has been tested on Debian9 and Ubuntu 18.04 (last updated on January 2, 2022). Among others, [gap-4.11.1](https://www.gap-system.org/Releases/4.11.1.html) will be installed. Once the installation is complete, you can create the latest documentation as follows:
+I provide an installation script for the [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project) [here](/Install.sh). It has been tested on Debian9 and Ubuntu 18.04 (last updated on January 2, 2022) and will, among others, install [gap-4.11.1](https://www.gap-system.org/Releases/4.11.1.html). Once complete, navigate into the *ToricVarieties_project* folder:
 
-* Navigate into the package folder and issue *make doc*.
-* Tests can be executed by issuing *make test* inside the *ToricVarieties_project* folder.
-
-Note that tests are run on a daily bases on *github*. See [here](https://github.com/homalg-project/ToricVarieties_project/actions/workflows/test.yml) for the latest test results.
-
-
+* Build documentation: *make doc*.
+* Execute tests: *make test* (see [here](https://github.com/homalg-project/ToricVarieties_project/actions/workflows/test.yml) for the daily tests of *github*).
 
 
 ## Freyd Categories (as part of the [CAP_project](https://github.com/homalg-project/CAP_project))

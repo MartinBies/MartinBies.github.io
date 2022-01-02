@@ -19,46 +19,6 @@ I work on open-source software on [github](https://github.com/herearound), where
 This software is written in [GAP-4](https://www.gap-system.org/Releases/4.11.1.html) and C++, is part of the [homalg_project](https://github.com/homalg-project) of [Mohamed Barakat](https://github.com/mohamed-barakat) and uses the [CAP_project](https://github.com/homalg-project/CAP_project).
 
 
-### Content
-
-#### Toric Varieties
-
-* [*ToricVarieties*](https://github.com/homalg-project/ToricVarieties_project/tree/master/ToricVarieties) (together with [*Sebastian Gutsche*](https://sebasguts.github.io/)): General functionality for toric varieties.
-* [*TopcomInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/TopcomInterface): Interface to [*Topcom*](https://www.wm.uni-bayreuth.de/de/team/rambau_joerg/TOPCOM/index.html), so that toric varieties can be constructed from triangulations.
-
-#### Coherent sheaves
-
-Coherent sheaves on toric varieties can be modelled by f.p. graded S-modules (S being the Cox ring of the toric variety) (c.f. [*Gabriel morphisms and the computability of Serre quotients with applications to coherent sheaves*](https://arxiv.org/abs/1409.2028)):
-
-* [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP): F.p. graded S-modules.
-* [*ToolsForFPGradedModules*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/ToolsForFPGradedModules): Resolutions.
-* [*TruncationsOfFPGradedModules*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/TruncationsOfFPGradedModules): Truncations, which are heavily used in the computation of sheaf cohomologies.
-* [*SheafCohomologyOnToricVarieties*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SheafCohomologyOnToricVarieties): Various algorithms for sheaf cohomologies, including those described in [*cohomologies of coherent sheaves and massless spectra in F-theory*](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/).
-
-We provide interfaces to [*cohomCalg*](https://benjaminjurke.com/academia-and-research/cohomcalg) and [*spasm*](https://github.com/cbouilla/spasm):
-
-* [*cohomCalgInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/cohomCalgInterface): Line bundle cohomologies via the famous *cohomCalg* algorithm.
-* [*AdditionsForToricVarieties*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/AdditionsForToricVarieties): Vanishing sets via *cohomCalg*.
-* [*SpasmInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SpasmInterface): Faster sheaf cohomology algorithm modulo a high prime number. This can be used as approximation.
-
-
-#### [H0Approximator](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/H0Approximator)
-
-On a hypersurface curve in a del-Pezzo 3 surface, we consider the pullback of a line bundle from the dP3. This package approximates the allowed values of global sections of this line bundle on the moduli space of all deformations of this curve. This implementation is the result of the paper [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196).
-
-
-#### [Quadrillion F-theory Standard Models](https://arxiv.org/abs/1903.00009)
-
-The largest currently known class of F-theory Standard Models without *chiral* exotics and gauge coupling unifications was described in [Quadrillion F-theory Standard Models](https://arxiv.org/abs/1903.00009). For short, we term these solutions *QSM*s. All of these geometries are given in terms of toric 3-folds. We have investigated these geometries in much detail in
-
-* Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076)
-* Martin Bies, Mirjam Cvetič, Muyang Liu [Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903)
-
-The [*QSMExplorer*](https://github.com/homalg-project/ToricVarieties_project/tree/master/QSMExplorer) -- implemented together with [Muyang Liu](https://katalog.uu.se/empinfo/?id=N21-1557) -- reflects these efforts and allows to list data of these vacua very easily. Each vacuum comes with canonical nodal curves, which we use to learn more about these F-theory vacua. Most importantly, we provide algorithms to count limit root bundles (as introduced in [*Moduli of roots of line bundles on curves*](https://arxiv.org/abs/math/0404078)).
-
-
-
-
 ### Documentation (last update 01/01/2022)
 
 * [AdditionsForToricVarieties](/AdditionsForToricVarieties.pdf),
@@ -75,13 +35,51 @@ The [*QSMExplorer*](https://github.com/homalg-project/ToricVarieties_project/tre
 For the latest package documentation, visit [github](https://github.com/homalg-project/ToricVarieties_project).
 
 
-
 ### Installation
 
 I provide an installation script [here](/Install.sh) for *Debian9* and *Ubuntu18.04* (last updated on January 2, 2022). Once complete, navigate to *gap4.11.1/local/pkg/ToricVarieties_project*:
 
 * Build documentation: *make doc*.
 * Execute tests: *make test* ([latest daily tests on github](https://github.com/homalg-project/ToricVarieties_project/actions/workflows/test.yml)).
+
+
+### Toric Varieties
+
+* [*ToricVarieties*](https://github.com/homalg-project/ToricVarieties_project/tree/master/ToricVarieties) (together with [*Sebastian Gutsche*](https://sebasguts.github.io/)): General functionality for toric varieties.
+* [*TopcomInterface*](https://github.com/homalg-project/ToricVarieties_project/tree/master/TopcomInterface): Interface to [*Topcom*](https://www.wm.uni-bayreuth.de/de/team/rambau_joerg/TOPCOM/index.html), so that toric varieties can be constructed from triangulations.
+
+
+### Coherent sheaves
+
+Coherent sheaves on toric varieties can be modelled by f.p. graded S-modules (S being the Cox ring of the toric variety) (c.f. [*Gabriel morphisms and the computability of Serre quotients with applications to coherent sheaves*](https://arxiv.org/abs/1409.2028)):
+
+* [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP): F.p. graded S-modules.
+* [*ToolsForFPGradedModules*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/ToolsForFPGradedModules): Resolutions.
+* [*TruncationsOfFPGradedModules*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/TruncationsOfFPGradedModules): Truncations, which are heavily used in the computation of sheaf cohomologies.
+* [*SheafCohomologyOnToricVarieties*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SheafCohomologyOnToricVarieties): Various algorithms for sheaf cohomologies, including those described in [*cohomologies of coherent sheaves and massless spectra in F-theory*](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/).
+
+We provide interfaces to [*cohomCalg*](https://benjaminjurke.com/academia-and-research/cohomcalg) and [*spasm*](https://github.com/cbouilla/spasm):
+
+* [*cohomCalgInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/cohomCalgInterface): Line bundle cohomologies via the famous *cohomCalg* algorithm.
+* [*AdditionsForToricVarieties*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/AdditionsForToricVarieties): Vanishing sets via *cohomCalg*.
+* [*SpasmInterface*](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/SpasmInterface): Faster sheaf cohomology algorithm modulo a high prime number. This can be used as approximation.
+
+
+### [H0Approximator](https://github.com/homalg-project/SheafCohomologyOnToricVarieties/tree/master/H0Approximator)
+
+On a hypersurface curve in a del-Pezzo 3 surface, we consider the pullback of a line bundle from the dP3. This package approximates the allowed values of global sections of this line bundle on the moduli space of all deformations of this curve. This implementation is the result of the paper [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196).
+
+
+### [Quadrillion F-theory Standard Models](https://arxiv.org/abs/1903.00009)
+
+The largest currently known class of F-theory Standard Models without *chiral* exotics and gauge coupling unifications was described in [Quadrillion F-theory Standard Models](https://arxiv.org/abs/1903.00009). For short, we term these solutions *QSM*s. All of these geometries are given in terms of toric 3-folds. We have investigated these geometries in much detail in
+
+* Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076)
+* Martin Bies, Mirjam Cvetič, Muyang Liu [Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903)
+
+The [*QSMExplorer*](https://github.com/homalg-project/ToricVarieties_project/tree/master/QSMExplorer) -- implemented together with [Muyang Liu](https://katalog.uu.se/empinfo/?id=N21-1557) -- reflects these efforts and allows to list data of these vacua very easily. Each vacuum comes with canonical nodal curves, which we use to learn more about these F-theory vacua. Most importantly, we provide algorithms to count limit root bundles (as introduced in [*Moduli of roots of line bundles on curves*](https://arxiv.org/abs/math/0404078)).
+
+
 
 
 ## Freyd Categories (as part of the [CAP_project](https://github.com/homalg-project/CAP_project))

@@ -79,9 +79,7 @@ The *QSMExplorer* -- implemented together with [Muyang Liu](https://katalog.uu.s
 A visualisation of the dependencies among my packages can be found [here](/SoftwarePackages.pdf).
 
 
-### Documentation
-
-Below, you can find the documentations of the GAP-packages in the [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project) (last update 01/01/2022):
+### Documentation (last update 01/01/2022)
 
 * [AdditionsForToricVarieties](/AdditionsForToricVarieties.pdf)
 * [cohomCalgInterface](/cohomCalgInterface.pdf)
@@ -94,13 +92,7 @@ Below, you can find the documentations of the GAP-packages in the [ToricVarietie
 * [ToricVarieties](/ToricVarieties.pdf)
 * [TruncationsForFPGradedModules](/TruncationsForFPGradedModules.pdf)
 
-The following packages are deprecated. I provide documentation merely for completeness:
-
-* [CAPCategoryOfProjectiveGradedModules](/CAPCategoryOfProjectiveGradedModules.pdf)
-* [CAPPresentationCategory](/CAPPresentationCategory.pdf)
-* [PresentationsByProjectiveGradedModules](/PresentationsByProjectiveGradedModules.pdf)
-* [TruncationsOfPresentationsOfProjectiveGradedModules](/TruncationsOfPresentationsOfProjectiveGradedModules.pdf)
-
+For the latest package documentation, please visit the *github* page of the [ToricVarieties_project](https://github.com/homalg-project/ToricVarieties_project).
 
 
 ### Installation instructions
@@ -124,10 +116,15 @@ The first implementations of a *PresentationCategory* category in the language o
 * [*CAPPresentationCategory*](https://github.com/HereAround/CAPPresentationCategory)
 * [*PresentationsByProjectiveGradedModules*](https://github.com/HereAround/PresentationsByProjectiveGradedModules)
 
-By now, this concept has been much better understood in [*A constructive approach to Freyd categories*](https://arxiv.org/abs/1712.03492) and [*Tensor products of finitely presented functors*](https://www.worldscientific.com/doi/abs/10.1142/S0219498822501869). Together with [*Sebastian Posur*](https://sebastianpos.github.io/), I have therefore remodelled these packages. The latest implementation is now available in the package
+The latest documentation of these packages is as follows:
+
+* [CAPCategoryOfProjectiveGradedModules](/CAPCategoryOfProjectiveGradedModules.pdf)
+* [CAPPresentationCategory](/CAPPresentationCategory.pdf)
+* [PresentationsByProjectiveGradedModules](/PresentationsByProjectiveGradedModules.pdf)
+
+Please note however, that these packages are by now deprecated. This is because this concept has been much better understood in [*A constructive approach to Freyd categories*](https://arxiv.org/abs/1712.03492) and [*Tensor products of finitely presented functors*](https://www.worldscientific.com/doi/abs/10.1142/S0219498822501869). Together with [*Sebastian Posur*](https://sebastianpos.github.io/), I have therefore remodelled these packages in the package
 
 * [*FreydCategoriesForCAP*](https://github.com/homalg-project/CAP_project/tree/master/FreydCategoriesForCAP)
-
 
 
 

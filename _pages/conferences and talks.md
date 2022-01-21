@@ -22,6 +22,7 @@ permalink: /conferences and talks/
 
  Date | Conference 
  ---------    :|-----------
+ Jan. 2022 | [13th polymake conference and developer meeting](https://polymake.org/doku.php/workshops/workshop0122) [presentation](/MartinBies-PolymakeWorkshop2022.pdf)
  July 2021   | [String Pheno 2021](https://indico.cern.ch/event/1034944/)
  June 2021   | [Strings 2021](https://www.ictp-saifr.org/strings2021/)
  June 2021   | [String Math 2021](https://impa.br/en_US/eventos-do-impa/2021-2/string-math-2021/)

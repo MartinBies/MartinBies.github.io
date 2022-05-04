@@ -12,6 +12,8 @@ permalink: /publications/
 
 You can find all my publications on [inspire](https://inspirehep.net/author/profile/M.Bies.1), on [arXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50) and on [orcid](https://orcid.org/0000-0002-9609-1693):
 
+8 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Brill-Noether-general Limit Root Bundles: Absence of vector-like Exotics in F-theory Standard Models*](https://arxiv.org/abs/2205.00008) (Preprint)
+
 7 | Martin Bies, Mirjam Cvetič, Muyang Liu [*Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs*](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903) (Physical Review D)
 
 6 | Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [*Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs*](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076)(Journal of High Energy Physics)

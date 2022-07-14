@@ -23,7 +23,7 @@ permalink: /conferences and talks/
  Date | Conference 
  ---------    :|-----------
  July 2022 | [Strings 2022](https://indico.cern.ch/event/1085701/)
- July 2022 | [String Math 2022](https://stringmath2022.fuw.edu.pl/) [(presentation)]()
+ July 2022 | [String Math 2022](https://stringmath2022.fuw.edu.pl/) [(presentation)](/MartinBies-StringMath2022.pdf)
  July 2022 | [String Pheno 2022](http://www.maths.liv.ac.uk/stringpheno2022/index.html) [(presentation)](/MartinBies-StringPheno2022.pdf)
  June 2022 | [Geometry, Topology and Singular Special Holonomy Spaces: 6-10 June 2022, Freiburg University](https://sites.duke.edu/scshgap/geometry-topology-and-singular-special-holonomy-spaces-6-10-june-2022-freiburg-university/)
  Jan. 2022 | [13th polymake conference and developer meeting](https://polymake.org/doku.php/workshops/workshop0122) [(presentation)](/MartinBies-PolymakeWorkshop2022.pdf)

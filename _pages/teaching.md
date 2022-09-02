@@ -10,7 +10,7 @@ permalink: /teaching/
 
 ### Spring 2022: Instructor for Computational linear algebra (grader: [Enzo Bergamo](https://www.enzobergamo.com/))
 
-* [Syllabus](/2022/Syllabus)
+* [Syllabus](/2022/Syllabus.pdf)
 * [Course notes](/2022/ComputationalLinearAlgebra-2022.pdf)
 * [Assignment 1](/2022/Assignment1.pdf)
 * [Assignment 2](/2022/Assignment2.pdf)

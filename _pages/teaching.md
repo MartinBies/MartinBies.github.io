@@ -14,7 +14,7 @@ permalink: /teaching/
 | --------- |
 | [Syllabus](/2022/Syllabus.pdf) |
 | [Course notes](/2022/ComputationalLinearAlgebra-2022.pdf) |
-| Grader: [Enzo Bergamo](https://www.enzobergamo.com/)) |
+| [Grader: Enzo Bergamo](https://www.enzobergamo.com/)) |
 
 | Theory assignments | Coding assignments |
 | --------- | --------- |
@@ -47,7 +47,7 @@ permalink: /teaching/
 | --------- |
 | [Syllabus](/2021/Syllabus.pdf) |
 | [Course notes](/2021/ComputationalLinearAlgebra-2021.pdf) |
-| Grader: Nicolas Haas) |
+| Grader: Nicolas Haas |
 
 | Assignment |
 | --------- |

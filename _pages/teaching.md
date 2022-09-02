@@ -46,7 +46,7 @@ permalink: /teaching/
 * [Midterm 1](/2021/Midterm1.pdf)
 * [Midterm 2](/2021/Midterm2.pdf)
 * [Final exam](/2021/FinalExam.pdf)
-* [Practice questions](/2021/Practice.pdf)
+* [Practice questions](/2021/PracticeAndSchedule.pdf)
 
 
 ## University of Heidelberg

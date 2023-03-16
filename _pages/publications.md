@@ -12,6 +12,8 @@ permalink: /publications/
 
 You can find all my publications on [inspire](https://inspirehep.net/author/profile/M.Bies.1), on [arXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50) and on [orcid](https://orcid.org/0000-0002-9609-1693):
 
+10 | Martin Bies [*Root bundles: Applications to F-theory Standard Models*](https://arxiv.org/abs/2303.08144)(Preprint)
+
 9 | Martin Bies, Lars Kastner [*Toric Geometry in OSCAR*](https://arxiv.org/abs/2303.08110)(Preprint)
 
 8 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Brill-Noether-general Limit Root Bundles: Absence of vector-like Exotics in F-theory Standard Models*](https://link.springer.com/article/10.1007/JHEP11(2022)004)(Journal of High Energy Physics)

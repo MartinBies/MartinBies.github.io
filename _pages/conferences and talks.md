@@ -8,6 +8,7 @@ permalink: /conferences and talks/
 
  Date | Place
  ---------    :|-----------
+ 16 May 2023 | [Oberseminar Algebraische Geometry, Universitaet des Saarlandes](https://www.uni-saarland.de/lehrstuhl/lazic/oberseminar-algebraische-geometrie.html) [(presentation)](/TalkSBMay2023.pdf)
  21 Sept. 2021   | [Summer series on string phenomenology](https://sites.google.com/view/string-pheno-seminars/) [(presentation)](/MartinBies-RootBundle-StringSummerSeriesAPresentation.pdf)
  19 Oct. 2020 | Pennsylvania, USA [(presentation)](/TalkUpennOctober19-2020.pdf)
  16 June 2020   | [Summer series on string phenomenology](https://stringphenoseminars.github.io/) [(presentation)](/PresentationSummerSeries.pdf)

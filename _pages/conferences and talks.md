@@ -7,10 +7,7 @@ permalink: /conferences and talks/
 ## Talks
 
  Date | Place
- ---------    :|-----------
- 
- PresentationStringPheno2023MartinBies.pdf
- 6 July 2023 | [String Pheno 2023, Daejeon, South Korea](https://indico.cern.ch/event/1270020/) [(presentation)](/PresentationStringPheno2023MartinBies.pdf)
+ ---------    :|----------- 
  16 May 2023 | [Oberseminar Algebraische Geometry, Universitaet des Saarlandes](https://www.uni-saarland.de/lehrstuhl/lazic/oberseminar-algebraische-geometrie.html) [(presentation)](/TalkSBMay2023.pdf)
  21 Sept. 2021   | [Summer series on string phenomenology](https://sites.google.com/view/string-pheno-seminars/) [(presentation)](/MartinBies-RootBundle-StringSummerSeriesAPresentation.pdf)
  19 Oct. 2020 | Pennsylvania, USA [(presentation)](/TalkUpennOctober19-2020.pdf)
@@ -26,6 +23,8 @@ permalink: /conferences and talks/
 
  Date | Conference 
  ---------    :|-----------
+ 12 July 2023 | [String Math 2023, Melbourne, Australia](https://indico.cern.ch/event/1270020/) [(presentation)](/PresentationStringMath2023MartinBies.pdf) [(poster)](/PosterMartinBiesStringMath2023.pdf)
+ 6 July 2023 | [String Pheno 2023, Daejeon, South Korea](https://indico.cern.ch/event/1270020/) [(presentation)](/PresentationStringPheno2023MartinBies.pdf) 
  May 2023 | [Computeralgebra Tagung 2023](https://konferenz.uni-hannover.de/event/83/) [(presentation)](/PresentationCAT2023MartinBies.pdf)
  July 2022 | [Strings 2022](https://indico.cern.ch/event/1085701/)
  July 2022 | [String Math 2022](https://stringmath2022.fuw.edu.pl/) [(presentation)](/MartinBies-StringMath2022.pdf)

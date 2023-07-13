@@ -12,25 +12,25 @@ permalink: /publications/
 
 You can find all my publications on [inspire](https://inspirehep.net/author/profile/M.Bies.1), on [arXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50) and on [orcid](https://orcid.org/0000-0002-9609-1693):
 
-11 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Improved statistics for F-theory standard models*](https://arxiv.org/abs/2307.02535)(Preprint)
+11 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Improved statistics for F-theory standard models*](https://arxiv.org/abs/2307.02535) (Preprint)
 
-10 | Martin Bies [*Root bundles: Applications to F-theory Standard Models*](https://arxiv.org/abs/2303.08144)(Preprint)
+10 | Martin Bies [*Root bundles: Applications to F-theory Standard Models*](https://arxiv.org/abs/2303.08144) (Preprint)
 
-9 | Martin Bies, Lars Kastner [*Toric Geometry in OSCAR*](https://arxiv.org/abs/2303.08110)(Preprint)
+9 | Martin Bies, Lars Kastner [*Toric Geometry in OSCAR*](https://arxiv.org/abs/2303.08110) (Preprint)
 
-8 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Brill-Noether-general Limit Root Bundles: Absence of vector-like Exotics in F-theory Standard Models*](https://link.springer.com/article/10.1007/JHEP11(2022)004)(Journal of High Energy Physics)
+8 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Brill-Noether-general Limit Root Bundles: Absence of vector-like Exotics in F-theory Standard Models*](https://link.springer.com/article/10.1007/JHEP11(2022)004) (Journal of High Energy Physics)
 
 7 | Martin Bies, Mirjam Cvetič, Muyang Liu [*Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs*](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903) (Physical Review D)
 
-6 | Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [*Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs*](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076)(Journal of High Energy Physics)
+6 | Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [*Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs*](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076) (Journal of High Energy Physics)
 
-5 | Martin Bies, Mirjam Cvetič, Ron Donagi, Ling Lin, Muyang Liu, Fabian Rühle [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196)(Journal of High Energy Physics)
+5 | Martin Bies, Mirjam Cvetič, Ron Donagi, Ling Lin, Muyang Liu, Fabian Rühle [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196) (Journal of High Energy Physics)
 
-4 | Martin Bies, Sebastian Posur [*Tensor products of finitely presented functors*](https://www.worldscientific.com/doi/abs/10.1142/S0219498822501869)(Journal of Algebra and Its Applications)
+4 | Martin Bies, Sebastian Posur [*Tensor products of finitely presented functors*](https://www.worldscientific.com/doi/abs/10.1142/S0219498822501869) (Journal of Algebra and Its Applications)
 
-3 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Algebraic Cycles and Local Anomalies in F-theory*](https://link.springer.com/article/10.1007%2FJHEP11%282017%29100)(Journal of High Energy Physics)
+3 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Algebraic Cycles and Local Anomalies in F-theory*](https://link.springer.com/article/10.1007%2FJHEP11%282017%29100) (Journal of High Energy Physics)
 
-2 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Gauge Backgrounds and Zero-Mode Counting in F-theory*](https://link.springer.com/article/10.1007%2FJHEP11%282017%29081)(Journal of High Energy Physics)
+2 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Gauge Backgrounds and Zero-Mode Counting in F-theory*](https://link.springer.com/article/10.1007%2FJHEP11%282017%29081) (Journal of High Energy Physics)
 
 1 | Martin Bies, Christoph Mayrhofer, Christian Pehle and Timo Weigand, [*Chow groups, Deligne cohomology and massless matter in F-theory*](https://arxiv.org/abs/1402.5144)
 

@@ -21,10 +21,11 @@ permalink: /conferences and talks/
 
 ## Conferences
 
- Date | Conference 
+ Date | Conference
  ---------    :|-----------
- 12 July 2023 | [String Math 2023, Melbourne, Australia](https://indico.cern.ch/event/1270020/) [(presentation)](/PresentationStringMath2023MartinBies.pdf) [(poster)](/PosterMartinBiesStringMath2023.pdf)
- 6 July 2023 | [String Pheno 2023, Daejeon, South Korea](https://indico.cern.ch/event/1270020/) [(presentation)](/PresentationStringPheno2023MartinBies.pdf) 
+ September 2023 | [Third Annual Meeting 2023 of SFB-TRR 195](https://www.math.uni-sb.de/ag/brandhorst/index.php?option=com_content&view=article&id=38:3rd-annual-meeting-sfb-trr-196-2023&catid=30&Itemid=109&lang=en) [(presentation)](/PresentationSFBMeeting2023MartinBies.pdf)
+ July 2023 | [String Math 2023, Melbourne, Australia](https://indico.cern.ch/event/1270020/) [(presentation)](/PresentationStringMath2023MartinBies.pdf) [(poster)](/PosterMartinBiesStringMath2023.pdf)
+ July 2023 | [String Pheno 2023, Daejeon, South Korea](https://indico.cern.ch/event/1270020/) [(presentation)](/PresentationStringPheno2023MartinBies.pdf) 
  May 2023 | [Computeralgebra Tagung 2023](https://konferenz.uni-hannover.de/event/83/) [(presentation)](/PresentationCAT2023MartinBies.pdf)
  July 2022 | [Strings 2022](https://indico.cern.ch/event/1085701/)
  July 2022 | [String Math 2022](https://stringmath2022.fuw.edu.pl/) [(presentation)](/MartinBies-StringMath2022.pdf)

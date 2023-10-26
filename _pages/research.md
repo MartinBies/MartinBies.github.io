@@ -6,7 +6,7 @@ permalink: /research/
 
 {% include toc %}
 
-By upbringing, I am a theoretical high energy physicist with a focus on string theory. In the past years, I have been working on a framework of string theory, called F-theory. It strongly utilizes geometric tools to investigate solutions to string theory. Below, you can find a brief summary of my research focus, interest and recent efforts. Many more details are available in my [Research statement](/ResearchMartinBies.pdf).
+By upbringing, I am a theoretical high energy physicist with a focus on string theory. In the past years, I have been working on a framework of string theory, called F-theory. It strongly utilizes geometric tools to investigate solutions to string theory. Below, you can find a brief summary of my research focus, interest and recent efforts. Many more details are available in my [Research statement](/ResearchStatementMartinBies.pdf).
 
 Of ample importance for string phenomenology is the number of Higgs fields in a particular compactifications. This is because the existence or absence of these fields determines if a Higgs mechanism can be employed to give masses to the other massless fields. As simple as this question may sound, it leads to rich mathematics such as Freyd categories, Chow groups, coherent sheaves, root bundles and Brill-Noether theory.
 

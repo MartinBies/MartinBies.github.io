@@ -12,36 +12,36 @@ For more details on my publications, please visit [inspire](https://inspirehep.n
 ## Peer Reviewed Publications
 
 
-1 | Martin Bies [*Root bundles: Applications to F-theory Standard Models*](https://www.ams.org/books/pspum/107/) (Proceedings of Symposida in Pure Mathematics, [Preprint](https://arxiv.org/abs/2303.08144))
+1 | Martin Bies [*Root bundles: Applications to F-theory Standard Models*](https://www.ams.org/books/pspum/107/) (Proceedings of Symposida in Pure Mathematics, [Preprint](https://arxiv.org/abs/2303.08144), 2024).
 
-2 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Brill-Noether-general Limit Root Bundles: Absence of vector-like Exotics in F-theory Standard Models*](https://link.springer.com/article/10.1007/JHEP11(2022)004) (Journal of High Energy Physics)
+2 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Brill-Noether-general Limit Root Bundles: Absence of vector-like Exotics in F-theory Standard Models*](https://link.springer.com/article/10.1007/JHEP11(2022)004) (Journal of High Energy Physics, November 2022).
 
-3 | Martin Bies, Mirjam Cvetič, Muyang Liu [*Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs*](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903) (Physical Review D)
+3 | Martin Bies, Mirjam Cvetič, Muyang Liu [*Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs*](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903) (Physical Review D, September 2021).
 
-4 | Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [*Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs*](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076) (Journal of High Energy Physics)
+4 | Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [*Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs*](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076) (Journal of High Energy Physics, September 2021).
 
-5 | Martin Bies, Sebastian Posur [*Tensor products of finitely presented functors*](https://www.worldscientific.com/doi/abs/10.1142/S0219498822501869) (Journal of Algebra and Its Applications)
+5 | Martin Bies, Sebastian Posur [*Tensor products of finitely presented functors*](https://www.worldscientific.com/doi/abs/10.1142/S0219498822501869) (Journal of Algebra and Its Applications, July 2021).
 
-6 | Martin Bies, Mirjam Cvetič, Ron Donagi, Ling Lin, Muyang Liu, Fabian Rühle [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196) (Journal of High Energy Physics)
+6 | Martin Bies, Mirjam Cvetič, Ron Donagi, Ling Lin, Muyang Liu, Fabian Rühle [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196) (Journal of High Energy Physics, Januar 2021).
 
-7 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Algebraic Cycles and Local Anomalies in F-theory*](https://link.springer.com/article/10.1007%2FJHEP11%282017%29100) (Journal of High Energy Physics)
+7 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Algebraic Cycles and Local Anomalies in F-theory*](https://link.springer.com/article/10.1007%2FJHEP11%282017%29100) (Journal of High Energy Physics, November 2017).
 
-8 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Gauge Backgrounds and Zero-Mode Counting in F-theory*](https://link.springer.com/article/10.1007%2FJHEP11%282017%29081) (Journal of High Energy Physics)
+8 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Gauge Backgrounds and Zero-Mode Counting in F-theory*](https://link.springer.com/article/10.1007%2FJHEP11%282017%29081) (Journal of High Energy Physics, November 2017).
 
 
 
 
 ## Preprints
 
-9 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Improved statistics for F-theory standard models*](https://arxiv.org/abs/2307.02535)
+9 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Improved statistics for F-theory standard models*](https://arxiv.org/abs/2307.02535), July 2023.
 
 
 
 ## Outreach
 
-10 | Martin Bies, Lars Kastner [*Toric Geometry in OSCAR*](https://fachgruppe-computeralgebra.de/data/CA-Rundbrief/car72.pdf) (ComputerAlgebraRundbrief, [Preprint](https://arxiv.org/abs/2303.08110))
-11 | Martin Bies, Lars Kastner [*Toric Geometry*](https://link.springer.com/book/9783031621260) (Chapter in book *The Computer Algebra System OSCAR: Algorithms and Examples* ISSN 1431-1550)
-12 | Martin Bies, Andrew P. Turner [*F-Theory Applications*](https://link.springer.com/book/9783031621260) (Chapter in book *The Computer Algebra System OSCAR: Algorithms and Examples* ISSN 1431-1550)
+10 | Martin Bies, Lars Kastner [*Toric Geometry in OSCAR*](https://fachgruppe-computeralgebra.de/data/CA-Rundbrief/car72.pdf) (ComputerAlgebraRundbrief, March 2023, [Preprint](https://arxiv.org/abs/2303.08110))
+11 | Martin Bies, Lars Kastner [*Toric Geometry*](https://link.springer.com/book/9783031621260) (Chapter in book *The Computer Algebra System OSCAR: Algorithms and Examples*, August 2024, ISSN 1431-1550)
+12 | Martin Bies, Andrew P. Turner [*F-Theory Applications*](https://link.springer.com/book/9783031621260) (Chapter in book *The Computer Algebra System OSCAR: Algorithms and Examples*, August 2024, ISSN 1431-1550)
 
 
 

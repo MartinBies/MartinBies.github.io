@@ -61,6 +61,4 @@ For more details on my publications, please visit [inspire](https://inspirehep.n
 
 ## Software
 
-According to [github](https://github.com/), I have added about 500.000 lines of codes and modified another 500.000. My coding experience includes gap, python, julia and C++. The latest news on my software are to be found at my [github-page](https://github.com/herearound).
-
-I am author and maintainer of the [*ToricVarieties_project*](https://github.com/homalg-project/ToricVarieties_project). Most recently, I have begun to migrate/integrate this software into the [*OSCAR Computer Algebra System*](https://github.com/oscar-system/Oscar.jl).
+According to [github](https://github.com/), I have added about 500.000 lines of codes and modified another 500.000. My coding experience includes gap, python, julia and C++. Currently, my focus rests on the [*OSCAR Computer Algebra System*](https://github.com/oscar-system/Oscar.jl). More details can be found at my [github-page](https://github.com/herearound).

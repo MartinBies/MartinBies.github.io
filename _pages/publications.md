@@ -42,9 +42,9 @@ On [github](https://github.com/), I have added/modified 142.000+ lines of codes.
 
 ## Outreach
 
-10 | Martin Bies, Lars Kastner [*Toric Geometry in OSCAR*](https://fachgruppe-computeralgebra.de/data/CA-Rundbrief/car72.pdf), ComputerAlgebraRundbrief, March 2023. (See here for a [preprint](https://arxiv.org/abs/2303.08110).)
+10 | Martin Bies, Andrew P. Turner [*F-Theory Applications*](https://link.springer.com/book/9783031621260), chapter in book *The Computer Algebra System OSCAR: Algorithms and Examples*, August 2024, ISSN 1431-1550.
 11 | Martin Bies, Lars Kastner [*Toric Geometry*](https://link.springer.com/book/9783031621260), chapter in book *The Computer Algebra System OSCAR: Algorithms and Examples*, August 2024, ISSN 1431-1550.
-12 | Martin Bies, Andrew P. Turner [*F-Theory Applications*](https://link.springer.com/book/9783031621260), chapter in book *The Computer Algebra System OSCAR: Algorithms and Examples*, August 2024, ISSN 1431-1550.
+12 | Martin Bies, Lars Kastner [*Toric Geometry in OSCAR*](https://fachgruppe-computeralgebra.de/data/CA-Rundbrief/car72.pdf), ComputerAlgebraRundbrief, March 2023. (See here for a [preprint](https://arxiv.org/abs/2303.08110).)
 
 
 

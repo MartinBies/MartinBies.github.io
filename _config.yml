@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Martin Bies - academic homepage"
+title                    : "Homepage of Martin Bies"
 title_separator          : "-"
 name                     : &name "Martin Bies"
-description              : "Martin Bies's academic homepage"
+description              : "Homepage of Martin Bies"
 url                      : "https://MartinBies.github.io"
 baseurl                  : ""
 repository               : "MartinBies/MartinBies.github.io"

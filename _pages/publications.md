@@ -6,8 +6,6 @@ permalink: /publications/
 
 {% include toc %}
 
-Below is an overview of my publications. For more details, please visit [inspire](https://inspirehep.net/author/profile/M.Bies.1), [arXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50), [orcid](https://orcid.org/0000-0002-9609-1693) or [scopus](https://www.scopus.com/authid/detail.uri?authorId=57197835420).
-
 ## Peer Reviewed Publications
 
 

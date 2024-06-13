@@ -1,20 +1,12 @@
 # main links
 main:
-  - title: "Research"
-    url: /research/
-  - title: "Software"
-    url: /software/
   - title: "Publications"
     url: /publications/
-  - title: "Conferences and talks"
+  - title: "Conferences and Talks"
     url: /conferences and talks
   - title: "Teaching"
     url: /teaching/
-#  - title: "Students"
-#    url: /students/
   - title: "CV"
     url: /cv/
-#  - title: "Links"
-#    url: /links/
   - title: "Contact"
     url: /contact/

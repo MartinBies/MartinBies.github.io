@@ -34,4 +34,4 @@ I have presented my research at numerous conferences. For details, see [here](ht
 
 ## Teaching
 
-I enjoy sharing knowledge with students. For my teaching record, see [here](https://martinbies.github.io/teaching/).
+I enjoy sharing knowledge with students: [Teaching Philosophy](https://martinbies.github.io/TeachingStatementMartinBies.pdf), [Teaching Record](https://martinbies.github.io/teaching/).

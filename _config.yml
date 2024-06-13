@@ -8,12 +8,6 @@ url: "https://MartinBies.github.io"
 repository: "MartinBies/MartinBies.github.io"
 words_per_minute: 200
 
-# Comments
-comments:
-  provider: "disqus"
-  disqus:
-    shortname: MartinBies-github-io
-
 # Staticman
 staticman:
   allowedFields: ['name', 'email', 'url', 'message']

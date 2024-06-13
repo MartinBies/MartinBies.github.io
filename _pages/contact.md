@@ -8,7 +8,7 @@ permalink: /contact/
 
 <a class="social-btn" style="white-space: nowrap" href="https://www.google.com/maps/place/Gottlieb-Daimler-Stra%C3%9Fe+48,+67663+Kaiserslautern/@49.4238948,7.7505619,17z/data=!3m1!4b1!4m5!3m4!1s0x47966d4fcb567097:0x9e57032bea341dc1!8m2!3d49.4238948!4d7.7527506?hl=en" rel="noopener noreferrer">
 <i class="fa fa-fw fa-map-marker" aria-hidden="true">
-TU Kaiserslautern<br>
+RPTU Kaiserslautern-Landau<br>
 Gottlieb-Daimler-Straße 48<br>
 Raum 48-407<br>
 67663 Kaiserslautern<br>
@@ -18,7 +18,7 @@ Germany<br>
 <br>
 
 
-([How to reach the Department of Mathematics at the TU Kaiserslautern?](https://www.uni-kl.de/en/routes-and-means-of-transport))
+([How to reach the RPTU Kaiserslautern-Landau?](https://rptu.de/en/routes-and-means-of-transport))
 
 ### Email
 

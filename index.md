@@ -11,6 +11,6 @@ By upbringing, I am a theoretical high energy physicist with a focus on string t
 
 ## Software
 
-I work on open-source software on [github](https://github.com/herearound), where I have added about 500.000 lines of codes and modified about another 500.000 lines of code. My coding experience includes julia, C++, python and many more. Currently, I focus on the [OSCAR Computer Algebra System](https://github.com/oscar-system/Oscar.jl), written in the modern programming language [Julia](https://julialang.org/).
+As my [github profile](https://github.com/herearound) details, I work on open-source software and have added/modified about 500.000 lines of codes. My coding experience includes julia, C++, python and many more. Currently, I focus on the [OSCAR Computer Algebra System](https://github.com/oscar-system/Oscar.jl), written in the modern programming language [Julia](https://julialang.org/).
 * [Details on the *toric varieties* functionality in OSCAR](https://docs.oscar-system.org/stable/AlgebraicGeometry/ToricVarieties/intro/).
 * [Details on *FTheoryTools* in OSCAR](https://docs.oscar-system.org/stable/Experimental/FTheoryTools/introduction/).

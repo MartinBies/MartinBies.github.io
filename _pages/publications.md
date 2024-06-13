@@ -6,11 +6,7 @@ permalink: /publications/
 
 {% include toc %}
 
-Below is an overview of my publications. For further details, please visit [inspire](https://inspirehep.net/author/profile/M.Bies.1), [arXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50), [orcid](https://orcid.org/0000-0002-9609-1693) or [scopus](https://www.scopus.com/authid/detail.uri?authorId=57197835420).
-
-On [github](https://github.com/), I have added/modified 142.000+ lines of codes. My coding experience includes gap, python, julia and C++. Currently, my focus rests on the [*OSCAR Computer Algebra System*](https://github.com/oscar-system/Oscar.jl). For more details, please visit my [github-page](https://github.com/herearound).
-
-
+Below is an overview of my publications. For more details, please visit [inspire](https://inspirehep.net/author/profile/M.Bies.1), [arXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50), [orcid](https://orcid.org/0000-0002-9609-1693) or [scopus](https://www.scopus.com/authid/detail.uri?authorId=57197835420).
 
 ## Peer Reviewed Publications
 

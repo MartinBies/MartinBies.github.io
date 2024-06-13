@@ -1,3 +1,15 @@
 ---
-layout: archive
+layout: default
 ---
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% include breadcrumbs.html %}
+{% endif %}
+
+<div id="main" role="main">
+    {% include sidebar.html %}
+  
+    <div class="archive">
+      {{ content }}
+    </div>
+  </div>

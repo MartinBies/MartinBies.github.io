@@ -60,5 +60,6 @@ permalink: /conferences and talks/
  
  Date | Conference 
  ---------    :|-----------
+ March 2024 | Moderation of meetings and project discussions (Kaiserslautern, Germany).
  Mai 2018 | Kontaktseminar of *Studienstiftung des deutschen Volkes* - focus on banking and consulting (Bonn, Germany)
  Mai 2018 | Physiker im Beruf of *deutsche physikalische Gesellschaft* (DPG) (Bad Honnef, Germany)

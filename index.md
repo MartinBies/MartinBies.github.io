@@ -1,9 +1,8 @@
 ---
 layout: home
 author_profile: true
+title: Welcome to My Homepage
 ---
-
-# Welcome to My Homepage
 
 Versatile Postdoctoral Researcher with a [PhD in Physics from Heidelberg University](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/). My research spans high energy physics, mathematics, and open-source software development, emphasizing my commitment to interdisciplinary research.
 

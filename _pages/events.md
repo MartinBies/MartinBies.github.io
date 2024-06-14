@@ -5,8 +5,6 @@ title: "Events"
 permalink: /events/
 ---
 
-# Events
-
 ## Talks
 
  Date | Place

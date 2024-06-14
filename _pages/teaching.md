@@ -5,11 +5,6 @@ title: "Teaching"
 permalink: /teaching/
 ---
 
-<!--{% include toc title = "Teaching at the"%}-->
-
-# Teaching
-
-
 ## RPTU Kaiserslautern-Landau
 
 Semester | Role | Course

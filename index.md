@@ -4,9 +4,11 @@ author_profile: true
 title: Welcome to My Homepage
 ---
 
-Versatile Postdoctoral Researcher with a [PhD in Physics from Heidelberg University](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/). My research spans high energy physics, mathematics, and open-source software development, emphasizing my commitment to interdisciplinary research.
+Versatile Postdoctoral Researcher with a [PhD in Physics from Heidelberg University](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/).
 
-With full English proficiency and strong public speaking skills, I have a strong track record of international collaborations. [My publications](https://martinbies.github.io/publications/) cover diverse mathematical topics including toric geometry, Freyd categories, Brill-Noether theory, and root bundles.
+My research spans physics, mathematics, and software development, emphasizing my interdisciplinary commitment. This research has led to [Publications](https://martinbies.github.io/publications/) on diverse mathematical topics, including toric geometry, Freyd categories, Brill-Noether theory, and root bundles.
+
+With full English proficiency and strong public speaking skills, I have a strong track record of international collaborations and [Teaching](https://martinbies.github.io/teaching/).
 
 Skilled in Julia, Python, and C++, I develop software on [GitHub](https://github.com/herearound) for computational research.
 

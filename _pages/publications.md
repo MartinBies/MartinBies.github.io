@@ -7,6 +7,8 @@ permalink: /publications/
 
 {% include toc %}
 
+# Publications
+
 ## Peer Reviewed Publications
 
 

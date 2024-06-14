@@ -7,6 +7,8 @@ permalink: /teaching/
 
 <!--{% include toc title = "Teaching at the"%}-->
 
+# Teaching
+
 ## University of Pennsylvania
 
 Below you can find a list of the courses that I taught as tutor, senior/head tutor and eventually lecturer. For more background, take a look at my [teaching philosophy](/TeachingStatementMartinBies.pdf).

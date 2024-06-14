@@ -8,11 +8,11 @@
 
   {% if author.avatar %}
     <div class="author__avatar">
-      {% if author.avatar contains "://" %}
-        <img src="{{ author.avatar }}" alt="{{ author.name }}" itemprop="image">
-      {% else %}
-        <img src="{{ author.avatar | absolute_url }}" class="author__avatar" alt="{{ author.name }}" itemprop="image">
-      {% endif %}
+    {% if author.avatar contains "://" %}
+      <img src="{{ author.avatar }}" alt="{{ author.name }}" itemprop="image" style="width: 100%; max-width: 250px; height: auto;">
+    {% else %}
+      <img src="{{ author.avatar | absolute_url }}" class="author__avatar" alt="{{ author.name }}" itemprop="image" style="width: 100%; max-width: 250px; height: auto;">
+    {% endif %}
     </div>
   {% endif %}
 

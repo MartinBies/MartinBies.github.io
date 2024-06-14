@@ -16,7 +16,7 @@ analytics:
 author:
   name: *name
   avatar: "/picture.jpg"
-  bio: "Doctor of physics"
+  bio: "Doctor of Physics"
   location: "RPTU Kaiserslautern-Landau"
   reaching_us: "https://rptu.de/en/routes-and-means-of-transport"
   address: "Gottlieb-Daimler-Straße 48"

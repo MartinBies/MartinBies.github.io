@@ -27,9 +27,9 @@ For a full list of my publications, see [inspire](https://inspirehep.net/author/
 My [GitHub profile](https://github.com/herearound) showcases my work on open-source software, with contributions to around 500,000 lines of code. I specialize in Julia, Python, C++. Currently, I focus on the [OSCAR Computer Algebra System](https://github.com/oscar-system/Oscar.jl), with emphasis on [*Toric Varieties*](https://docs.oscar-system.org/stable/AlgebraicGeometry/ToricVarieties/intro/) and [*FTheoryTools*](https://docs.oscar-system.org/stable/Experimental/FTheoryTools/introduction/).
 
 
-## Talks and Conferences
+## Events
 
-I have presented my research at numerous conferences. For details, see [here](https://martinbies.github.io/conferences%20and%20talks/).
+I have participated in numerous conferences and workshops, delivered talks, and presented posters. For details, see [here](https://martinbies.github.io/events/).
 
 
 ## Teaching

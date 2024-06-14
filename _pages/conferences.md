@@ -1,8 +1,8 @@
 ---
 layout: single
 author_profile: true
-title: "Conferences and talks"
-permalink: /conferences and talks/
+title: "Events"
+permalink: /events/
 ---
 
 ## Talks

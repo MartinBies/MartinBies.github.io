@@ -31,7 +31,7 @@
 
         {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <span itemprop="name"></span>
+          <span itemprop="name">
             <a href="{{ author.reaching_us }}" itemprop="url" target="_blank" rel="noopener noreferrer">
               <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
             </a>

@@ -22,10 +22,3 @@ Germany<br>
 
 
 ([How to reach the RPTU Kaiserslautern-Landau?](https://rptu.de/en/routes-and-means-of-transport))
-
-
-### Phone
-
-<a class="social-btn" style="white-space: nowrap" href="tel:+49 (0)631 205-2252" target="_blank" rel="noopener noreferrer">
-  <i class="fa fa-fw fa-phone">+49 (0)631 205-2252</i>
-</a>

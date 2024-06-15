@@ -16,9 +16,7 @@ permalink: /events/
  10 Dec. 2019   | Pennsylvania, USA [(presentation)](/TalkUPenn19.pdf)
  10 Oct. 2018   | Brussels, Belgium [(presentation)](/Brussels.pdf)
  3 July 2014   | Aachen, Germany [(presentation)](/PresentationAachen.pdf)
- 
 
-{% include toc title = "Subject of conference"%}
 
 ## Conferences
 

@@ -1,8 +1,0 @@
-Things to know:
-
-(*) config.yml: 
-    - personal data
-(*) _pages:
-    - here you want to fill in all your data/details
-(*) _data/navigation:
-    - header and their order is defined here

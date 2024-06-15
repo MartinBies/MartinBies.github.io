@@ -5,12 +5,30 @@ title: "Teaching"
 permalink: /teaching/
 ---
 
+I enjoy teaching. Below is my record. More details are available in my [Teaching Philosophy](https://martinbies.github.io/TeachingStatementMartinBies.pdf).
+
+
 ## RPTU Kaiserslautern-Landau
+
+### Sommer 2024: Instructor for Introduction To Topology
+
+| **Generalities** | | | |
+| --------- |
+| Details available in [OLAT](https://olat.vcrp.de/dmz/). | [Course follows notes by A. Gathmann](https://agag-gathmann.math.rptu.de/class/topo-2023/topo-2023.pdf) | [Tutor: Max Mayer](https://math.rptu.de/ags/agag/personen/mitglieder) | |
+
+
+| **Assignments** | | | |
+| ---- | ---- | ---- | ---- |
+[Assignment 1](/2024/Blatt-1.pdf) | [Assignment 2](/2024/Blatt-2.pdf) | [Assignment 3](/2024/Blatt-3.pdf) | [Assignment 4](/2024/Blatt-4.pdf) |
+
+
+
+### Tutoring
 
 | **Semester** | **Role** | **Course** |
 | ---- |---- | ---- |
-| Sommer 2024    | Instructor | Introduction To Topology |
-| Winter 2023/2024 | Tutor | Algebraic Geometry |
+| Winter 2023/2024 | (Head)Tutor | Algebraic Geometry |
+
 
 
 ## University of Pennsylvania

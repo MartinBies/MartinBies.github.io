@@ -83,11 +83,12 @@
 
   button {
     padding: 0 0.5rem;
+    padding-left: 1.6rem;
     align-self: stretch;
     border: 0;
     outline: none;
     color: #fff;
-    background-color: $primary-color;
+    background-color: $gray; // The color of the annoying thing that cost me hours!
     cursor: pointer;
   }
 

@@ -10,7 +10,7 @@ I enjoy teaching. Below is my record. More details are available in my [Teaching
 
 ## RPTU Kaiserslautern-Landau
 
-### Sommer 2024: Instructor for Introduction To Topology
+### Summer 2024: Instructor for Introduction To Topology
 
 | **Generalities** | | | |
 | --------- |

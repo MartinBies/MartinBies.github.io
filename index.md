@@ -4,7 +4,7 @@ author_profile: true
 title: Welcome to My Homepage
 ---
 
-Versatile Postdoctoral Researcher with a [PhD in Physics from Heidelberg University](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/).
+Versatile Postdoctoral Researcher with [doctor in Physics](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/) from Heidelberg University.
 
 My research spans physics, mathematics, and software development, emphasizing my interdisciplinary commitment. This research has led to [Publications](https://martinbies.github.io/publications/) on diverse mathematical topics, including toric geometry, Freyd categories, Brill-Noether theory, and root bundles.
 

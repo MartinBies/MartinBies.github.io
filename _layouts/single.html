@@ -46,7 +46,6 @@
   </div>
 
   <div id="main" role="main">
-    {% if page.author_profile or layout.author_profile or page.sidebar %}
       <div class="sidebar sticky">
 
         <!-- Author profile -->
@@ -59,23 +58,15 @@
       
         <div itemscope itemtype="http://schema.org/Person">
       
-        {% if author.avatar %}
           <div class="author__avatar">
-          {% if author.avatar contains "://" %}
-            <img src="{{ author.avatar }}" alt="{{ author.name }}" itemprop="image" style="width: 100%; max-width: 250px; height: auto;">
-          {% else %}
             <img src="{{ author.avatar | absolute_url }}" class="author__avatar" alt="{{ author.name }}" itemprop="image" style="width: 100%; max-width: 250px; height: auto;">
-          {% endif %}
           </div>
-        {% endif %}
       
         <div class="author__content">
           <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
-          {% if author.bio %}
             <p class="author__bio" itemprop="description">
               {{ author.bio }}
             </p>
-          {% endif %}
         </div>
       
         <div class="author__urls-wrapper">
@@ -147,20 +138,7 @@
         </div>
       </div>
 
-        {% if page.sidebar %}
-          {% for s in page.sidebar %}
-            {% if s.image %}
-              <img src="{% if s.image contains '://' %}{{ s.image }}{% else %}{{ s.image | absolute_url }}{% endif %}" alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-            {% endif %}
-            {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-            {% if s.text %}{{ s.text | markdownify }}{% endif %}
-          {% endfor %}
-          {% if page.sidebar.nav %}
-            {% include nav_list nav=page.sidebar.nav %}
-          {% endif %}
-        {% endif %}
       </div>
-    {% endif %}
     
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
       <h1 class="page-title" itemprop="headline">{{ page.title }}</h1>

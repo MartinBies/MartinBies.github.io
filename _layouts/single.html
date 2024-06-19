@@ -1,22 +1,44 @@
----
-layout: default
----
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.5.0 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
 
-{% if page.url != "/" and site.breadcrumbs %}
-  {% include breadcrumbs.html %}
-{% endif %}
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
 
-<div id="main" role="main">
-  {% include sidebar.html %}
+    {% include masthead.html %}
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <h1 class="page-title" itemprop="headline">{{ page.title }}</h1>
+    {% if page.url != "/" and site.breadcrumbs %}
+      {% include breadcrumbs.html %}
+    {% endif %}
 
-    <section class="page__content" itemprop="text">
-      {{ content }}
-      {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-    </section>
+    <div id="main" role="main">
+      {% include sidebar.html %}
 
-  </article>
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        <h1 class="page-title" itemprop="headline">{{ page.title }}</h1>
 
-</div>
+        <section class="page__content" itemprop="text">
+          {{ content }}
+          {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+        </section>
+      </article>
+    </div>
+
+    <div class="page__footer">
+      <footer>
+        {% include footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

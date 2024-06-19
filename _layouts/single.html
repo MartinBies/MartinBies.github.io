@@ -82,7 +82,6 @@
           <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Contact" }}</button>
           <ul class="author__urls social-icons">
       
-              {% if author.location %}
               <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
                 <span itemprop="name">
                   <a href="{{ author.reaching_us }}" itemprop="url" target="_blank" rel="noopener noreferrer">
@@ -90,35 +89,21 @@
                   </a>
                 </span>
                 <span itemprop="streetAddress">
-                  {% if author.address %}
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address }}<br>
-                  {% endif %}
-                  {% if author.address2 %}
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address2 }}<br>
-                  {% endif %}
-                  {% if author.address3 %}
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address3 }}<br>
-                  {% endif %}
-                  {% if author.address4 %}
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address4 }}<br>
-                  {% endif %}
                  </span>
               </li>
-            {% endif %}
       
-            {% if author.secretary_phone %}
               <li itemprop="telephone">
                 <i class="fa fa-fw fa-building" aria-hidden="true"></i> Secretary: <span>{{ author.secretary_phone }}</span>
               </li>
-            {% endif %}
       
-            {% if author.phone %}
               <li itemprop="telephone">
                 <i class="fa fa-fw fa-user" aria-hidden="true"></i> Office: <span>{{ author.phone }}</span>
               </li>
-            {% endif %}
       
-            {% if author.email %}
               <li>
                 <a href="mailto:{{ author.email }}">
                   <meta itemprop="email" content="{{ author.email }}">
@@ -126,48 +111,37 @@
                   Email: {{ author.email }}
                 </a>
               </li>
-            {% endif %}
       
-            {% if author.orcid %}
               <li>
                 <a href="https://orcid.org/{{ author.orcid }}" itemprop="sameAs" style="display: flex; align-items: center;">
                   <img src="/images/orcid.svg" alt="ORCID Icon" style="width: 20px; height: 20px; margin-right: 5px;"> 
                   <span style="font-size: inherit;">ORCID: {{ author.orcid }}</span>
                 </a>
               </li>
-            {% endif %}
             
-            {% if author.scopus %}
               <li>
                 <a href="https://www.scopus.com/authid/detail.uri?authorId={{ author.scopus }}" itemprop="sameAs">
                   <i class="fa fa-fw fa-key" aria-hidden="true"></i> Scopus: {{ author.scopus }}
                 </a>
               </li>
-            {% endif %}
       
-            {% if author.github %}
               <li>
                 <a href="https://github.com/{{ author.github }}" itemprop="sameAs">
                   <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub: {{ author.github }}
                 </a>
               </li>
-            {% endif %}
       
-            {% if author.linkedin %}
               <li>
                 <a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs">
                   <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
                 </a>
               </li>
-            {% endif %}
       
-            {% if author.xing %}
               <li>
                 <a href="https://www.xing.com/profile/{{ author.xing }}" itemprop="sameAs">
                   <i class="fa fa-fw fa-xing-square" aria-hidden="true"></i> XING
                 </a>
               </li>
-            {% endif %}
       
           </ul>
         </div>

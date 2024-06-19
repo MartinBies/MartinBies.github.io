@@ -15,7 +15,7 @@ Skilled in Julia, Python, and C++, I develop software on [GitHub](https://github
 
 ## Research
 
-I work on F-theory, a string theory framework using geometry to study its solutions. My focus is translating physics questions into mathematical challenges, then solving those challenges with enumerative computer techniques. More details are in my [Research Statement](/ResearchStatement.pdf) and [CV](https://martinbies.github.io/CV_MartinBies.pdf).
+I work on F-theory, a string theory framework using geometry to study its solutions. My focus is translating physics questions into mathematical challenges, then solving those challenges with enumerative computer techniques. More details are in my [Research Statement](/General/ResearchStatement.pdf) and [CV](/General/CV_MartinBies.pdf).
 
 
 ## Publications
@@ -25,7 +25,7 @@ For a full list of my publications, see [inspire](https://inspirehep.net/author/
 
 ## Software
 
-My [GitHub profile](https://github.com/herearound) showcases my work on open-source software, with contributions to around 500,000 lines of code. I specialize in Julia, Python, C++. Currently, I focus on the [OSCAR Computer Algebra System](https://github.com/oscar-system/Oscar.jl), with emphasis on [*Toric Varieties*](https://docs.oscar-system.org/stable/AlgebraicGeometry/ToricVarieties/intro/) and [*FTheoryTools*](https://docs.oscar-system.org/stable/Experimental/FTheoryTools/introduction/).
+My [GitHub profile](https://github.com/herearound) showcases my work on open-source software, with contributions to around 500,000 lines of code. I specialize in Julia, Python, C++. Currently, I focus on the [OSCAR Computer Algebra System](https://www.oscar-system.org/), with emphasis on [*Toric Varieties*](https://docs.oscar-system.org/stable/AlgebraicGeometry/ToricVarieties/intro/) and [*FTheoryTools*](https://docs.oscar-system.org/stable/Experimental/FTheoryTools/introduction/).
 
 
 ## Events
@@ -35,4 +35,4 @@ I have participated in numerous conferences and workshops, delivered talks, and 
 
 ## Teaching
 
-I enjoy sharing knowledge with students: [Teaching Philosophy](https://martinbies.github.io/TeachingStatementMartinBies.pdf), [Teaching Record](https://martinbies.github.io/teaching/).
+I enjoy sharing knowledge with students: [Teaching Philosophy](/General/TeachingStatementMartinBies.pdf), [Teaching Record](https://martinbies.github.io/teaching/).

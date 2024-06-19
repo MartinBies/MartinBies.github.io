@@ -46,6 +46,9 @@
         </div>
       {% endif %}
 
+
+      <!-- Content of page -->
+       <!-- Content of page -->
       <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
         <h1 class="page-title" itemprop="headline">{{ page.title }}</h1>
 
@@ -57,7 +60,6 @@
     </div>
 
 
-
     <!-- Footer -->
     <!-- Footer -->
     <div class="page__footer">
@@ -67,7 +69,11 @@
       </footer>
     </div>
 
-    {% include scripts.html %}
+
+    <!-- Scripts -->
+    <!-- Scripts -->
+    <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
+    {% include analytics.html %}
 
   </body>
 </html>

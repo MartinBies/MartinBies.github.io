@@ -1,72 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--
   Minimal Mistakes Jekyll Theme 4.5.0 by Michael Rose
   Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+<html lang="{{ site.locale | slice: 0, 2 | default: 'en' }}" class="no-js">
 
-  <!-- Header -->
-  <!-- Header -->
-  <head>
+<head>
+  <meta charset="utf-8">
+  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  </script>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <!--[if lte IE 9]>
+    <style>
+      /* old IE unsupported flexbox fixes */
+      .greedy-nav .site-title {
+        padding-right: 3em;
+      }
+      .greedy-nav button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+      }
+    </style>
+  <![endif]-->
+  <meta http-equiv="default-style" content="on">
+</head>
 
-    <meta charset="utf-8">
+<body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+  
+  {% include masthead.html %}
 
-    <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-    
-    <!-- http://t.co/dKP3o1e -->
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <script>
-      document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-    </script>
-    
-    <!-- For all browsers -->
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    
-    <!--[if lte IE 9]>
-      <style>
-        /* old IE unsupported flexbox fixes */
-        .greedy-nav .site-title {
-          padding-right: 3em;
-        }
-        .greedy-nav button {
-          position: absolute;
-          top: 0;
-          right: 0;
-          height: 100%;
-        }
-      </style>
-    <![endif]-->
-    
-    <meta http-equiv="default-style" content="on">
-    
-  </head>
-
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-
-    {% include masthead.html %}
-
-    <div id="main" role="main">
-
-      <!-- Sidebar -->
-      <!-- Sidebar -->
-      {% if page.author_profile or layout.author_profile or page.sidebar %}
+  <div id="main" role="main">
+    {% if page.author_profile or layout.author_profile or page.sidebar %}
       <div class="sidebar sticky">
         {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
         {% if page.sidebar %}
           {% for s in page.sidebar %}
             {% if s.image %}
-              <img src=
-              {% if s.image contains "://" %}
-                "{{ s.image }}"
-              {% else %}
-                "{{ s.image | absolute_url }}"
-              {% endif %}
-              alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+              <img src="{% if s.image contains '://' %}{{ s.image }}{% else %}{{ s.image | absolute_url }}{% endif %}" alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
             {% endif %}
             {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
             {% if s.text %}{{ s.text | markdownify }}{% endif %}
@@ -75,46 +54,34 @@
             {% include nav_list nav=page.sidebar.nav %}
           {% endif %}
         {% endif %}
-        </div>
-      {% endif %}
-
-
-      <!-- Content of page -->
-      <!-- Content of page -->
-      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        <h1 class="page-title" itemprop="headline">{{ page.title }}</h1>
-
-        <section class="page__content" itemprop="text">
-          {{ content }}
-          {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
-        </section>
-      </article>
-    </div>
-
-
-    <!-- Footer -->
-    <!-- Footer -->
-    <div class="page__footer">
-      <footer>
-        <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
-        <div class="page__footer-copyright">Last modified 2024-06-19</div>
-      </footer>
-    </div>
-
-
-    <!-- Scripts -->
-    <!-- Scripts -->
-    <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
-    {% if site.analytics.provider and page.analytics != false %}
-
-    {% case site.analytics.provider %}
-    {% when "google" %}
-      {% include /analytics-providers/google.html %}
-    {% when "custom" %}
-      {% include /analytics-providers/custom.html %}
-    {% endcase %}
-    
+      </div>
     {% endif %}
+    
+    <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+      <h1 class="page-title" itemprop="headline">{{ page.title }}</h1>
+      <section class="page__content" itemprop="text">
+        {{ content }}
+        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: 'Direct Link' }}</a></div>{% endif %}
+      </section>
+    </article>
+  </div>
 
-  </body>
+  <div class="page__footer">
+    <footer>
+      <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: 'Powered by' }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+      <div class="page__footer-copyright">Last modified 2024-06-19</div>
+    </footer>
+  </div>
+
+  <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
+  {% if site.analytics.provider and page.analytics != false %}
+    {% case site.analytics.provider %}
+      {% when 'google' %}
+        {% include '/analytics-providers/google.html' %}
+      {% when 'custom' %}
+        {% include '/analytics-providers/custom.html' %}
+    {% endcase %}
+  {% endif %}
+
+</body>
 </html>

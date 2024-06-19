@@ -30,12 +30,8 @@
           <a class="site-title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
           <ul class="visible-links">
             {% for link in site.data.navigation.main %}
-              {% if link.url contains 'http' %}
-                {% assign domain = '' %}
-              {% else %}
-                {% assign domain = site.url | append: site.baseurl %}
-              {% endif %}
-              <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+              {% assign domain = link.url | contains:'http' | default: site.url | append: site.baseurl %}
+              <li class="masthead__menu-item"><a href="{{ domain }}">{{ link.title }}</a></li>
             {% endfor %}
           </ul>
           <button><span class="navicon"></span></button>
@@ -46,106 +42,97 @@
   </div>
 
   <div id="main" role="main">
-      <div class="sidebar sticky">
-
-        <!-- Author profile -->
-        <!-- Author profile -->
-
-        {% if page.author and site.data.authors[page.author] %}
+    <div class="sidebar sticky">
+      {% if page.author and site.data.authors[page.author] %}
         {% assign author = site.data.authors[page.author] %}
-        {% else %}
+      {% else %}
         {% assign author = site.author %}
-        {% endif %}
+      {% endif %}
 
-        <div itemscope itemtype="http://schema.org/Person">
-      
-          <div class="author__avatar">
-            <img src="{{ author.avatar | absolute_url }}" class="author__avatar" alt="{{ author.name }}" itemprop="image" style="width: 100%; max-width: 250px; height: auto;">
-          </div>
-      
+      <div itemscope itemtype="http://schema.org/Person">
+        <div class="author__avatar">
+          <img src="{{ author.avatar | absolute_url }}" class="author__avatar" alt="{{ author.name }}" itemprop="image" style="width: 100%; max-width: 250px; height: auto;">
+        </div>
+
         <div class="author__content">
           <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
-            <p class="author__bio" itemprop="description">
-              {{ author.bio }}
-            </p>
+          <p class="author__bio" itemprop="description">{{ author.bio }}</p>
         </div>
-      
+
         <div class="author__urls-wrapper">
           <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Contact" }}</button>
           <ul class="author__urls social-icons">
-      
-              <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-                <span itemprop="name">
-                  <a href="{{ author.reaching_us }}" itemprop="url" target="_blank" rel="noopener noreferrer">
-                    <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
-                  </a>
-                </span>
-                <span itemprop="streetAddress">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address }}<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address2 }}<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address3 }}<br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address4 }}<br>
-                 </span>
-              </li>
-      
-              <li itemprop="telephone">
-                <i class="fa fa-fw fa-building" aria-hidden="true"></i> Secretary: <span>{{ author.secretary_phone }}</span>
-              </li>
-      
-              <li itemprop="telephone">
-                <i class="fa fa-fw fa-user" aria-hidden="true"></i> Office: <span>{{ author.phone }}</span>
-              </li>
-      
-              <li>
-                <a href="mailto:{{ author.email }}">
-                  <meta itemprop="email" content="{{ author.email }}">
-                  <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> 
-                  Email: {{ author.email }}
+            <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+              <span itemprop="name">
+                <a href="{{ author.reaching_us }}" itemprop="url" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
                 </a>
-              </li>
-      
-              <li>
-                <a href="https://orcid.org/{{ author.orcid }}" itemprop="sameAs" style="display: flex; align-items: center;">
-                  <img src="/images/orcid.svg" alt="ORCID Icon" style="width: 20px; height: 20px; margin-right: 5px;"> 
-                  <span style="font-size: inherit;">ORCID: {{ author.orcid }}</span>
-                </a>
-              </li>
-            
-              <li>
-                <a href="https://www.scopus.com/authid/detail.uri?authorId={{ author.scopus }}" itemprop="sameAs">
-                  <i class="fa fa-fw fa-key" aria-hidden="true"></i> Scopus: {{ author.scopus }}
-                </a>
-              </li>
-      
-              <li>
-                <a href="https://github.com/{{ author.github }}" itemprop="sameAs">
-                  <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub: {{ author.github }}
-                </a>
-              </li>
-      
-              <li>
-                <a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs">
-                  <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
-                </a>
-              </li>
-      
-              <li>
-                <a href="https://www.xing.com/profile/{{ author.xing }}" itemprop="sameAs">
-                  <i class="fa fa-fw fa-xing-square" aria-hidden="true"></i> XING
-                </a>
-              </li>
-      
+              </span>
+              <span itemprop="streetAddress">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address }}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address2 }}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address3 }}<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address4 }}<br>
+              </span>
+            </li>
+
+            <li itemprop="telephone">
+              <i class="fa fa-fw fa-building" aria-hidden="true"></i> Secretary: <span>{{ author.secretary_phone }}</span>
+            </li>
+
+            <li itemprop="telephone">
+              <i class="fa fa-fw fa-user" aria-hidden="true"></i> Office: <span>{{ author.phone }}</span>
+            </li>
+
+            <li>
+              <a href="mailto:{{ author.email }}">
+                <meta itemprop="email" content="{{ author.email }}">
+                <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email: {{ author.email }}
+              </a>
+            </li>
+
+            <li>
+              <a href="https://orcid.org/{{ author.orcid }}" itemprop="sameAs" style="display: flex; align-items: center;">
+                <img src="/images/orcid.svg" alt="ORCID Icon" style="width: 20px; height: 20px; margin-right: 5px;"> 
+                <span style="font-size: inherit;">ORCID: {{ author.orcid }}</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.scopus.com/authid/detail.uri?authorId={{ author.scopus }}" itemprop="sameAs">
+                <i class="fa fa-fw fa-key" aria-hidden="true"></i> Scopus: {{ author.scopus }}
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/{{ author.github }}" itemprop="sameAs">
+                <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub: {{ author.github }}
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs">
+                <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.xing.com/profile/{{ author.xing }}" itemprop="sameAs">
+                <i class="fa fa-fw fa-xing-square" aria-hidden="true"></i> XING
+              </a>
+            </li>
           </ul>
         </div>
       </div>
+    </div>
 
-      </div>
-    
     <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
       <h1 class="page-title" itemprop="headline">{{ page.title }}</h1>
       <section class="page__content" itemprop="text">
         {{ content }}
-        {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: 'Direct Link' }}</a></div>{% endif %}
+        {% if page.link %}
+          <div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: 'Direct Link' }}</a></div>
+        {% endif %}
       </section>
     </article>
   </div>

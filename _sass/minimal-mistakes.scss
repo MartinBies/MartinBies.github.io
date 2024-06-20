@@ -8,9 +8,9 @@
 /* ==========================================================================
 0. MIXINS AND FUNCTIONS
 ========================================================================== */
-@import "minimal-mistakes/vendor/breakpoint/breakpoint";
+@import "breakpoint/breakpoint";
 @include breakpoint-set("to ems", true);
-@import "minimal-mistakes/vendor/font-awesome/font-awesome";
+@import "font-awesome/font-awesome";
 
 
 

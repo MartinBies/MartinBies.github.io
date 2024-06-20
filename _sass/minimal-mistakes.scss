@@ -1052,26 +1052,15 @@ body:hover .visually-hidden button {
 ========================================================================== */
 
 .social-icons {
-    .fa {
-      color: #000;
-    }
-  
-    .fa-github,
-    .fa-github-alt,
-    .fa-github-square {
-      color: $github-color;
-    }
-  
-    .fa-linkedin,
-    .fa-linkedin-square {
-      color: $linkedin-color;
-    }
-  
-    .fa-xing,
-    .fa-xing-square {
-      color: $xing-color;
-    }
+  .fa {color: #000;}
+  .fa-github,
+  .fa-github-square {color: $github-color;}
+  .fa-linkedin,
+  .fa-linkedin-square {color: $linkedin-color;}
+  .fa-xing,
+  .fa-xing-square {color: $xing-color;}
 }
+
 
 
 /* Navicons

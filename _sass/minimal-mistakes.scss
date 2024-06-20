@@ -131,12 +131,45 @@ $intro-transition           : intro 0.3s both !default;
 
 
 
-
-/* Mixins and functions */
+/* ==========================================================================
+MIXINS AND FUNCTIONS
+========================================================================== */
 @import "minimal-mistakes/vendor/breakpoint/breakpoint";
 @include breakpoint-set("to ems", true);
 @import "minimal-mistakes/vendor/font-awesome/font-awesome";
-@import "minimal-mistakes/mixins";
+
+
+
+
+/* ==========================================================================
+MIXINS
+========================================================================== */
+
+%tab-focus {
+    /* Default*/
+    outline: thin dotted $warning-color;
+    /* Webkit*/
+    outline: 5px auto $warning-color;
+    outline-offset: -2px;
+}
+
+/* em function
+========================================================================== */
+@function em($target, $context: $doc-font-size) {
+    @return ($target / $context) * 1em;
+}
+
+@mixin clearfix {
+    clear: both;
+
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+}
+
+
 
 /* Core CSS */
 @import "minimal-mistakes/reset";

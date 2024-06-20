@@ -4,7 +4,6 @@
  * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt)
 */
 
-
 /* ==========================================================================
 0. MIXINS AND FUNCTIONS
 ========================================================================== */
@@ -26,7 +25,6 @@ $sans-serif: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Seg
 $global-font-family: $sans-serif !default;
 $header-font-family: $sans-serif !default;
 $sans-serif-narrow: $sans-serif !default;
-
 $type-size-1: 2.441em !default;  // ~39.056px
 $type-size-2: 1.953em !default;  // ~31.248px
 $type-size-3: 1.563em !default;  // ~25.008px
@@ -41,12 +39,10 @@ $type-size-8: 0.625em !default;  // ~10px
 $gray: #7a8288 !default;
 $light-gray: mix(#fff, $gray, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
-
 $body-color: #fff !default;
 $background-color: #f0f0f0 !default;
 $text-color: mix(#000, $gray, 40%) !default;
-$border-color: $lighter-gray !default;
-
+$border-color: mix(#fff, $gray, 90%) !default;
 $primary-color: #7a8288 !default;
 $warning-color: #f89406 !default;
 
@@ -76,7 +72,6 @@ $x-large: 1280px !default;
 ========================================================================== */
 $right-sidebar-width-narrow: 200px !default;
 $right-sidebar-width: 300px !default;
-$right-sidebar-width-wide: 400px !default;
 
 /* Other
 ========================================================================== */

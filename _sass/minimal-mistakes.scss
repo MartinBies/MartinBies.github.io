@@ -258,7 +258,7 @@ textarea {
 
 
 /* ==========================================================================
-BASE ELEMENTS
+4. BASE ELEMENTS
 ========================================================================== */
 
 html {
@@ -293,25 +293,11 @@ h1 {
     font-size: $type-size-3;
 }
 
-h2 {
-    font-size: $type-size-4;
-}
-
-h3 {
-    font-size: $type-size-5;
-}
-
-h4 {
-    font-size: $type-size-6;
-}
-
-h5 {
-    font-size: $type-size-6;
-}
-
-h6 {
-    font-size: $type-size-6;
-}
+h2 {font-size: $type-size-4;}
+h3 {font-size: $type-size-5;}
+h4 {font-size: $type-size-6;}
+h5 {font-size: $type-size-6;}
+h6 {font-size: $type-size-6;}
 
 small, .small {
     font-size: $type-size-6;
@@ -447,7 +433,7 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
 
 
 /* ==========================================================================
-TABLES
+5. TABLES
 ========================================================================== */
 
 table {

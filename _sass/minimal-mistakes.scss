@@ -931,7 +931,7 @@ th {
 
 
 /* ==========================================================================
-FOOTER
+9. FOOTER
 ========================================================================== */
 
 .page__footer {
@@ -948,10 +948,6 @@ FOOTER
     /* sticky footer fix end */
     margin-top: 3em;
     color: mix(#fff, $gray, 25%);
-    -webkit-animation: $intro-transition;
-            animation: $intro-transition;
-    -webkit-animation-delay: 0.45s;
-            animation-delay: 0.45s;
     background-color: $lighter-gray;
     border-top: 1px solid $light-gray;
   
@@ -990,7 +986,7 @@ FOOTER
 
 
 /* ==========================================================================
-UTILITY CLASSES
+10. UTILITY CLASSES
 ========================================================================== */
 
 /* Visibility

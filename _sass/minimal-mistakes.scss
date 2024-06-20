@@ -381,8 +381,6 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
 
 
 
-
-
 /* ==========================================================================
 5. TABLES
 ========================================================================== */
@@ -417,13 +415,7 @@ td {
 
 tr,
 td,
-th {
-    vertical-align: middle;
-}
-
-
-
-
+th {vertical-align: middle;}
 
 
 
@@ -449,7 +441,7 @@ th {
   &:hover {background-color: mix(white, #000, 20%);}
 
   .icon {margin-right: 0.5em;}
-  
+
   .icon + .hidden {margin-left: -0.5em;}
 
   &--inverse {

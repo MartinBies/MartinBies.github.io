@@ -6,7 +6,7 @@
 
 
 /* ==========================================================================
-MIXINS AND FUNCTIONS
+0. MIXINS AND FUNCTIONS
 ========================================================================== */
 @import "minimal-mistakes/vendor/breakpoint/breakpoint";
 @include breakpoint-set("to ems", true);
@@ -15,7 +15,7 @@ MIXINS AND FUNCTIONS
 
 
 /* ==========================================================================
-Variables
+1. Variables
 ========================================================================== */
 
 $doc-font-size: 16 !default;
@@ -52,13 +52,12 @@ $type-size-8: 0.625em !default;  // ~10px
 /* Colors
 ========================================================================== */
 $gray: #7a8288 !default;
-$dark-gray: mix(#000, $gray, 40%) !default;
 $light-gray: mix(#fff, $gray, 50%) !default;
 $lighter-gray: mix(#fff, $gray, 90%) !default;
 
 $body-color: #fff !default;
-$background-color: #f0f0f0 !default;  /* Light gray background */
-$text-color: $dark-gray !default;
+$background-color: #f0f0f0 !default;
+$text-color: mix(#000, $gray, 40%) !default;
 $border-color: $lighter-gray !default;
 
 $primary-color: #7a8288 !default;
@@ -101,8 +100,10 @@ $navicon-height: 0.35rem !default;
 $global-transition: all 0.2s ease-in-out !default;
 $intro-transition: intro 0.3s both !default;
 
+
+
 /* ==========================================================================
-MIXINS
+2. MIXINS
 ========================================================================== */
 
 %tab-focus {
@@ -127,8 +128,10 @@ MIXINS
   }
 }
 
+
+
 /* ==========================================================================
-STYLE RESETS
+3. STYLE RESETS
 ========================================================================== */
 
 * {

@@ -61,16 +61,11 @@ $lighter-gray               : mix(#fff, $gray, 90%) !default;
 
 $body-color                 : #fff !default;
 $background-color           : #f0f0f0 !default;  /* Light gray background */
-$code-background-color      : #fafafa !default;
-$code-background-color-dark : $light-gray !default;
 $text-color                 : $dark-gray !default;
 $border-color               : $lighter-gray !default;
 
 $primary-color              : #7a8288 !default;
-$success-color              : #62c462 !default;
 $warning-color              : #f89406 !default;
-$danger-color               : #ee5f5b !default;
-$info-color                 : #52adc8 !default;
 
 /* brands
 ========================================================================== */
@@ -80,7 +75,7 @@ $xing-color                 : #006567 !default;
 
 /* links
 ========================================================================== */
-$link-color                 : $info-color !default;
+$link-color                 : #52adc8 !default;
 $link-color-hover           : mix(#000, $link-color, 25%) !default;
 $link-color-visited         : mix(#fff, $link-color, 25%) !default;
 $masthead-link-color        : $primary-color !default;
@@ -436,34 +431,6 @@ a {
     }
 }
 
-/* code */
-
-tt, code, kbd, samp, pre {
-    font-family: $monospace;
-}
-
-pre {
-    overflow-x: auto; /* add scrollbars to wide code blocks*/
-}
-
-p > code,
-a > code,
-li > code,
-figcaption > code,
-td > code {
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    font-size: $type-size-6;
-    background: $code-background-color;
-    border: 1px solid $lighter-gray;
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
-  
-    &:before, &:after {
-      letter-spacing: -0.2em;
-      content: "\00a0"; /* non-breaking space*/
-    }
-}
 
 /* horizontal rule */
 
@@ -636,80 +603,6 @@ BUTTONS
     &--light-outline {
       border: 1px solid #fff !important; /* override*/
       background-color: transparent;
-    }
-  
-    /* information */
-  
-    &--info {
-      background-color: $info-color;
-  
-      &:hover {
-        background-color: mix(#000, $info-color, 20%);
-      }
-    }
-  
-    /* warning */
-  
-    &--warning {
-      background-color: $warning-color;
-  
-      &:hover {
-        background-color: mix(#000, $warning-color, 20%);
-      }
-    }
-  
-    /* success */
-  
-    &--success {
-      background-color: $success-color;
-  
-      &:hover {
-        background-color: mix(#000, $success-color, 20%);
-      }
-    }
-  
-    /* danger */
-  
-    &--danger {
-      background-color: $danger-color;
-  
-      &:hover {
-        background-color: mix(#000, $danger-color, 20%);
-      }
-    }
-  
-    /* disabled */
-  
-    &--disabled {
-      pointer-events: none;
-      cursor: not-allowed;
-      filter: alpha(opacity=65);
-      box-shadow: none;
-      opacity: 0.65;
-    }
-  
-    /* social buttons */
-  
-    $social:
-    (facebook, $linkedin-color),
-    (twitter, $linkedin-color),
-    (google-plus, $linkedin-color),
-    (linkedin, $linkedin-color);
-  
-    @each $socialnetwork, $color in $social {
-      &--#{$socialnetwork} {
-        background-color: $color;
-  
-        &:hover {
-          background-color: mix(#000, $color, 20%);
-        }
-      }
-    }
-  
-    /* extra large button */
-  
-    &--x-large {
-      font-size: $type-size-4;
     }
   
     /* large button */
@@ -1497,15 +1390,6 @@ body:hover .visually-hidden button {
       padding: 0.5em 1em;
       border-top: 1px solid $border-color;
     }
-}
-
-
-/* Required
-========================================================================== */
-
-.required {
-    color: $danger-color;
-    font-weight: bold;
 }
 
 

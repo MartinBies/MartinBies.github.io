@@ -52,5 +52,5 @@ Below is a summary of my publications. For more details visit [Inspire](https://
 ## Theses
 
 14 | [*Cohomologies of coherent sheaves and massless spectra in F-theory*](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/),doctoral thesis, Heidelberg university, February 2018.
-15 | [*Cohomologies of holomorphic line bundles in smooth and compact normal toric varieties*](/Publications/Master_thesis_MartinBies.pdf), MSc. thesis, Heidelberg university, February 2014. (See here for a [presentation of the results](/Publications/Master_thesis_presentation.pdf).)
-16 | [*Intersecting D6-brane models onT2×T2×T2/(σ×Ω)andT2×T2×T2/(Z2×Z2×σ×Ω)orientifolds*](/Publications/Bachelor_thesis_MartinBies.pdf), BSc. thesis, Heidelberg university, August 2012. (See here for a [presentation of the results](/Publications/Bachelor_thesis_presentation.pdf).)
+15 | [*Cohomologies of holomorphic line bundles in smooth and compact normal toric varieties*](/Materials/Publications/Master_thesis_MartinBies.pdf), MSc. thesis, Heidelberg university, February 2014. (See here for a [presentation of the results](/Materials/Publications/Master_thesis_presentation.pdf).)
+16 | [*Intersecting D6-brane models onT2×T2×T2/(σ×Ω)andT2×T2×T2/(Z2×Z2×σ×Ω)orientifolds*](/Materials/Publications/Bachelor_thesis_MartinBies.pdf), BSc. thesis, Heidelberg university, August 2012. (See here for a [presentation of the results](/Materials/Publications/Bachelor_thesis_presentation.pdf).)

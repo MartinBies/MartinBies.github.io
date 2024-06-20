@@ -15,7 +15,7 @@ Skilled in Julia, Python, and C++, I develop software on [GitHub](https://github
 
 ## Research
 
-I work on F-theory, a string theory framework using geometry to study its solutions. My focus is translating physics questions into mathematical challenges, then solving those challenges with enumerative computer techniques. More details are in my [Research Statement](/General/ResearchStatement.pdf) and [CV](/General/CV_MartinBies.pdf).
+I work on F-theory, a string theory framework using geometry to study its solutions. My focus is translating physics questions into mathematical challenges, then solving those challenges with enumerative computer techniques. More details are in my [Research Statement](/Materials/General/ResearchStatement.pdf) and [CV](/Materials/General/CV_MartinBies.pdf).
 
 
 ## Publications
@@ -35,4 +35,4 @@ I have participated in numerous conferences and workshops, delivered talks, and 
 
 ## Teaching
 
-I enjoy sharing knowledge with students: [Teaching Philosophy](/General/TeachingStatementMartinBies.pdf), [Teaching Record](https://martinbies.github.io/teaching/).
+I enjoy sharing knowledge with students: [Teaching Philosophy](/Materials/General/TeachingStatementMartinBies.pdf), [Teaching Record](https://martinbies.github.io/teaching/).

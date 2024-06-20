@@ -5,7 +5,7 @@ title: "Teaching"
 permalink: /teaching/
 ---
 
-I enjoy teaching. Below is my record. See my [Teaching Statement](/General/TeachingStatementMartinBies.pdf) for more details.
+I enjoy teaching. Below is my record. See my [Teaching Statement](/Materials/General/TeachingStatementMartinBies.pdf) for more details.
 
 
 ## RPTU Kaiserslautern-Landau
@@ -19,7 +19,7 @@ I enjoy teaching. Below is my record. See my [Teaching Statement](/General/Teach
 
 | **Assignments** | | | |
 | ---- | ---- | ---- | ---- |
-[Assignment 1](/Teaching/2024/Blatt-1.pdf) | [Assignment 2](/Teaching/2024/Blatt-2.pdf) | [Assignment 3](/Teaching/2024/Blatt-3.pdf) | [Assignment 4](/Teaching/2024/Blatt-4.pdf) |
+[Assignment 1](/Materials/Teaching/2024/Blatt-1.pdf) | [Assignment 2](/Materials/Teaching/2024/Blatt-2.pdf) | [Assignment 3](/Materials/Teaching/2024/Blatt-3.pdf) | [Assignment 4](/Materials/Teaching/2024/Blatt-4.pdf) |
 
 
 
@@ -27,7 +27,7 @@ I enjoy teaching. Below is my record. See my [Teaching Statement](/General/Teach
 
 | **Semester** | **Role** | **Course** |
 | ---- |---- | ---- |
-| Winter 2023/Teaching/2024 | (Head)Tutor | Algebraic Geometry |
+| Winter 2023/Materials/Teaching/2024 | (Head)Tutor | Algebraic Geometry |
 
 
 
@@ -37,42 +37,42 @@ I enjoy teaching. Below is my record. See my [Teaching Statement](/General/Teach
 
 | **Generalities** | | | |
 | --------- |
-| [Syllabus](/Teaching/2022/Syllabus.pdf) | [Course notes](/Teaching/2022/ComputationalLinearAlgebra-2022.pdf) | [Grader: Enzo Bergamo](https://www.enzobergamo.com/) |
+| [Syllabus](/Materials/Teaching/2022/Syllabus.pdf) | [Course notes](/Materials/Teaching/2022/ComputationalLinearAlgebra-2022.pdf) | [Grader: Enzo Bergamo](https://www.enzobergamo.com/) |
 
 | **Theory Assignments** | | | |
 | ---- | ---- | ---- | ---- |
-| [Assignment1-Theory](/Teaching/2022/Assignment1-Theory.pdf) | [Assignment2-Theory](/Teaching/2022/Assignment2-Theory.pdf) | [Assignment3-Theory](/Teaching/2022/Assignment3-Theory.pdf) | [Assignment4-Theory](/Teaching/2022/Assignment4-Theory.pdf) |
-| [Assignment5-Theory](/Teaching/2022/Assignment5-Theory.pdf) | [Assignment6-Theory](/Teaching/2022/Assignment6-Theory.pdf) | [Assignment7-Theory](/Teaching/2022/Assignment7-Theory.pdf) | [Assignment8-Theory](/Teaching/2022/Assignment8-Theory.pdf) |
-| [Assignment9-Theory](/Teaching/2022/Assignment9-Theory.pdf) | [Assignment10-Theory](/Teaching/2022/Assignment10-Theory.pdf) | [Assignment11-Theory](/Teaching/2022/Assignment11-Theory.pdf) | |
+| [Assignment1-Theory](/Materials/Teaching/2022/Assignment1-Theory.pdf) | [Assignment2-Theory](/Materials/Teaching/2022/Assignment2-Theory.pdf) | [Assignment3-Theory](/Materials/Teaching/2022/Assignment3-Theory.pdf) | [Assignment4-Theory](/Materials/Teaching/2022/Assignment4-Theory.pdf) |
+| [Assignment5-Theory](/Materials/Teaching/2022/Assignment5-Theory.pdf) | [Assignment6-Theory](/Materials/Teaching/2022/Assignment6-Theory.pdf) | [Assignment7-Theory](/Materials/Teaching/2022/Assignment7-Theory.pdf) | [Assignment8-Theory](/Materials/Teaching/2022/Assignment8-Theory.pdf) |
+| [Assignment9-Theory](/Materials/Teaching/2022/Assignment9-Theory.pdf) | [Assignment10-Theory](/Materials/Teaching/2022/Assignment10-Theory.pdf) | [Assignment11-Theory](/Materials/Teaching/2022/Assignment11-Theory.pdf) | |
 
 | **Coding Assignments** | | | |
 | ---- | ---- | ---- | ---- |
-| [Assignment1-Coding](/Teaching/2022/Assignment1-Coding.pdf) | [Assignment2-Coding](/Teaching/2022/Assignment2-Coding.pdf) | [Assignment3-Coding](/Teaching/2022/Assignment3-Coding.pdf) | [Assignment4-Coding](/Teaching/2022/Assignment4-Coding.pdf) |
-| [Assignment5-Coding](/Teaching/2022/Assignment5-Coding.pdf) | [Assignment6-Coding](/Teaching/2022/Assignment6-Coding.pdf) | [Assignment7-Coding](/Teaching/2022/Assignment7-Coding.pdf) | [Assignment8-Coding](/Teaching/2022/Assignment8-Coding.pdf) |
-| [Assignment9-Coding](/Teaching/2022/Assignment9-Coding.pdf) | [Assignment10-Coding](/Teaching/2022/Assignment10-Coding.pdf) | [Assignment11-Coding](/Teaching/2022/Assignment11-Coding.pdf) | |
+| [Assignment1-Coding](/Materials/Teaching/2022/Assignment1-Coding.pdf) | [Assignment2-Coding](/Materials/Teaching/2022/Assignment2-Coding.pdf) | [Assignment3-Coding](/Materials/Teaching/2022/Assignment3-Coding.pdf) | [Assignment4-Coding](/Materials/Teaching/2022/Assignment4-Coding.pdf) |
+| [Assignment5-Coding](/Materials/Teaching/2022/Assignment5-Coding.pdf) | [Assignment6-Coding](/Materials/Teaching/2022/Assignment6-Coding.pdf) | [Assignment7-Coding](/Materials/Teaching/2022/Assignment7-Coding.pdf) | [Assignment8-Coding](/Materials/Teaching/2022/Assignment8-Coding.pdf) |
+| [Assignment9-Coding](/Materials/Teaching/2022/Assignment9-Coding.pdf) | [Assignment10-Coding](/Materials/Teaching/2022/Assignment10-Coding.pdf) | [Assignment11-Coding](/Materials/Teaching/2022/Assignment11-Coding.pdf) | |
 
 | **Exams** | | | |
 | ---- | ---- | ---- | ---- |
-| [Midterm 1](/Teaching/2022/Midterm1.pdf) | [Midterm 2](/Teaching/2022/Midterm2.pdf) | [Final exam](/Teaching/2022/FinalExam.pdf) | [Practice questions](/Teaching/2022/Practice.pdf) |
+| [Midterm 1](/Materials/Teaching/2022/Midterm1.pdf) | [Midterm 2](/Materials/Teaching/2022/Midterm2.pdf) | [Final exam](/Materials/Teaching/2022/FinalExam.pdf) | [Practice questions](/Materials/Teaching/2022/Practice.pdf) |
 
 
 ### Spring 2021: Instructor for Computational Linear Algebra
 
 | **Generalities** | | | |
 | ---- | ---- | ---- | ---- |
-| [Syllabus](/Teaching/2021/Syllabus.pdf) | [Course notes](/Teaching/2021/ComputationalLinearAlgebra-2021.pdf) | Grader: Nicolas Haas | |
+| [Syllabus](/Materials/Teaching/2021/Syllabus.pdf) | [Course notes](/Materials/Teaching/2021/ComputationalLinearAlgebra-2021.pdf) | Grader: Nicolas Haas | |
 
 
 | **Assignments** | | | |
 | ---- | ---- | ---- | ---- |
-[Assignment 1](/Teaching/2021/Assignment1.pdf) | [Assignment 2](/Teaching/2021/Assignment2.pdf) | [Assignment 3](/Teaching/2021/Assignment3.pdf) | [Assignment 4](/Teaching/2021/Assignment4.pdf)
-[Assignment 5](/Teaching/2021/Assignment5.pdf) | [Assignment 6](/Teaching/2021/Assignment6.pdf) | [Assignment 7](/Teaching/2021/Assignment7.pdf) | [Assignment 8](/Teaching/2021/Assignment8.pdf)
-[Assignment 9](/Teaching/2021/Assignment9.pdf) | [Assignment 10](/Teaching/2021/Assignment10.pdf) | [Assignment 11](/Teaching/2021/Assignment11.pdf)
+[Assignment 1](/Materials/Teaching/2021/Assignment1.pdf) | [Assignment 2](/Materials/Teaching/2021/Assignment2.pdf) | [Assignment 3](/Materials/Teaching/2021/Assignment3.pdf) | [Assignment 4](/Materials/Teaching/2021/Assignment4.pdf)
+[Assignment 5](/Materials/Teaching/2021/Assignment5.pdf) | [Assignment 6](/Materials/Teaching/2021/Assignment6.pdf) | [Assignment 7](/Materials/Teaching/2021/Assignment7.pdf) | [Assignment 8](/Materials/Teaching/2021/Assignment8.pdf)
+[Assignment 9](/Materials/Teaching/2021/Assignment9.pdf) | [Assignment 10](/Materials/Teaching/2021/Assignment10.pdf) | [Assignment 11](/Materials/Teaching/2021/Assignment11.pdf)
 
 
 | **Exams** | | | |
 | ---- | ---- | ---- | ---- |
-| [Midterm 1](/Teaching/2021/Midterm1.pdf) | [Midterm 2](/Teaching/2021/Midterm2.pdf) | [Final exam](/Teaching/2021/FinalExam.pdf) | [Practice questions](/Teaching/2021/PracticeAndSchedule.pdf) |
+| [Midterm 1](/Materials/Teaching/2021/Midterm1.pdf) | [Midterm 2](/Materials/Teaching/2021/Midterm2.pdf) | [Final exam](/Materials/Teaching/2021/FinalExam.pdf) | [Practice questions](/Materials/Teaching/2021/PracticeAndSchedule.pdf) |
 
 
 ## University of Heidelberg

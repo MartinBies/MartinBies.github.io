@@ -19,26 +19,13 @@
 ========================================================================== */
 
 $doc-font-size: 16 !default;
-
-$paragraph-indent: false !default; // true, false (default)
 $indent-var: 1.3em !default;
-
-$serif: Georgia, Times, serif !default;
+$paragraph-indent: false !default; // true, false (default)
+$caption-font-family: Georgia, Times, serif !default;
 $sans-serif: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
-
-$sans-serif-narrow: $sans-serif !default;
-$helvetica: Helvetica, "Helvetica Neue", Arial, sans-serif !default;
-
-$georgia: Georgia, serif !default;
-$times: Times, serif !default;
-$bodoni: "Bodoni MT", serif !default;
-$calisto: "Calisto MT", serif !default;
-$garamond: Garamond, serif !default;
-
 $global-font-family: $sans-serif !default;
 $header-font-family: $sans-serif !default;
-$caption-font-family: $serif !default;
+$sans-serif-narrow: $sans-serif !default;
 
 $type-size-1: 2.441em !default;  // ~39.056px
 $type-size-2: 1.953em !default;  // ~31.248px

@@ -1047,48 +1047,6 @@ body:hover .visually-hidden button {
 }
 
 
-/* Skip links
-========================================================================== */
-
-.skip-link {
-    position: fixed;
-    z-index: 20;
-    margin: 0;
-    font-family: $sans-serif;
-    white-space: nowrap;
-}
-
-.skip-link li {
-    height: 0;
-    width: 0;
-    list-style: none;
-}
-
-
-/* Type
-========================================================================== */
-
-.text-left {
-    text-align: left;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-right {
-    text-align: right;
-}
-
-.text-justify {
-    text-align: justify;
-}
-
-.text-nowrap {
-    white-space: nowrap;
-}
-
-
 /* Alignment
 ========================================================================== */
 

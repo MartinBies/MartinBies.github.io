@@ -1178,20 +1178,6 @@ body:hover .visually-hidden button {
 }
 
 
-/*
-Google Custom Search Engine
-========================================================================== */
-
-.gsc-control-cse {
-
-    table, tr, td {
-      border: 0; /* remove table borders widget */
-    }
-}
-
-
-
-
 
 /* ==========================================================================
 SINGLE PAGE/POST
@@ -1314,11 +1300,6 @@ SINGLE PAGE/POST
       font-size: $type-size-6;
     }
   
-    /* blockquote citations */
-    blockquote + .small {
-      margin-top: -1.5em;
-      padding-left: 1.25rem;
-    }
 }
 
 

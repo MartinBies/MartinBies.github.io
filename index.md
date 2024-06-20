@@ -20,7 +20,7 @@ I work on F-theory, a string theory framework using geometry to study its soluti
 
 ## Publications
 
-For a full list of my publications, see [inspire](https://inspirehep.net/author/profile/M.Bies.1), [arXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50), [orcid](https://orcid.org/0000-0002-9609-1693), [scopus](https://www.scopus.com/authid/detail.uri?authorId=57197835420) or the summary [here](https://martinbies.github.io/publications/).
+For a full list of my publications, see [Inspire](https://inspirehep.net/author/profile/M.Bies.1), [ArXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50), [Orcid](https://orcid.org/0000-0002-9609-1693), [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57197835420) or [This Summary](https://martinbies.github.io/publications/).
 
 
 ## Software

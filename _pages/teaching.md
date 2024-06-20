@@ -5,7 +5,7 @@ title: "Teaching"
 permalink: /teaching/
 ---
 
-I enjoy teaching. Below is my record. More details are available in my [Teaching Philosophy](/General/TeachingStatementMartinBies.pdf).
+I enjoy teaching. Below is my record. See my [Teaching Statement](/General/TeachingStatementMartinBies.pdf) for more details.
 
 
 ## RPTU Kaiserslautern-Landau

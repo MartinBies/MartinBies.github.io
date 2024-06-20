@@ -8,10 +8,6 @@ url: "https://MartinBies.github.io"
 repository: "MartinBies/MartinBies.github.io"
 words_per_minute: 200
 
-# Analytics
-analytics:
-  provider: "google-universal"
-
 # Site Author
 author:
   name: *name

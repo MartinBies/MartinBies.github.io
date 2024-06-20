@@ -1305,10 +1305,7 @@ body:hover .visually-hidden button {
 
 
 /* ==========================================================================
-SIDEBAR
-========================================================================== */
-
-/* Default
+12. SIDEBAR
 ========================================================================== */
 
 .sidebar {
@@ -1361,41 +1358,6 @@ SIDEBAR
     }
 }
 
-.sidebar__right {
-    margin-bottom: 1em;
-  
-    @include breakpoint($large) {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: $right-sidebar-width-narrow;
-      margin-right: -1 * $right-sidebar-width-narrow;
-      padding-left: 1em;
-      z-index: 10;
-    }
-  
-    @include breakpoint($x-large) {
-      width: $right-sidebar-width;
-      margin-right: -1 * $right-sidebar-width;
-    }
-}
-
-.splash .sidebar__right {
-  
-    @include breakpoint($large) {
-      position: relative;
-      float: right;
-      margin-right: 0;
-    }
-  
-    @include breakpoint($x-large) {
-      margin-right: 0;
-    }
-}
-
-/* Author profile and links
-========================================================================== */
-
 .author__avatar {
     display: table-cell;
     vertical-align: top;
@@ -1436,6 +1398,8 @@ SIDEBAR
 
 .author__name {
     margin: 0;
+    font-family: $sans-serif;
+    font-size: $type-size-5;
   
     @include breakpoint($large) {
       margin-top: 10px;
@@ -1443,10 +1407,6 @@ SIDEBAR
     }
 }
 
-.sidebar .author__name {
-    font-family: $sans-serif;
-    font-size: $type-size-5;
-}
 
 .author__bio {
     margin: 0;

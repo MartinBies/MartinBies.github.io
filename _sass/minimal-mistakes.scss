@@ -327,15 +327,6 @@ p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
     widows: 3;
 }
 
-/* abbreviations */
-
-abbr[title],
-abbr[data-original-title] {
-    text-decoration: none;
-    cursor: help;
-    border-bottom: 1px dotted $text-color;
-}
-
 /* blockquotes */
 
 blockquote {

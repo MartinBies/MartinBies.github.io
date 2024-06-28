@@ -23,7 +23,7 @@ permalink: /events/
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Conference | Material |
 | ---- | ---- | ---- |
 | July 2024 | [Session](https://icms-conference.org/2024/sessions/session_Bies_Kastner_Zach/) organizer at [ICMS 2024, Durham, UK](https://maths.dur.ac.uk/icms2024/ICMS2024.html) (together with L. Kastner and M. Zach) | |
-| June 2024 | [String Pheno 2024, Pardova, Italy](https://indico.dfa.unipd.it/event/1051/) | |
+| June 2024 | [String Pheno 2024, Pardova, Italy](https://indico.dfa.unipd.it/event/1051/) | [Slides](/Materials/Events/MartinBiesStringPheno2024.pdf) |
 | Sept. 2023 | [Third Annual Meeting 2023 of SFB-TRR 195](https://www.math.uni-sb.de/ag/brandhorst/index.php?option=com_content&view=article&id=38:3rd-annual-meeting-sfb-trr-196-2023&catid=30&Itemid=109&lang=en) | [Slides](/Materials/Events/PresentationSFBMeeting2023MartinBies.pdf) |
 | July 2023 | [String Math 2023, Melbourne, Australia](https://indico.cern.ch/event/1270020/) | [Slides](/Materials/Events/PresentationStringMath2023MartinBies.pdf), [Poster](/Materials/Events/PosterMartinBiesStringMath2023.pdf) |
 | July 2023 | [String Pheno 2023, Daejeon, South Korea](https://indico.cern.ch/event/1270020/) | [Slides](/Materials/Events/PresentationStringPheno2023MartinBies.pdf) |

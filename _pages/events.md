@@ -69,3 +69,4 @@ permalink: /events/
 | Mar. 2024 | Moderation of meetings and project discussions (Kaiserslautern, Germany) |
 | May 2018 | Kontaktseminar of *Studienstiftung des deutschen Volkes* - focus on banking and consulting (Bonn, Germany) |
 | May 2018 | Physiker im Beruf of *deutsche physikalische Gesellschaft* (DPG) (Bad Honnef, Germany) |
+| May 2017 | Training for admission board members of *Studienstiftung des deutschen Volkes* (Frankfurt, Germany)

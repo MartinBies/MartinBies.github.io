@@ -18,16 +18,22 @@ permalink: /events/
 | 3 July 2014   | Aachen, Germany | [Slides](/Materials/Events/PresentationAachen.pdf) |
 
 
-## Conferences
+## Conferences and Workshops
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Conference | Material |
 | ---- | ---- | ---- |
+| Apr. 2025 | [OSCAR Coding Sprint, Kaiserslautern, GER](https://www.oscar-system.org/events/meetings/2025-03/) | |
+| Mar. 2025 | [Retreat of the SFB-TRR 195, Bad Münster am Stein, GER](https://www.computeralgebra.de/sfb/events/retreat-2025-of-the-sfb-195/) | |
+| Dec. 2024 | [LEAN meets MaRDI and OSCAR, Berlin, GER](https://polymake.org/doku.php/workshops/lean_workshop1224) | |
+| Nov. 2024 | [MaRDI Annual Meeting 2024, Kaiserslautern, GER](https://www.itwm.fraunhofer.de/de/messen-veranstaltungen/2024/2024_11_18_mardi-annual-meeting.html) | |
+| Sept. 2024 | [OSCAR Workshop, Kaiserslautern, GER](https://www.oscar-system.org/events/meetings/2024-09/) | |
 | July 2024 | [Session](https://icms-conference.org/2024/sessions/session_Bies_Kastner_Zach/) organizer at [ICMS 2024, Durham, UK](https://maths.dur.ac.uk/icms2024/ICMS2024.html) (together with L. Kastner and M. Zach) | |
 | June 2024 | [String Pheno 2024, Pardova, Italy](https://indico.dfa.unipd.it/event/1051/) | [Slides](/Materials/Events/MartinBiesStringPheno2024.pdf) |
 | Sept. 2023 | [Third Annual Meeting 2023 of SFB-TRR 195](https://www.math.uni-sb.de/ag/brandhorst/index.php?option=com_content&view=article&id=38:3rd-annual-meeting-sfb-trr-196-2023&catid=30&Itemid=109&lang=en) | [Slides](/Materials/Events/PresentationSFBMeeting2023MartinBies.pdf) |
 | July 2023 | [String Math 2023, Melbourne, Australia](https://indico.cern.ch/event/1270020/) | [Slides](/Materials/Events/PresentationStringMath2023MartinBies.pdf), [Poster](/Materials/Events/PosterMartinBiesStringMath2023.pdf) |
 | July 2023 | [String Pheno 2023, Daejeon, South Korea](https://indico.cern.ch/event/1270020/) | [Slides](/Materials/Events/PresentationStringPheno2023MartinBies.pdf) |
 | May 2023 | [Computeralgebra Tagung 2023](https://konferenz.uni-hannover.de/event/83/) | [Slides](/Materials/Events/PresentationCAT2023MartinBies.pdf) |
+| Feb. 2023 | [OSCAR developer meeting, Kaiserslautern, GER](https://www.oscar-system.org/events/meetings/2023-02/) | |
 | July 2022 | [Strings 2022](https://indico.cern.ch/event/1085701/) | |
 | July 2022 | [String Math 2022](https://stringmath2022.fuw.edu.pl/) | [Slides](/Materials/Events/MartinBies-StringMath2022.pdf) |
 | July 2022 | [String Pheno 2022](http://www.maths.liv.ac.uk/stringpheno2022/index.html) | [Slides](/Materials/Events/MartinBies-StringPheno2022.pdf) |
@@ -47,11 +53,11 @@ permalink: /events/
 | Aug 2018   | [CAP Days 2018](https://homalg-project.github.io/capdays-2018/) (Siegen, Germany) | [Slides](/Materials/Events/CAP18_presentation.pdf) |
 | Mar. 2018 | [String Data 2018](https://indico.mpp.mpg.de/event/5578/) (Munich, Germany) | |
 | July 2017  | [String Pheno 2017](http://www.cpe.vt.edu/stringpheno17/index.html) (Virginia, USA) | [Slides](/Materials/Events/StringPheno17_presentation.pdf) |
-| Dez. 2015  | String Math (Sanya, China) | |
+| Dec. 2015  | String Math (Sanya, China) | |
 | Sept. 2015 | [Third GAP Days](https://www.gapdays.de/gapdays2015-fall/) (Trondheim, Norway) |
 | Mar. 2015 | [Second GAP Days](https://www.gapdays.de/gapdays2015-spring/) (Aachen, Germany) |
 | Feb. 2015  | [Physics and Geometry](http://wwwth.mpp.mpg.de/conf/f-theory15/) of F-theory (Munich, Germany) |
-| Dez. 2014  | [Homological Pertubation Theory](http://hamilton.nuigalway.ie/HPT/) (Galway, Ireland) |
+| Dec. 2014  | [Homological Pertubation Theory](http://hamilton.nuigalway.ie/HPT/) (Galway, Ireland) |
 | Aug. 2014  | [GAP Days](https://www.gapdays.de/gapdays2014/) (Aachen, Germany) | [Slides](/Materials/Events/GAP14_presentation.pdf) |
 | Feb. 2014  | Geometry and Phsics of String Compactifications (Heidelberg, Germany) | |
 

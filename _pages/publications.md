@@ -10,28 +10,23 @@ Below is a summary of my publications. For more details visit [Inspire](https://
 
 ## Peer Reviewed Publications
 
-1 | Martin Bies [*Root bundles: Applications to F-theory Standard Models*](https://www.ams.org/books/pspum/107/), Proceedings of Symposia in Pure Mathematics, 2024. (See here for a [preprint](https://arxiv.org/abs/2303.08144).)
+1 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Improved statistics for F-theory standard models*](https://link.springer.com/article/10.1007/s00220-024-05148-7), [Communication in Mathematical Physics](https://link.springer.com/journal/220), 2024. (See here for a [preprint](https://arxiv.org/abs/2307.02535).)
 
-2 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Brill-Noether-general Limit Root Bundles: Absence of vector-like Exotics in F-theory Standard Models*](https://link.springer.com/article/10.1007/JHEP11(2022)004), Journal of High Energy Physics, November 2022.
+2 | Martin Bies [*Root bundles: Applications to F-theory Standard Models*](https://www.ams.org/books/pspum/107/), Proceedings of Symposia in Pure Mathematics, 2024. (See here for a [preprint](https://arxiv.org/abs/2303.08144).)
 
-3 | Martin Bies, Mirjam Cvetič, Muyang Liu [*Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs*](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903), Physical Review D, September 2021.
+3 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Brill-Noether-general Limit Root Bundles: Absence of vector-like Exotics in F-theory Standard Models*](https://link.springer.com/article/10.1007/JHEP11(2022)004), Journal of High Energy Physics, November 2022.
 
-4 | Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [*Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs*](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076), Journal of High Energy Physics, September 2021.
+4 | Martin Bies, Mirjam Cvetič, Muyang Liu [*Statistics of Root Bundles Relevant for Exact Matter Spectra of F-theory MSSMs*](https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.L061903), Physical Review D, September 2021.
 
-5 | Martin Bies, Sebastian Posur [*Tensor products of finitely presented functors*](https://www.worldscientific.com/doi/abs/10.1142/S0219498822501869), Journal of Algebra and Its Applications, July 2021.
+5 | Martin Bies, Mirjam Cvetič, Ron Donagi, Muyang Liu, Marielle Ong [*Root Bundles and Towards Exact Matter Spectra of F-theory MSSMs*](https://link.springer.com/article/10.1007%2FJHEP09%282021%29076), Journal of High Energy Physics, September 2021.
 
-6 | Martin Bies, Mirjam Cvetič, Ron Donagi, Ling Lin, Muyang Liu, Fabian Rühle [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196), Journal of High Energy Physics, Januar 2021.
+6 | Martin Bies, Sebastian Posur [*Tensor products of finitely presented functors*](https://www.worldscientific.com/doi/abs/10.1142/S0219498822501869), Journal of Algebra and Its Applications, July 2021.
 
-7 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Algebraic Cycles and Local Anomalies in F-theory*](https://link.springer.com/article/10.1007%2FJHEP11%282017%29100), Journal of High Energy Physics, November 2017.
+7 | Martin Bies, Mirjam Cvetič, Ron Donagi, Ling Lin, Muyang Liu, Fabian Rühle [*Machine Learning and Algebraic Approaches towards Complete Matter Spectra in 4d F-theory*](https://link.springer.com/article/10.1007%2FJHEP01%282021%29196), Journal of High Energy Physics, Januar 2021.
 
-8 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Gauge Backgrounds and Zero-Mode Counting in F-theory*](https://link.springer.com/article/10.1007%2FJHEP11%282017%29081), Journal of High Energy Physics, November 2017.
+8 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Algebraic Cycles and Local Anomalies in F-theory*](https://link.springer.com/article/10.1007%2FJHEP11%282017%29100), Journal of High Energy Physics, November 2017.
 
-
-
-
-## Preprints
-
-9 | Martin Bies, Mirjam Cvetič, Ron Donagi, Marielle Ong [*Improved statistics for F-theory standard models*](https://arxiv.org/abs/2307.02535), July 2023.
+9 | Martin Bies, Christoph Mayrhofer and Timo Weigand, [*Gauge Backgrounds and Zero-Mode Counting in F-theory*](https://link.springer.com/article/10.1007%2FJHEP11%282017%29081), Journal of High Energy Physics, November 2017.
 
 
 

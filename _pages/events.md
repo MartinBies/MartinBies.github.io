@@ -22,7 +22,7 @@ permalink: /events/
 
 | Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Conference | Material |
 | ---- | ---- | ---- |
-| Sept. 2025 | [SFB-TRR 195 Jahrestagung 2025](https://www.math.uni-tuebingen.de/de/forschung/kombinatorische-algebraische-geometrie/sfb-trr-195/annual-meeting-2025) | [Slides](Materials/Events/MartinBies-SFBJahrestagung2025.pdf)
+| Sept. 2025 | [SFB-TRR 195 Jahrestagung 2025](https://www.math.uni-tuebingen.de/de/forschung/kombinatorische-algebraische-geometrie/sfb-trr-195/annual-meeting-2025) | [Slides](/Materials/Events/MartinBies-SFBJahrestagung2025.pdf)
 | Apr. 2025 | [OSCAR Coding Sprint, Kaiserslautern, GER](https://www.oscar-system.org/events/meetings/2025-03/) | |
 | Mar. 2025 | [Retreat of the SFB-TRR 195, Bad Münster am Stein, GER](https://www.computeralgebra.de/sfb/events/retreat-2025-of-the-sfb-195/) | |
 | Dec. 2024 | [LEAN meets MaRDI and OSCAR, Berlin, GER](https://polymake.org/doku.php/workshops/lean_workshop1224) | |

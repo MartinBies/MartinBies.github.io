@@ -21,3 +21,5 @@ group :jekyll_plugins do
 end
 
 # To upgrade, run `bundle update`.
+
+gem "rake", "~> 13.2"

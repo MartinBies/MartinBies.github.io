@@ -20,13 +20,20 @@ bundle exec rake preview
 
 Open <http://127.0.0.1:4000> in a browser. Jekyll watches the source files and
 rebuilds the site when they change; LiveReload refreshes the browser. Stop the
-server with `Ctrl+C`.
-
-To check that the production site can be generated without starting a server:
+server with `Ctrl+C`. If either port is already occupied, choose alternatives:
 
 ```sh
-bundle exec rake build
+PORT=4100 LIVERELOAD_PORT=35730 bundle exec rake preview
 ```
+
+To build the production site and validate its HTML, accessibility basics,
+assets, and internal links:
+
+```sh
+bundle exec rake check
+```
+
+Use `bundle exec rake build` when only a production build is needed.
 
 The generated site is written to `_site/`, which is intentionally ignored by
 Git.
@@ -37,6 +44,3 @@ Git.
 - If native gems fail to compile on Debian or Ubuntu, install the Ruby
   development tools with `sudo apt install ruby-dev build-essential` and retry
   `bundle install`.
-- The `GitHub Metadata: No GitHub API authentication` warning is harmless for
-  this site's local preview. Set a `JEKYLL_GITHUB_TOKEN` only if GitHub metadata
-  is needed while developing.

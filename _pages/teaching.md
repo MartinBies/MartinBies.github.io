@@ -5,12 +5,12 @@ title: "Teaching"
 permalink: /teaching/
 ---
 
-I enjoy teaching. Below is my record. See my [Teaching Statement](/Materials/General/TeachingStatementMartinBies.pdf) for more details.
+I enjoy teaching. Below is my record. See my [Teaching Statement]({{ '/Materials/General/TeachingStatementMartinBies.pdf' | relative_url }}) for more details.
 
 
 ## RPTU Kaiserslautern-Landau
 
-### Summer 2024: Instructor for Introduction To Topology
+### Summer 2024: Instructor for Introduction to Topology
 
 | **Generalities** | | | |
 | --------- |
@@ -19,15 +19,15 @@ I enjoy teaching. Below is my record. See my [Teaching Statement](/Materials/Gen
 
 | **Assignments** | | | |
 | ---- | ---- | ---- | ---- |
-[Assignment 1](/Materials/Teaching/2024/Blatt-1.pdf) | [Assignment 2](/Materials/Teaching/2024/Blatt-2.pdf) | [Assignment 3](/Materials/Teaching/2024/Blatt-3.pdf) | [Assignment 4](/Materials/Teaching/2024/Blatt-4.pdf) |
-[Assignment 5](/Materials/Teaching/2024/Blatt-5.pdf) | [Assignment 6](/Materials/Teaching/2024/Blatt-6.pdf) | | |
+[Assignment 1]({{ '/Materials/Teaching/2024/Blatt-1.pdf' | relative_url }}) | [Assignment 2]({{ '/Materials/Teaching/2024/Blatt-2.pdf' | relative_url }}) | [Assignment 3]({{ '/Materials/Teaching/2024/Blatt-3.pdf' | relative_url }}) | [Assignment 4]({{ '/Materials/Teaching/2024/Blatt-4.pdf' | relative_url }}) |
+[Assignment 5]({{ '/Materials/Teaching/2024/Blatt-5.pdf' | relative_url }}) | [Assignment 6]({{ '/Materials/Teaching/2024/Blatt-6.pdf' | relative_url }}) | | |
 
 
 ### Tutoring
 
 | **Semester** | **Role** | **Course** |
 | ---- |---- | ---- |
-| Winter 2023/Materials/Teaching/2024 | (Head)Tutor | Algebraic Geometry |
+| Winter 2023/2024 | (Head)Tutor | Algebraic Geometry |
 
 
 
@@ -37,51 +37,51 @@ I enjoy teaching. Below is my record. See my [Teaching Statement](/Materials/Gen
 
 | **Generalities** | | | |
 | --------- |
-| [Syllabus](/Materials/Teaching/2022/Syllabus.pdf) | [Course notes](/Materials/Teaching/2022/ComputationalLinearAlgebra-2022.pdf) | [Grader: Enzo Bergamo](https://www.enzobergamo.com/) |
+| [Syllabus]({{ '/Materials/Teaching/2022/Syllabus.pdf' | relative_url }}) | [Course notes]({{ '/Materials/Teaching/2022/ComputationalLinearAlgebra-2022.pdf' | relative_url }}) | [Grader: Enzo Bergamo](https://www.enzobergamo.com/) |
 
 | **Theory Assignments** | | | |
 | ---- | ---- | ---- | ---- |
-| [Assignment1-Theory](/Materials/Teaching/2022/Assignment1-Theory.pdf) | [Assignment2-Theory](/Materials/Teaching/2022/Assignment2-Theory.pdf) | [Assignment3-Theory](/Materials/Teaching/2022/Assignment3-Theory.pdf) | [Assignment4-Theory](/Materials/Teaching/2022/Assignment4-Theory.pdf) |
-| [Assignment5-Theory](/Materials/Teaching/2022/Assignment5-Theory.pdf) | [Assignment6-Theory](/Materials/Teaching/2022/Assignment6-Theory.pdf) | [Assignment7-Theory](/Materials/Teaching/2022/Assignment7-Theory.pdf) | [Assignment8-Theory](/Materials/Teaching/2022/Assignment8-Theory.pdf) |
-| [Assignment9-Theory](/Materials/Teaching/2022/Assignment9-Theory.pdf) | [Assignment10-Theory](/Materials/Teaching/2022/Assignment10-Theory.pdf) | | |
+| [Assignment1-Theory]({{ '/Materials/Teaching/2022/Assignment1-Theory.pdf' | relative_url }}) | [Assignment2-Theory]({{ '/Materials/Teaching/2022/Assignment2-Theory.pdf' | relative_url }}) | [Assignment3-Theory]({{ '/Materials/Teaching/2022/Assignment3-Theory.pdf' | relative_url }}) | [Assignment4-Theory]({{ '/Materials/Teaching/2022/Assignment4-Theory.pdf' | relative_url }}) |
+| [Assignment5-Theory]({{ '/Materials/Teaching/2022/Assignment5-Theory.pdf' | relative_url }}) | [Assignment6-Theory]({{ '/Materials/Teaching/2022/Assignment6-Theory.pdf' | relative_url }}) | [Assignment7-Theory]({{ '/Materials/Teaching/2022/Assignment7-Theory.pdf' | relative_url }}) | [Assignment8-Theory]({{ '/Materials/Teaching/2022/Assignment8-Theory.pdf' | relative_url }}) |
+| [Assignment9-Theory]({{ '/Materials/Teaching/2022/Assignment9-Theory.pdf' | relative_url }}) | [Assignment10-Theory]({{ '/Materials/Teaching/2022/Assignment10-Theory.pdf' | relative_url }}) | | |
 
 | **Coding Assignments** | | | |
 | ---- | ---- | ---- | ---- |
-| [Assignment1-Coding](/Materials/Teaching/2022/Assignment1-Coding.pdf) | [Assignment2-Coding](/Materials/Teaching/2022/Assignment2-Coding.pdf) | [Assignment3-Coding](/Materials/Teaching/2022/Assignment3-Coding.pdf) | [Assignment4-Coding](/Materials/Teaching/2022/Assignment4-Coding.pdf) |
-| [Assignment5-Coding](/Materials/Teaching/2022/Assignment5-Coding.pdf) | [Assignment6-Coding](/Materials/Teaching/2022/Assignment6-Coding.pdf) | [Assignment7-Coding](/Materials/Teaching/2022/Assignment7-Coding.pdf) | [Assignment8-Coding](/Materials/Teaching/2022/Assignment8-Coding.pdf) |
-| [Assignment9-Coding](/Materials/Teaching/2022/Assignment9-Coding.pdf) | [Assignment10-Coding](/Materials/Teaching/2022/Assignment10-Coding.pdf) | | |
+| [Assignment1-Coding]({{ '/Materials/Teaching/2022/Assignment1-Coding.pdf' | relative_url }}) | [Assignment2-Coding]({{ '/Materials/Teaching/2022/Assignment2-Coding.pdf' | relative_url }}) | [Assignment3-Coding]({{ '/Materials/Teaching/2022/Assignment3-Coding.pdf' | relative_url }}) | [Assignment4-Coding]({{ '/Materials/Teaching/2022/Assignment4-Coding.pdf' | relative_url }}) |
+| [Assignment5-Coding]({{ '/Materials/Teaching/2022/Assignment5-Coding.pdf' | relative_url }}) | [Assignment6-Coding]({{ '/Materials/Teaching/2022/Assignment6-Coding.pdf' | relative_url }}) | [Assignment7-Coding]({{ '/Materials/Teaching/2022/Assignment7-Coding.pdf' | relative_url }}) | [Assignment8-Coding]({{ '/Materials/Teaching/2022/Assignment8-Coding.pdf' | relative_url }}) |
+| [Assignment9-Coding]({{ '/Materials/Teaching/2022/Assignment9-Coding.pdf' | relative_url }}) | [Assignment10-Coding]({{ '/Materials/Teaching/2022/Assignment10-Coding.pdf' | relative_url }}) | | |
 
 | **Exams** | | | |
 | ---- | ---- | ---- | ---- |
-| [Midterm 1](/Materials/Teaching/2022/Midterm1.pdf) | [Midterm 2](/Materials/Teaching/2022/Midterm2.pdf) | [Final exam](/Materials/Teaching/2022/FinalExam.pdf) | [Practice questions](/Materials/Teaching/2022/Practice.pdf) |
+| [Midterm 1]({{ '/Materials/Teaching/2022/Midterm1.pdf' | relative_url }}) | [Midterm 2]({{ '/Materials/Teaching/2022/Midterm2.pdf' | relative_url }}) | [Final exam]({{ '/Materials/Teaching/2022/FinalExam.pdf' | relative_url }}) | [Practice questions]({{ '/Materials/Teaching/2022/Practice.pdf' | relative_url }}) |
 
 
 ### Spring 2021: Instructor for Computational Linear Algebra
 
 | **Generalities** | | | |
 | ---- | ---- | ---- | ---- |
-| [Syllabus](/Materials/Teaching/2021/Syllabus.pdf) | [Course notes](/Materials/Teaching/2021/ComputationalLinearAlgebra-2021.pdf) | Grader: Nicolas Haas | |
+| [Syllabus]({{ '/Materials/Teaching/2021/Syllabus.pdf' | relative_url }}) | [Course notes]({{ '/Materials/Teaching/2021/ComputationalLinearAlgebra-2021.pdf' | relative_url }}) | Grader: Nicolas Haas | |
 
 
 | **Assignments** | | | |
 | ---- | ---- | ---- | ---- |
-[Assignment 1](/Materials/Teaching/2021/Assignment1.pdf) | [Assignment 2](/Materials/Teaching/2021/Assignment2.pdf) | [Assignment 3](/Materials/Teaching/2021/Assignment3.pdf) | [Assignment 4](/Materials/Teaching/2021/Assignment4.pdf)
-[Assignment 5](/Materials/Teaching/2021/Assignment5.pdf) | [Assignment 6](/Materials/Teaching/2021/Assignment6.pdf) | [Assignment 7](/Materials/Teaching/2021/Assignment7.pdf) | [Assignment 8](/Materials/Teaching/2021/Assignment8.pdf)
-[Assignment 9](/Materials/Teaching/2021/Assignment9.pdf) | [Assignment 10](/Materials/Teaching/2021/Assignment10.pdf) | [Assignment 11](/Materials/Teaching/2021/Assignment11.pdf)
+[Assignment 1]({{ '/Materials/Teaching/2021/Assignment1.pdf' | relative_url }}) | [Assignment 2]({{ '/Materials/Teaching/2021/Assignment2.pdf' | relative_url }}) | [Assignment 3]({{ '/Materials/Teaching/2021/Assignment3.pdf' | relative_url }}) | [Assignment 4]({{ '/Materials/Teaching/2021/Assignment4.pdf' | relative_url }})
+[Assignment 5]({{ '/Materials/Teaching/2021/Assignment5.pdf' | relative_url }}) | [Assignment 6]({{ '/Materials/Teaching/2021/Assignment6.pdf' | relative_url }}) | [Assignment 7]({{ '/Materials/Teaching/2021/Assignment7.pdf' | relative_url }}) | [Assignment 8]({{ '/Materials/Teaching/2021/Assignment8.pdf' | relative_url }})
+[Assignment 9]({{ '/Materials/Teaching/2021/Assignment9.pdf' | relative_url }}) | [Assignment 10]({{ '/Materials/Teaching/2021/Assignment10.pdf' | relative_url }}) | [Assignment 11]({{ '/Materials/Teaching/2021/Assignment11.pdf' | relative_url }})
 
 
 | **Exams** | | | |
 | ---- | ---- | ---- | ---- |
-| [Midterm 1](/Materials/Teaching/2021/Midterm1.pdf) | [Midterm 2](/Materials/Teaching/2021/Midterm2.pdf) | [Final exam](/Materials/Teaching/2021/FinalExam.pdf) | [Practice questions](/Materials/Teaching/2021/PracticeAndSchedule.pdf) |
+| [Midterm 1]({{ '/Materials/Teaching/2021/Midterm1.pdf' | relative_url }}) | [Midterm 2]({{ '/Materials/Teaching/2021/Midterm2.pdf' | relative_url }}) | [Final exam]({{ '/Materials/Teaching/2021/FinalExam.pdf' | relative_url }}) | [Practice questions]({{ '/Materials/Teaching/2021/PracticeAndSchedule.pdf' | relative_url }}) |
 
 
 ## University of Heidelberg
 
 | **Semester** | **Role** | **Course** |
 | ----- |---- | ---- |
-| Summer 2018    | Headtutor | Methods of Mathematical Physics I |
+| Summer 2018    | Head tutor | Methods of Mathematical Physics I |
 |  Winter 2016/2017 | Tutor     | Theoretical Physics I |
-| Summer 2016    | Headtutor | General Relativity |
+| Summer 2016    | Head tutor | General Relativity |
 |  Summer 2015    | Tutor     | Theoretical Physics IV |
 |  Winter 2014/2015 | Tutor     | Quantum Field Theory I |
 |  Winter 2013/2014 | Tutor     | Theoretical Physics III |

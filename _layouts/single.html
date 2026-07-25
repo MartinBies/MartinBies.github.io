@@ -1,153 +1,109 @@
-<!DOCTYPE html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.5.0 by Michael Rose
-  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
--->
-<html lang="{{ site.locale | slice: 0, 2 | default: 'en' }}" class="no-js">
-
+<!doctype html>
+<html lang="{{ site.locale | default: 'en-US' | replace: '_', '-' }}">
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
-  <link href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | absolute_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script>
-    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% assign page_description = page.excerpt | default: site.description | strip_html | strip_newlines %}
+  <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }} {{ site.title_separator }} {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page_description | escape }}">
+  <meta name="author" content="{{ site.author.name | escape }}">
+  <meta name="theme-color" content="#f0f0f0">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+  <meta property="og:description" content="{{ page_description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <link rel="icon" href="{{ '/Materials/Images/favicon.ico' | relative_url }}" sizes="any">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-  <meta http-equiv="default-style" content="on">
-  <link rel="icon" href="/Materials/Images/favicon.ico" type="image/x-icon">
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
 </head>
+<body class="layout--{{ page.layout | default: layout.layout }}">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-<body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
-
-  <div class="masthead">
+  <header class="masthead">
     <div class="masthead__inner-wrap">
-      <div class="masthead__menu">
-        <nav id="site-nav" class="greedy-nav">
-          <a class="site-title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
-          <ul class="visible-links">
-            {% for link in site.data.navigation.main %}
-              {% assign domain = link.url | contains:'http' | default: site.url | append: site.baseurl %}
-              <li class="masthead__menu-item"><a href="{{ domain }}">{{ link.title }}</a></li>
-            {% endfor %}
-          </ul>
-          <button><span class="navicon"></span></button>
-          <ul class="hidden-links hidden"></ul>
-        </nav>
-      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+          <span class="navicon" aria-hidden="true"></span>
+          <span class="visually-hidden">Toggle navigation</span>
+        </button>
+        <ul class="site-nav__links" id="primary-menu">
+          {% for link in site.data.navigation.main %}
+            <li class="masthead__menu-item">
+              {% if link.url contains '://' %}
+                <a href="{{ link.url }}">{{ link.title }}</a>
+              {% else %}
+                <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div id="main" role="main">
-    <div class="sidebar sticky">
-      {% if page.author and site.data.authors[page.author] %}
-        {% assign author = site.data.authors[page.author] %}
-      {% else %}
-        {% assign author = site.author %}
-      {% endif %}
+  <main id="main-content">
+    <div id="main">
+      {% assign author = site.author %}
+      <aside class="sidebar sticky" aria-label="About {{ author.name }}">
+        <div itemscope itemtype="https://schema.org/Person">
+          <div class="author__avatar">
+            <img src="{{ '/Materials/Images/picture.jpg' | relative_url }}" width="2731" height="2448" alt="Portrait of {{ author.name }}" itemprop="image" fetchpriority="high">
+          </div>
 
-      <div itemscope itemtype="http://schema.org/Person">
-        <div class="author__avatar">
-          <img src="/Materials/Images/picture.jpg" class="author__avatar" alt="{{ author.name }}" itemprop="image" style="width: 100%; max-width: 250px; height: auto;">
-        </div>
+          <div class="author__content">
+            <h2 class="author__name" itemprop="name">{{ author.name }}</h2>
+            <p class="author__bio" itemprop="description">{{ author.bio }}</p>
+          </div>
 
-        <div class="author__content">
-          <h3 class="author__name" itemprop="name">{{ author.name }}</h3>
-          <p class="author__bio" itemprop="description">{{ author.bio }}</p>
-        </div>
-
-        <div class="author__urls-wrapper">
-          <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Contact" }}</button>
-          <ul class="author__urls social-icons">
-            <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-              <span itemprop="name">
-                <a href="{{ author.reaching_us }}" itemprop="url" target="_blank" rel="noopener noreferrer">
-                  <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">{{ author.location }}</span>
+          <div class="author__urls-wrapper">
+            <button class="contact-toggle btn btn--inverse" type="button" aria-expanded="false" aria-controls="author-contact">Contact</button>
+            <ul class="author__urls social-icons" id="author-contact">
+              <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+                <a href="{{ author.reaching_us }}" itemprop="url">
+                  <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i><span itemprop="name">{{ author.location }}</span>
                 </a>
-              </span>
-              <span itemprop="streetAddress">
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address }}<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address2 }}<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address3 }}<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ author.address4 }}<br>
-              </span>
-            </li>
-
-            <li itemprop="telephone">
-              <i class="fa fa-fw fa-building" aria-hidden="true"></i> Secretary: <span>{{ author.secretary_phone }}</span>
-            </li>
-
-            <li itemprop="telephone">
-              <i class="fa fa-fw fa-user" aria-hidden="true"></i> Office: <span>{{ author.phone }}</span>
-            </li>
-
-            <li>
-              <a href="mailto:{{ author.email }}">
-                <meta itemprop="email" content="{{ author.email }}">
-                <i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i> Email: {{ author.email }}
-              </a>
-            </li>
-
-            <li>
-              <a href="https://orcid.org/{{ author.orcid }}" itemprop="sameAs" style="display: flex; align-items: center;">
-                <img src="/Materials/Images/orcid.svg" alt="ORCID Icon" style="width: 20px; height: 20px; margin-right: 5px;"> 
-                <span style="font-size: inherit;">ORCID: {{ author.orcid }}</span>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.scopus.com/authid/detail.uri?authorId={{ author.scopus }}" itemprop="sameAs">
-                <i class="fa fa-fw fa-key" aria-hidden="true"></i> Scopus: {{ author.scopus }}
-              </a>
-            </li>
-
-            <li>
-              <a href="https://github.com/{{ author.github }}" itemprop="sameAs">
-                <i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub: {{ author.github }}
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs">
-                <i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i> LinkedIn
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.xing.com/profile/{{ author.xing }}" itemprop="sameAs">
-                <i class="fa fa-fw fa-xing-square" aria-hidden="true"></i> XING
-              </a>
-            </li>
-          </ul>
+                <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                  <span itemprop="streetAddress">{{ author.address }}<br>{{ author.address2 }}</span><br>
+                  <span itemprop="postalCode">{{ author.postal_code }}</span> <span itemprop="addressLocality">{{ author.city }}</span><br>
+                  <span itemprop="addressCountry">{{ author.address4 }}</span>
+                </address>
+              </li>
+              <li><i class="fa fa-fw fa-building" aria-hidden="true"></i>Secretary: <a href="tel:{{ author.secretary_phone_uri }}">{{ author.secretary_phone }}</a></li>
+              <li><i class="fa fa-fw fa-user" aria-hidden="true"></i>Office: <a href="tel:{{ author.phone_uri }}" itemprop="telephone">{{ author.phone }}</a></li>
+              <li>
+                <a href="mailto:{{ author.email }}" itemprop="email"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i>Email</a>
+              </li>
+              <li>
+                <a href="https://orcid.org/{{ author.orcid }}" itemprop="sameAs" rel="me">
+                  <img class="orcid-icon" src="{{ '/Materials/Images/orcid.svg' | relative_url }}" width="20" height="20" alt="" aria-hidden="true">ORCID: {{ author.orcid }}
+                </a>
+              </li>
+              <li><a href="https://www.scopus.com/authid/detail.uri?authorId={{ author.scopus }}" itemprop="sameAs"><i class="fa fa-fw fa-key" aria-hidden="true"></i>Scopus</a></li>
+              <li><a href="https://github.com/{{ author.github }}" itemprop="sameAs" rel="me"><i class="fa fa-fw fa-github" aria-hidden="true"></i>GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs" rel="me"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></li>
+              <li><a href="https://www.xing.com/profile/{{ author.xing }}" itemprop="sameAs" rel="me"><i class="fa fa-fw fa-xing-square" aria-hidden="true"></i>XING</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </aside>
+
+      <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+        <h1 class="page-title" itemprop="headline">{{ page.title }}</h1>
+        <section class="page__content" itemprop="text">
+          {{ content }}
+        </section>
+      </article>
     </div>
+  </main>
 
-    <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-      <h1 class="page-title" itemprop="headline">{{ page.title }}</h1>
-      <section class="page__content" itemprop="text">
-        {{ content }}
-      </section>
-    </article>
-  </div>
-
-  <div class="page__footer">
-    <footer>
-      <div class="page__footer-content">
-        <div>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: 'Powered by' }} 
-          <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; 
-          <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.
-        </div>
-        <div>Last modified June 20, 2024</div>
-      </div>
-    </footer>
-  </div>
-  
-  <script src="{{ '/assets/js/main.min.js' | absolute_url }}"></script>
-
+  <footer class="page__footer">
+    <div class="page__footer-content">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</p>
+      <p>Built with <a href="https://jekyllrb.com/" rel="nofollow">Jekyll</a>. Last generated <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%B %-d, %Y' }}</time>.</p>
+    </div>
+  </footer>
 </body>
 </html>

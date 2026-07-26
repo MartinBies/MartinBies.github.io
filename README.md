@@ -86,9 +86,9 @@ Git.
   development tools with `sudo apt install ruby-dev build-essential` and retry
   `bundle install`.
 
-## Licensing
+## Copyright
 
-Portions of the website code and styling derive from the Minimal Mistakes
-Jekyll theme. See `THIRD_PARTY_LICENSES.txt` for the applicable MIT notice and
-the distinction between inherited code and original personal or academic
-content.
+Copyright © Martin Bies. All rights reserved. No license is granted for the
+website source, design, or personal and academic materials unless explicitly
+stated otherwise. Third-party development tools listed in `Gemfile` remain
+subject to their respective licenses.

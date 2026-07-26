@@ -26,6 +26,42 @@ server with `Ctrl+C`. If either port is already occupied, choose alternatives:
 PORT=4100 LIVERELOAD_PORT=35730 bundle exec rake preview
 ```
 
+## Inspect the mobile layout in a desktop browser
+
+Start the preview server with `bundle exec rake preview`, open
+<http://127.0.0.1:4000>, and then use your browser’s responsive-design mode.
+This emulates a mobile viewport, touch input, pixel density, and orientation; it
+does not require a physical phone.
+
+### Chrome, Chromium, or Microsoft Edge
+
+1. Open Developer Tools with `F12` or `Ctrl+Shift+I` (`Cmd+Option+I` on macOS).
+2. Toggle the device toolbar with `Ctrl+Shift+M` (`Cmd+Shift+M` on macOS).
+3. Select a preset such as **iPhone 14 Pro** or **Pixel 7**, or choose
+   **Responsive** and drag the viewport edges.
+4. Use the rotate button to test portrait and landscape orientations.
+5. Reload once with Developer Tools open. The site versions its CSS and
+   JavaScript automatically, so subsequent Jekyll rebuilds should appear
+   without stale browser assets.
+
+### Firefox
+
+1. Open Responsive Design Mode with `Ctrl+Shift+M` (`Cmd+Option+M` on macOS).
+2. Choose a device preset or enter a custom width and height.
+3. Enable touch simulation with the hand icon and use the rotate control to
+   test both orientations.
+
+### Safari on macOS
+
+1. In Safari’s advanced settings, enable **Show features for web developers**.
+2. Choose **Develop → Enter Responsive Design Mode**, or press `Option+Cmd+R`.
+3. Select an iPhone/iPad preset and test portrait and landscape modes.
+
+While testing the burger menu, verify that it opens and closes by touch/click,
+closes after selecting a link or clicking outside, closes with `Escape`, moves
+keyboard focus into the menu when opened, and returns focus to the menu button
+when dismissed with `Escape`.
+
 To build the production site and validate its HTML, accessibility basics,
 assets, and internal links:
 

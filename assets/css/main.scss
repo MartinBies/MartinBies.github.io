@@ -541,14 +541,67 @@ th {vertical-align: middle;}
 .site-nav__toggle[aria-expanded="true"] .navicon::after { transform: rotate(-45deg); }
 
 @media (max-width: 767px) {
-  .site-nav { flex-wrap: wrap; }
-  .js .site-nav__toggle { display: inline-grid; place-items: center; margin-left: auto; }
-  .site-nav__links { flex-basis: 100%; flex-direction: column; align-items: stretch; }
-  .js .site-nav__links { display: none; }
-  .js .site-nav__links.is-open { display: flex; }
-  .site-nav__links a { margin: 0; padding: 0.75rem; }
-}
+  .site-nav {
+    position: relative;
+    flex-wrap: wrap;
+  }
 
+  .js .site-nav {
+    flex-wrap: nowrap;
+  }
+
+  .js .site-nav__toggle {
+    display: inline-grid;
+    place-items: center;
+    margin-left: auto;
+  }
+
+  .site-nav__links {
+    flex-basis: 100%;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .js .site-nav__links {
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    right: 0;
+    left: 0;
+    z-index: 30;
+    display: flex;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    background: #fff;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    box-shadow: 0 0.75rem 2rem rgba(#000, 0.18);
+  }
+
+  .js .site-nav__links[hidden] {
+    display: none;
+  }
+
+  .site-nav__links a {
+    min-height: 48px;
+    margin: 0;
+    padding: 0.8rem 1rem;
+    border-radius: $border-radius;
+  }
+
+  .site-nav__links a:hover,
+  .site-nav__links a:focus-visible {
+    background: $lighter-gray;
+  }
+
+  .site-nav__links a[aria-current="page"] {
+    color: #fff;
+    background: $masthead-link-color;
+  }
+
+  .site-nav__links a[aria-current="page"]::after {
+    display: none;
+  }
+}
 
 /* ==========================================================================
 9. FOOTER

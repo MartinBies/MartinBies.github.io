@@ -3,47 +3,81 @@
 
   document.documentElement.classList.add("js");
 
-  const toggles = [
-    {
-      button: document.querySelector(".site-nav__toggle"),
-      panel: document.querySelector(".site-nav__links"),
-      openClass: "is-open"
-    },
-    {
-      button: document.querySelector(".contact-toggle"),
-      panel: document.querySelector(".author__urls"),
-      openClass: "is--visible"
-    }
-  ];
+  const mobileQuery = window.matchMedia("(max-width: 767px)");
+  const menuButton = document.querySelector(".site-nav__toggle");
+  const menu = document.querySelector(".site-nav__links");
+  const contactButton = document.querySelector(".contact-toggle");
+  const contactPanel = document.querySelector(".author__urls");
 
-  const close = ({ button, panel, openClass }) => {
-    if (!button || !panel) return;
-    button.setAttribute("aria-expanded", "false");
-    panel.classList.remove(openClass);
+  const setButtonState = (button, expanded, labels) => {
+    if (!button) return;
+    button.setAttribute("aria-expanded", String(expanded));
+    if (labels) button.setAttribute("aria-label", expanded ? labels.close : labels.open);
   };
 
-  toggles.forEach((toggle) => {
-    const { button, panel, openClass } = toggle;
-    if (!button || !panel) return;
+  const closeContact = () => {
+    if (!contactButton || !contactPanel) return;
+    setButtonState(contactButton, false);
+    contactPanel.classList.remove("is--visible");
+  };
 
-    button.addEventListener("click", () => {
-      const expanded = button.getAttribute("aria-expanded") === "true";
-      toggles.forEach((other) => {
-        if (other !== toggle) close(other);
-      });
-      button.setAttribute("aria-expanded", String(!expanded));
-      panel.classList.toggle(openClass, !expanded);
+  const closeMenu = ({ restoreFocus = false } = {}) => {
+    if (!menuButton || !menu) return;
+    setButtonState(menuButton, false, { open: "Open navigation menu", close: "Close navigation menu" });
+    menu.classList.remove("is-open");
+    if (mobileQuery.matches) menu.hidden = true;
+    if (restoreFocus) menuButton.focus();
+  };
+
+  const openMenu = () => {
+    if (!menuButton || !menu || !mobileQuery.matches) return;
+    closeContact();
+    menu.hidden = false;
+    menu.classList.add("is-open");
+    setButtonState(menuButton, true, { open: "Open navigation menu", close: "Close navigation menu" });
+    menu.querySelector("a")?.focus();
+  };
+
+  const syncMenuToViewport = () => {
+    if (!menuButton || !menu) return;
+    menu.classList.remove("is-open");
+    setButtonState(menuButton, false, { open: "Open navigation menu", close: "Close navigation menu" });
+    menu.hidden = mobileQuery.matches;
+  };
+
+  if (menuButton && menu) {
+    syncMenuToViewport();
+
+    menuButton.addEventListener("click", () => {
+      const expanded = menuButton.getAttribute("aria-expanded") === "true";
+      expanded ? closeMenu() : openMenu();
     });
-  });
+
+    menu.addEventListener("click", (event) => {
+      if (event.target.closest("a")) closeMenu();
+    });
+
+    mobileQuery.addEventListener("change", syncMenuToViewport);
+  }
+
+  if (contactButton && contactPanel) {
+    contactButton.addEventListener("click", () => {
+      const expanded = contactButton.getAttribute("aria-expanded") === "true";
+      closeMenu();
+      setButtonState(contactButton, !expanded);
+      contactPanel.classList.toggle("is--visible", !expanded);
+    });
+  }
 
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") toggles.forEach(close);
+    if (event.key !== "Escape") return;
+    const menuWasOpen = menuButton?.getAttribute("aria-expanded") === "true";
+    closeMenu({ restoreFocus: menuWasOpen });
+    closeContact();
   });
 
   document.addEventListener("click", (event) => {
-    toggles.forEach((toggle) => {
-      const { button, panel } = toggle;
-      if (button && panel && !button.contains(event.target) && !panel.contains(event.target)) close(toggle);
-    });
+    if (menuButton && menu && !menuButton.contains(event.target) && !menu.contains(event.target)) closeMenu();
+    if (contactButton && contactPanel && !contactButton.contains(event.target) && !contactPanel.contains(event.target)) closeContact();
   });
 })();

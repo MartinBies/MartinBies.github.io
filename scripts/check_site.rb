@@ -7,6 +7,7 @@ require "uri"
 
 SITE_DIR = Pathname.new(ARGV.fetch(0, "_site")).expand_path
 INTERNAL_HOSTS = %w[martinbies.github.io www.martinbies.github.io].freeze
+SAFE_SCHEMES = %w[http https mailto tel].freeze
 DATE_FORMAT = /\A\d{1,2} (?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{4}\z/
 LEGACY_MONTH = /\b(?:January|February|March|April|June|July|August|September|Sept\.|October|November|December|Jan\.|Feb\.|Mar\.|Apr\.|Aug\.|Oct\.|Nov\.|Dec\.)\b/
 errors = []
@@ -24,7 +25,8 @@ def local_target(raw_url, current_url)
   return if raw_url.nil? || raw_url.empty?
 
   uri = URI.parse(raw_url.strip)
-  return if %w[mailto tel data].include?(uri.scheme&.downcase)
+  scheme = uri.scheme&.downcase
+  return unless scheme.nil? || %w[http https].include?(scheme)
   return if uri.host && !INTERNAL_HOSTS.include?(uri.host.downcase)
 
   base = URI("https://martinbies.github.io#{current_url}")
@@ -37,10 +39,15 @@ end
 def output_path(url_path)
   decoded = URI::DEFAULT_PARSER.unescape(url_path)
   relative = decoded.sub(%r{\A/}, "")
-  return SITE_DIR.join("index.html") if relative.empty?
-  return SITE_DIR.join(relative, "index.html") if decoded.end_with?("/")
+  candidate = if relative.empty?
+                SITE_DIR.join("index.html")
+              elsif decoded.end_with?("/")
+                SITE_DIR.join(relative, "index.html")
+              else
+                SITE_DIR.join(relative)
+              end.expand_path
 
-  SITE_DIR.join(relative)
+  return candidate if candidate.to_s.start_with?("#{SITE_DIR}#{File::SEPARATOR}")
 end
 
 pages.each do |url, document|
@@ -100,7 +107,7 @@ pages.each do |url, document|
     begin
       uri = URI.parse(raw)
       scheme = uri.scheme&.downcase
-      errors << "#{label}: unsafe URL scheme in #{raw.inspect}" if %w[javascript vbscript].include?(scheme)
+      errors << "#{label}: unsupported URL scheme in #{raw.inspect}" if scheme && !SAFE_SCHEMES.include?(scheme)
       errors << "#{label}: insecure external URL #{raw.inspect}" if scheme == "http" && uri.host && !%w[localhost 127.0.0.1].include?(uri.host.downcase)
       resource = element.name != "a" && (element.name != "link" || element["rel"].to_s.split.include?("stylesheet"))
       errors << "#{label}: third-party resource is not permitted: #{raw.inspect}" if resource && uri.host && !INTERNAL_HOSTS.include?(uri.host.downcase)
@@ -118,6 +125,10 @@ pages.each do |url, document|
     end
 
     destination = output_path(path)
+    unless destination
+      errors << "#{label}: #{raw} resolves outside the generated site"
+      next
+    end
     unless destination.file?
       errors << "#{label}: #{raw} resolves to missing #{destination.relative_path_from(SITE_DIR)}"
       next
@@ -131,9 +142,15 @@ pages.each do |url, document|
   end
 end
 
-source = Dir["{_layouts,_pages,assets,index.md}/**/*"].select { |path| File.file?(path) }.map { |path| File.read(path) }.join("\n")
+source_files = Dir["_layouts/**/*", "_pages/**/*", "_data/**/*", "assets/**/*", "index.md"].select { |path| File.file?(path) }
+source = source_files.map { |source_path| File.read(source_path) }.join("\n")
+
 %w[main.min.js jquery-1.12.4 greedy-nav magnificPopup smoothScroll fitVids].each do |legacy|
   errors << "source still references removed legacy code: #{legacy}" if source.include?(legacy)
+end
+
+Dir["Materials/**/*"].select { |material| File.file?(material) && !material.start_with?("Materials/Data/") }.each do |material|
+  errors << "unreferenced public material: #{material}" unless source.include?(material)
 end
 
 if errors.any?

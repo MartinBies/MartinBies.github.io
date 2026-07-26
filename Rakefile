@@ -1,5 +1,10 @@
+desc "Remove generated files"
+task :clean do
+  sh "bundle exec jekyll clean"
+end
+
 desc "Build the website into _site"
-task :build do
+task build: :clean do
   sh({ "JEKYLL_ENV" => "production" }, "bundle exec jekyll build --trace")
 end
 

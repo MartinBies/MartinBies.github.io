@@ -24,12 +24,12 @@ permalink: /events/
 | Apr 2025 | [OSCAR Coding Sprint, Kaiserslautern, GER](https://www.oscar-system.org/events/meetings/2025-03/) | |
 | Mar 2025 | [Retreat of the SFB-TRR 195, Bad Münster am Stein, GER](https://www.computeralgebra.de/sfb/events/retreat-2025-of-the-sfb-195/) | |
 | Dec 2024 | [LEAN meets MaRDI and OSCAR, Berlin, GER](https://polymake.org/doku.php/workshops/lean_workshop1224) | |
-| Nov 2024 | [MaRDI Annual Meeting 2024, Kaiserslautern, GER](https://www.itwm.fraunhofer.de/de/messen-veranstaltungen/2024/2024_11_18_mardi-annual-meeting.html) | |
+| Nov 2024 | [MaRDI Annual Meeting 2024, Kaiserslautern, GER](https://www.itwm.fraunhofer.de/en/fairs_events/2024/2024_11_18_mardi-annual-meeting-en.html) | |
 | Sep 2024 | [OSCAR Workshop, Kaiserslautern, GER](https://www.oscar-system.org/events/meetings/2024-09/) | |
 | Jul 2024 | [Session](https://icms-conference.org/2024/sessions/session_Bies_Kastner_Zach/) organizer at [ICMS 2024, Durham, UK](https://maths.dur.ac.uk/icms2024/ICMS2024.html) (together with L. Kastner and M. Zach) | |
 | Jun 2024 | [String Pheno 2024, Padova, Italy](https://indico.dfa.unipd.it/event/1051/) | [Slides]({{ '/Materials/Events/MartinBiesStringPheno2024.pdf' | relative_url }}) |
 | Sep 2023 | Third Annual Meeting 2023 of SFB-TRR 195 | [Slides]({{ '/Materials/Events/PresentationSFBMeeting2023MartinBies.pdf' | relative_url }}) |
-| Jul 2023 | [String Math 2023, Melbourne, Australia](https://indico.cern.ch/event/1270020/) | [Slides]({{ '/Materials/Events/PresentationStringMath2023MartinBies.pdf' | relative_url }}), [Poster]({{ '/Materials/Events/PosterMartinBiesStringMath2023.pdf' | relative_url }}) |
+| Jul 2023 | [String Math 2023, Melbourne, Australia](https://stringmath2023.sciencesconf.org/) | [Slides]({{ '/Materials/Events/PresentationStringMath2023MartinBies.pdf' | relative_url }}), [Poster]({{ '/Materials/Events/PosterMartinBiesStringMath2023.pdf' | relative_url }}) |
 | Jul 2023 | [String Pheno 2023, Daejeon, South Korea](https://indico.cern.ch/event/1270020/) | [Slides]({{ '/Materials/Events/PresentationStringPheno2023MartinBies.pdf' | relative_url }}) |
 | May 2023 | [Computeralgebra Tagung 2023](https://konferenz.uni-hannover.de/event/83/) | [Slides]({{ '/Materials/Events/PresentationCAT2023MartinBies.pdf' | relative_url }}) |
 | Feb 2023 | [OSCAR developer meeting, Kaiserslautern, GER](https://www.oscar-system.org/events/meetings/2023-02/) | |
@@ -41,7 +41,7 @@ permalink: /events/
 | Nov 2021 | [Simons Collaboration on Homological Mirror Symmetry, Annual Meeting (New York, United States)](https://indico.flatironinstitute.org/event/2700/) | |
 | Sep 2021 | [Simons Collaboration on Special Holonomy in Geometry, Analysis, and Physics, Progress and Open Problems (Stony Brook, United States)](https://sites.duke.edu/scshgap/progress-and-open-problems-2021-september-12-15-2021-scgp-stony-brook/) | |
 | Sep 2021 | [Simons Collaboration on Special Holonomy in Geometry, Analysis and Physics, Annual Meeting (New York, United States)](https://philanthropynewyork.org/news/simons-collaboration-special-holonomy-geometry-analysis-and-physics-first-annual-meeting) | |
-| Jul 2021 | [String Pheno 2021](https://indico.cern.ch/event/1034944/) | |
+| Jul 2021 | [String Pheno 2021](https://indico.global/event/1289/) | |
 | Jun 2021 | [Strings 2021](https://www.ictp-saifr.org/strings2021/) | |
 | Jun 2021 | [String Math 2021](https://impa.br/en_US/eventos-do-impa/2021-2/string-math-2021/) | |
 | Dec 2020 | [String data 2020](https://indico.cern.ch/event/958074/overview) | [Slides]({{ '/Materials/Events/StringData2020MartinBies.pdf' | relative_url }}) |

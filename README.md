@@ -90,5 +90,5 @@ Git.
 
 Copyright © Martin Bies. All rights reserved. No license is granted for the
 website source, design, or personal and academic materials unless explicitly
-stated otherwise. Third-party development tools listed in `Gemfile` remain
-subject to their respective licenses.
+stated otherwise. Development dependencies recorded in `Gemfile.lock` are not
+part of the published website and remain subject to their respective licenses.

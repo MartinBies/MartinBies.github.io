@@ -3,12 +3,14 @@
 
   document.documentElement.classList.add("js");
 
-  const mobile = window.matchMedia("(max-width: 767px)");
+  const mobileViewport = window.matchMedia("(max-width: 767px)");
   const menuButton = document.querySelector(".site-nav__toggle");
   const menu = document.querySelector(".site-nav__links");
   const contactButton = document.querySelector(".contact-toggle");
-  const contacts = document.querySelector(".author__urls");
-  const expanded = (button) => button?.getAttribute("aria-expanded") === "true";
+  const contacts = document.querySelector(".contact-panel");
+
+  const isExpanded = (button) => button?.getAttribute("aria-expanded") === "true";
+  const closest = (target, selector) => target instanceof Element ? target.closest(selector) : null;
 
   const setExpanded = (button, open, name = "") => {
     button?.setAttribute("aria-expanded", String(open));
@@ -20,25 +22,30 @@
     contacts?.classList.remove("is--visible");
   };
 
-  const setMenu = (open, focus = false) => {
+  const setMenu = (open, restoreFocus = false) => {
     if (!menuButton || !menu) return;
-    open = open && mobile.matches;
-    if (open) closeContacts();
-    setExpanded(menuButton, open, "navigation menu");
-    menu.hidden = mobile.matches && !open;
-    if (open) menu.querySelector("a")?.focus();
-    if (focus) menuButton.focus();
+
+    const shouldOpen = open && mobileViewport.matches;
+    if (shouldOpen) closeContacts();
+
+    setExpanded(menuButton, shouldOpen, "navigation menu");
+    menu.hidden = mobileViewport.matches && !shouldOpen;
+
+    if (shouldOpen) menu.querySelector("a")?.focus();
+    if (restoreFocus) menuButton.focus();
   };
 
   if (menuButton && menu) {
     setMenu(false);
-    menuButton.addEventListener("click", () => setMenu(!expanded(menuButton)));
-    menu.addEventListener("click", (event) => event.target.closest("a") && setMenu(false));
-    mobile.addEventListener("change", () => setMenu(false));
+    menuButton.addEventListener("click", () => setMenu(!isExpanded(menuButton)));
+    menu.addEventListener("click", (event) => {
+      if (closest(event.target, "a")) setMenu(false);
+    });
+    mobileViewport.addEventListener("change", () => setMenu(false));
   }
 
   contactButton?.addEventListener("click", () => {
-    const open = !expanded(contactButton);
+    const open = !isExpanded(contactButton);
     setMenu(false);
     setExpanded(contactButton, open);
     contacts?.classList.toggle("is--visible", open);
@@ -46,14 +53,16 @@
 
   document.addEventListener("keydown", (event) => {
     if (event.key !== "Escape") return;
-    const contactWasOpen = expanded(contactButton);
-    setMenu(false, expanded(menuButton));
+
+    const menuWasOpen = isExpanded(menuButton);
+    const contactsWereOpen = isExpanded(contactButton);
+    setMenu(false, menuWasOpen);
     closeContacts();
-    if (contactWasOpen) contactButton.focus();
+    if (contactsWereOpen) contactButton.focus();
   });
 
   document.addEventListener("click", (event) => {
-    if (menuButton && menu && !event.target.closest(".site-nav")) setMenu(false);
-    if (contactButton && contacts && !event.target.closest(".author__urls-wrapper")) closeContacts();
+    if (isExpanded(menuButton) && !closest(event.target, ".site-nav")) setMenu(false);
+    if (isExpanded(contactButton) && !closest(event.target, ".contact-panel-wrapper")) closeContacts();
   });
 })();

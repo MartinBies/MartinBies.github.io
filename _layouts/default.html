@@ -54,14 +54,29 @@
         <p class="profile__role">{{ author.bio }}</p>
       </div>
 
-      <div class="author__urls-wrapper">
+      <div class="contact-panel-wrapper">
         <button class="contact-toggle" type="button" aria-expanded="false" aria-controls="author-contact">Contact</button>
-        <div class="author__urls" id="author-contact">
+        <div class="contact-panel" id="author-contact">
           <address class="contact-list">
-            <p><span class="contact-label">At</span><a href="{{ author.reaching_us }}">{{ author.location }}</a><br>{{ author.address }}<br>{{ author.address2 }}<br>{{ author.postal_code }} {{ author.city }}, {{ author.address4 }}</p>
-            <p class="author__phone"><span class="contact-label">Secretary</span><a href="tel:{{ author.secretary_phone_uri }}">{{ author.secretary_phone }}</a></p>
-            <p class="author__phone"><span class="contact-label">Office</span><a href="tel:{{ author.phone_uri }}">{{ author.phone }}</a></p>
-            <p><span class="contact-label">Email</span><a href="mailto:{{ author.email }}">{{ author.email }}</a></p>
+            <p>
+              <span class="contact-label">At</span>
+              <a href="{{ author.directions_url }}">{{ author.location }}</a><br>
+              {{ author.address }}<br>
+              {{ author.office }}<br>
+              {{ author.postal_code }} {{ author.city }}, {{ author.country }}
+            </p>
+            <p class="contact-phone">
+              <span class="contact-label">Secretary</span>
+              <a href="tel:{{ author.secretary_phone_url }}">{{ author.secretary_phone }}</a>
+            </p>
+            <p class="contact-phone">
+              <span class="contact-label">Office</span>
+              <a href="tel:{{ author.office_phone_url }}">{{ author.office_phone }}</a>
+            </p>
+            <p>
+              <span class="contact-label">Email</span>
+              <a href="mailto:{{ author.email }}">{{ author.email }}</a>
+            </p>
           </address>
           <nav class="profile-links" aria-label="Professional profiles">
             <a href="https://orcid.org/{{ author.orcid }}" rel="me">ORCID</a>

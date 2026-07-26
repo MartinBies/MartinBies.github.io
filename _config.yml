@@ -7,23 +7,24 @@ description: "Academic homepage of physicist Martin Bies: research, publications
 url: "https://martinbies.github.io"
 baseurl: ""
 repository: "MartinBies/MartinBies.github.io"
+theme: null
 
 # Site Author
 author:
   name: *name
   bio: "Doctor of Physics"
   location: "RPTU Kaiserslautern-Landau"
-  reaching_us: "https://rptu.de/en/routes-and-means-of-transport"
+  directions_url: "https://rptu.de/en/routes-and-means-of-transport"
   address: "Gottlieb-Daimler-Straße 48"
-  address2: "Office 48-433"
+  office: "Office 48-433"
   postal_code: "67663"
   city: "Kaiserslautern"
-  address4: "Germany"
+  country: "Germany"
   email: "martin.bies@rptu.de"
-  phone: "+49 (0)631 205-2252"
-  phone_uri: "+496312052252"
+  office_phone: "+49 (0)631 205-2252"
+  office_phone_url: "+496312052252"
   secretary_phone: "+49 (0)631 205-3141"
-  secretary_phone_uri: "+496312053141"
+  secretary_phone_url: "+496312053141"
   orcid: "0000-0002-9609-1693"
   scopus: "57197835420"
   github: "HereAround"
@@ -63,7 +64,6 @@ kramdown:
 
 # Sass/SCSS
 sass:
-  sass_dir: _sass
   style: compressed
 
 # Outputting

@@ -3,7 +3,6 @@
 
 :root {
   --paper: #f5f2eb;
-  --paper-deep: #ebe6dc;
   --ink: #18212b;
   --muted: #65707b;
   --line: #cbc6bc;
@@ -249,7 +248,7 @@ button:focus-visible {
   font-size: 0.9rem;
 }
 
-.author__urls {
+.contact-panel {
   font-size: 0.8rem;
 }
 
@@ -271,7 +270,7 @@ button:focus-visible {
   text-transform: uppercase;
 }
 
-.author__phone {
+.contact-phone {
   display: flex;
   flex-wrap: nowrap;
   align-items: baseline;
@@ -280,7 +279,7 @@ button:focus-visible {
   white-space: nowrap;
 }
 
-.author__phone .contact-label {
+.contact-phone .contact-label {
   min-width: 4.8rem;
 }
 
@@ -383,10 +382,6 @@ table {
   font-weight: 750;
 }
 
-.table-wrap {
-  overflow-x: auto;
-}
-
 table {
   display: block;
   width: 100%;
@@ -410,15 +405,6 @@ th {
   text-transform: uppercase;
 }
 
-blockquote {
-  margin: 2rem 0;
-  padding-left: 1.25rem;
-  border-left: 3px solid var(--blue);
-  color: var(--muted);
-  font-family: var(--serif);
-  font-size: 1.15rem;
-}
-
 .site-footer {
   width: min(calc(100% - 3rem), var(--content));
   margin: 0 auto;
@@ -435,6 +421,10 @@ blockquote {
     position: relative;
     width: min(calc(100% - 2rem), var(--content));
     min-height: 4.25rem;
+  }
+
+  html:not(.js) .site-nav__toggle {
+    display: none;
   }
 
   .site-nav__toggle {
@@ -494,9 +484,7 @@ blockquote {
     padding: 0.7rem;
   }
 
-  .author__urls-wrapper { position: static; }
-
-  .author__urls {
+  .contact-panel {
     position: absolute;
     right: 1rem;
     left: 1rem;
@@ -509,9 +497,9 @@ blockquote {
     box-shadow: 0 1rem 3rem rgba(24, 33, 43, 0.12);
   }
 
-  .author__urls.is--visible { display: block; }
+  .contact-panel.is--visible { display: block; }
 
-  html:not(.js) .author__urls {
+  html:not(.js) .contact-panel {
     position: static;
     display: block;
     grid-column: 1 / -1;
@@ -526,7 +514,6 @@ blockquote {
   h1 { font-size: clamp(2.65rem, 15vw, 4.2rem); }
 
   .site-footer {
-    display: block;
     width: calc(100% - 2rem);
   }
 }
@@ -542,6 +529,7 @@ blockquote {
   .site-footer { display: none; }
 
   body { background: #fff; }
+  body::before { display: none; }
   .page-shell { display: block; width: auto; margin: 0; }
   .page { max-width: none; }
   a { color: inherit; }

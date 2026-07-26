@@ -420,9 +420,6 @@ blockquote {
 }
 
 .site-footer {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
   width: min(calc(100% - 3rem), var(--content));
   margin: 0 auto;
   padding: 1.5rem 0 2.5rem;
@@ -532,8 +529,6 @@ blockquote {
     display: block;
     width: calc(100% - 2rem);
   }
-
-  .site-footer p + p { margin-top: 0.25rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

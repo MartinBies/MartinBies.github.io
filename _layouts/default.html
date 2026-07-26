@@ -85,8 +85,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</p>
-    <p>Last generated <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%B %-d, %Y' }}</time>.</p>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} <span aria-hidden="true">·</span> Last generated <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%B %-d, %Y' }}</time>.</p>
   </footer>
 </body>
 </html>

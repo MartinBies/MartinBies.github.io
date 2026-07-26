@@ -1122,10 +1122,16 @@ main {
 }
 
 @media (max-width: 1023px) {
+  .author__urls-wrapper {
+    position: static;
+  }
+
   .author__urls {
-    width: max-content;
-    min-width: 18rem;
-    max-width: calc(100vw - 2rem);
+    right: 0;
+    left: 0;
+    width: auto;
+    min-width: 0;
+    max-width: none;
   }
 
   .author__urls.is--visible {

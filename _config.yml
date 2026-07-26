@@ -5,6 +5,7 @@ title_separator: "-"
 name: &name "Martin Bies"
 description: "Academic homepage of physicist Martin Bies: research, publications, software, events, and teaching."
 url: "https://martinbies.github.io"
+baseurl: ""
 repository: "MartinBies/MartinBies.github.io"
 
 # Site Author

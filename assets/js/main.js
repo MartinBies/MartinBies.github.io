@@ -46,8 +46,10 @@
 
   document.addEventListener("keydown", (event) => {
     if (event.key !== "Escape") return;
+    const contactWasOpen = expanded(contactButton);
     setMenu(false, expanded(menuButton));
     closeContacts();
+    if (contactWasOpen) contactButton.focus();
   });
 
   document.addEventListener("click", (event) => {

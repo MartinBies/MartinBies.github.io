@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  {% if jekyll.environment == "production" %}
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; form-action 'none'; upgrade-insecure-requests">
+  {% endif %}
   {% assign page_description = page.excerpt | default: site.description | strip_html | strip_newlines %}
   {% assign asset_version = site.time | date: '%s' %}
   <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }} {{ site.title_separator }} {{ site.title }}{% endif %}</title>

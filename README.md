@@ -69,7 +69,12 @@ assets, and internal links:
 bundle exec rake check
 ```
 
-Use `bundle exec rake build` when only a production build is needed.
+Use `bundle exec rake build` when only a production build is needed. Check the
+Ruby dependencies against the latest security-advisory database with:
+
+```sh
+bundle exec rake audit
+```
 
 The generated site is written to `_site/`, which is intentionally ignored by
 Git.

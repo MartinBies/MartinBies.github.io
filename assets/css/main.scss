@@ -947,6 +947,7 @@ th {vertical-align: middle;}
     @include breakpoint($large) {
       display: block;
       position: relative;
+      z-index: auto;
       margin: 0;
       padding: 0;
       border: 0;
@@ -1122,6 +1123,15 @@ main {
 }
 
 @media (max-width: 1023px) {
+  html:not(.js) .author__urls {
+    display: block;
+    position: static;
+  }
+
+  html:not(.js) .contact-toggle {
+    display: none;
+  }
+
   .author__urls-wrapper {
     position: static;
   }

@@ -19,9 +19,10 @@ pages = html_files.to_h do |file|
 end
 
 def local_target(raw_url, current_url)
-  return if raw_url.nil? || raw_url.empty? || raw_url.start_with?("mailto:", "tel:", "data:", "javascript:")
+  return if raw_url.nil? || raw_url.empty?
 
-  uri = URI.parse(raw_url)
+  uri = URI.parse(raw_url.strip)
+  return if %w[mailto tel data].include?(uri.scheme&.downcase)
   return if uri.host && !INTERNAL_HOSTS.include?(uri.host.downcase)
 
   base = URI("https://martinbies.github.io#{current_url}")
@@ -48,6 +49,15 @@ pages.each do |url, document|
   errors << "#{label}: expected exactly one main element" unless document.css("main").length == 1
   errors << "#{label}: expected exactly one h1" unless document.css("h1").length == 1
   errors << "#{label}: html element requires a lang attribute" if document.at_css("html")&.[]("lang").to_s.empty?
+  errors << "#{label}: missing strict referrer policy" unless document.at_css('meta[name="referrer"][content="strict-origin-when-cross-origin"]')
+
+  policy = document.at_css('meta[http-equiv="Content-Security-Policy"]')&.[]("content").to_s
+  required_directives = ["default-src 'self'", "base-uri 'self'", "object-src 'none'", "script-src 'self'", "style-src 'self'", "form-action 'none'", "upgrade-insecure-requests"]
+  missing_directives = required_directives.reject { |directive| policy.split(";").map(&:strip).include?(directive) }
+  errors << "#{label}: content security policy is missing #{missing_directives.join(', ')}" if missing_directives.any?
+  errors << "#{label}: inline scripts are forbidden by the content security policy" if document.at_css("script:not([src])")
+  errors << "#{label}: inline style attributes are forbidden by the content security policy" if document.at_css("[style]")
+  errors << "#{label}: inline style elements are forbidden by the content security policy" if document.at_css("style")
 
   ids = document.css("[id]").map { |node| node["id"] }
   ids.tally.select { |_, count| count > 1 }.each_key do |id|
@@ -78,8 +88,19 @@ pages.each do |url, document|
     errors << "#{label}: table #{index + 1} has inconsistent column counts #{widths.uniq.inspect}" if widths.uniq.length > 1
   end
 
-  document.css("a[href], link[href], script[src], img[src]").each do |element|
-    raw = element["href"] || element["src"]
+  document.css("a[href], link[href], script[src], img[src], iframe[src]").each do |element|
+    raw = (element["href"] || element["src"]).to_s.strip
+    begin
+      uri = URI.parse(raw)
+      scheme = uri.scheme&.downcase
+      errors << "#{label}: unsafe URL scheme in #{raw.inspect}" if %w[javascript vbscript].include?(scheme)
+      errors << "#{label}: insecure external URL #{raw.inspect}" if scheme == "http" && uri.host && !%w[localhost 127.0.0.1].include?(uri.host.downcase)
+      resource = element.name != "a" && (element.name != "link" || element["rel"].to_s.split.include?("stylesheet"))
+      errors << "#{label}: third-party resource is not permitted: #{raw.inspect}" if resource && uri.host && !INTERNAL_HOSTS.include?(uri.host.downcase)
+    rescue URI::InvalidURIError
+      # The link validator below reports malformed URLs consistently.
+    end
+
     target = local_target(raw, url)
     next unless target
 
@@ -114,4 +135,4 @@ if errors.any?
   exit 1
 end
 
-puts "Validated #{html_files.length} HTML pages: structure, accessibility basics, tables, assets, and internal links are sound."
+puts "Validated #{html_files.length} HTML pages: structure, security policy, accessibility basics, tables, assets, and internal links are sound."

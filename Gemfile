@@ -4,3 +4,4 @@ gem "github-pages", group: :jekyll_plugins
 gem "webrick", "~> 1.7"
 gem "rake", "~> 13.2"
 gem "faraday-retry", "~> 2.2"
+gem "bundler-audit", "~> 0.9", require: false

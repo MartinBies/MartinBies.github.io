@@ -1,11 +1,16 @@
 desc "Build the website into _site"
 task :build do
-  sh "bundle exec jekyll build --trace"
+  sh({ "JEKYLL_ENV" => "production" }, "bundle exec jekyll build --trace")
 end
 
 desc "Build and validate HTML, accessibility basics, assets, and internal links"
 task check: :build do
   sh "bundle exec ruby scripts/check_site.rb"
+end
+
+desc "Check bundled Ruby dependencies against the current advisory database"
+task :audit do
+  sh "bundle exec bundle-audit check --update"
 end
 
 desc "Serve the website locally with automatic browser refresh"

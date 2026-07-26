@@ -1,5 +1,4 @@
 ---
-layout: single
 author_profile: true
 title: Welcome to My Homepage
 ---

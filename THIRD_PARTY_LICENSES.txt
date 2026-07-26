@@ -1,3 +1,12 @@
+Third-party license notices
+===========================
+
+Portions of this website's source code and styling are derived from the
+Minimal Mistakes Jekyll theme and remain subject to the following MIT license.
+This license notice does not grant rights to the website's original content,
+portrait, curriculum vitae, publications, presentations, teaching materials,
+or other personal and academic materials unless explicitly stated elsewhere.
+
 The MIT License (MIT)
 
 Copyright (c) 2017 Michael Rose

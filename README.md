@@ -85,3 +85,10 @@ Git.
 - If native gems fail to compile on Debian or Ubuntu, install the Ruby
   development tools with `sudo apt install ruby-dev build-essential` and retry
   `bundle install`.
+
+## Licensing
+
+Portions of the website code and styling derive from the Minimal Mistakes
+Jekyll theme. See `THIRD_PARTY_LICENSES.txt` for the applicable MIT notice and
+the distinction between inherited code and original personal or academic
+content.

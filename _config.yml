@@ -30,6 +30,17 @@ author:
   linkedin: "martin-bies-000a1156"
   xing: "Martin_Bies"
 
+# Page Defaults
+defaults:
+  - scope:
+      path: "index.md"
+    values:
+      layout: default
+  - scope:
+      path: "_pages"
+    values:
+      layout: default
+
 # Reading Files
 include:
   - _pages

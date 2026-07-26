@@ -1,6 +1,5 @@
 ---
-author_profile: true
-title: "Events"
+title: "Talks & Events"
 permalink: /events/
 ---
 

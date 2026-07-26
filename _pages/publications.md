@@ -1,13 +1,12 @@
 ---
-author_profile: true
 title: "Publications"
 permalink: /publications/
 ---
 
-Below is a summary of my publications. For more details visit [Inspire](https://inspirehep.net/author/profile/M.Bies.1), [ArXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50), [Orcid](https://orcid.org/0000-0002-9609-1693) or [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57197835420).
+Research articles, outreach work, and theses. Complete records are also available through [INSPIRE](https://inspirehep.net/author/profile/M.Bies.1), [arXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50), [ORCID](https://orcid.org/0000-0002-9609-1693), and [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57197835420).
 
 
-## Peer Reviewed Publications
+## Peer-reviewed publications
 
 1. Martin Bies, Miķelis E. Miķelsons, Andrew P. Turner - [*FTheoryTools: Advancing Computational Capabilities for F-Theory Research*](https://onlinelibrary.wiley.com/doi/10.1002/prop.70065), [Fortschritte der Physik](https://onlinelibrary.wiley.com/journal/15213978), 2026.
 
@@ -39,7 +38,7 @@ Below is a summary of my publications. For more details visit [Inspire](https://
 13. Martin Bies, Lars Kastner [*Toric Geometry in OSCAR*](https://fachgruppe-computeralgebra.de/data/CA-Rundbrief/car72.pdf), ComputerAlgebraRundbrief, March 2023. (See here for a [preprint](https://arxiv.org/abs/2303.08110).)
 
 
-## Unpublished Works
+## Preprints and unpublished work
 
 {: start="14"}
 14. Martin Bies, Christoph Mayrhofer, Christian Pehle and Timo Weigand, [*Chow groups, Deligne cohomology and massless matter in F-theory*](https://arxiv.org/abs/1402.5144), February 2014.

@@ -1,10 +1,9 @@
 ---
-author_profile: true
 title: "Teaching"
 permalink: /teaching/
 ---
 
-I enjoy teaching. Below is my record. See my [Teaching Statement]({{ '/Materials/General/TeachingStatementMartinBies.pdf' | relative_url }}) for more details.
+Courses, assignments, and teaching material from RPTU Kaiserslautern-Landau, the University of Pennsylvania, and Heidelberg University. My [teaching statement]({{ '/Materials/General/TeachingStatementMartinBies.pdf' | relative_url }}) describes the ideas behind my practice.
 
 
 ## RPTU Kaiserslautern-Landau

@@ -1,37 +1,20 @@
 ---
-author_profile: true
-title: Welcome to My Homepage
+title: Martin Bies
+excerpt: "Martin Bies is a mathematical physicist working across geometry, computation, and string theory."
 ---
 
-Versatile Postdoctoral Researcher with [Doctor in Physics](https://archiv.ub.uni-heidelberg.de/volltextserver/24045/) from Heidelberg University.
+I am a mathematical physicist working across geometry, computation, and string theory.
 
-My research spans physics, mathematics, and software development, emphasizing my interdisciplinary commitment. This research has led to [Publications]({{ '/publications/' | relative_url }}) on diverse mathematical topics, including toric geometry, Freyd categories, Brill-Noether theory, and root bundles.
-
-With full English proficiency and strong public speaking skills, I have a strong track record of international collaborations, [Event Participation]({{ '/events/' | relative_url }}) and [Teaching]({{ '/teaching/' | relative_url }}).
-
-Skilled in Julia, Python, and C++, I develop software on [GitHub](https://github.com/herearound) for computational research.
-
+My research uses algebraic and computational geometry to study F-theory. I translate questions about particle physics into concrete mathematical problems, then develop enumerative and computer-algebra methods to solve them.
 
 ## Research
 
-I work on F-theory, a string theory framework using geometry to study its solutions. My focus is translating physics questions into mathematical challenges, then solving those challenges with enumerative computer techniques. More details are in my [Research Statement]({{ '/Materials/General/ResearchStatement.pdf' | relative_url }}) and [CV]({{ '/Materials/General/CV_MartinBies.pdf' | relative_url }}).
-
-
-## Publications
-
-For a full list of my publications, see [Inspire](https://inspirehep.net/author/profile/M.Bies.1), [ArXiv](https://arxiv.org/search/?query=Martin+Bies&searchtype=author&abstracts=hide&order=-announced_date_first&size=50), [Orcid](https://orcid.org/0000-0002-9609-1693), [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57197835420) or [This Summary]({{ '/publications/' | relative_url }}).
-
+My work connects F-theory, toric geometry, Brill–Noether theory, and root bundles. Read my [research statement]({{ '/Materials/General/ResearchStatement.pdf' | relative_url }}) for an overview or browse my [publications]({{ '/publications/' | relative_url }}).
 
 ## Software
 
-My [GitHub profile](https://github.com/herearound) showcases my work on open-source software, with contributions to around 500,000 lines of code. I specialize in Julia, Python, C++. Currently, I focus on the [OSCAR Computer Algebra System](https://www.oscar-system.org/), with emphasis on [*Toric Varieties*](https://docs.oscar-system.org/stable/AlgebraicGeometry/ToricVarieties/intro/) and [*FTheoryTools*](https://docs.oscar-system.org/stable/Experimental/FTheoryTools/introduction/).
+I contribute to the open-source [OSCAR Computer Algebra System](https://www.oscar-system.org/), with a particular focus on [toric varieties](https://docs.oscar-system.org/stable/AlgebraicGeometry/ToricVarieties/intro/) and [FTheoryTools](https://docs.oscar-system.org/stable/Experimental/FTheoryTools/introduction/). More of my software is available on [GitHub](https://github.com/herearound).
 
+## Teaching and talks
 
-## Events
-
-I have participated in numerous conferences and workshops, delivered talks, and presented posters. For details, see [here]({{ '/events/' | relative_url }}).
-
-
-## Teaching
-
-I enjoy sharing knowledge with students: [Teaching Philosophy]({{ '/Materials/General/TeachingStatementMartinBies.pdf' | relative_url }}), [Teaching Record]({{ '/teaching/' | relative_url }}).
+I enjoy making difficult ideas accessible—in the classroom, in collaborations, and at the blackboard. Explore my [teaching record]({{ '/teaching/' | relative_url }}), [teaching statement]({{ '/Materials/General/TeachingStatementMartinBies.pdf' | relative_url }}), or [talks and conference material]({{ '/events/' | relative_url }}).

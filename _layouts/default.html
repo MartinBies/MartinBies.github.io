@@ -9,10 +9,10 @@
   {% endif %}
   {% assign page_description = page.excerpt | default: site.description | strip_html | strip_newlines %}
   {% assign asset_version = site.time | date: '%s' %}
-  <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }} {{ site.title_separator }} {{ site.title }}{% endif %}</title>
+  <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }} {{ site.title_separator }} {{ site.name }}{% endif %}</title>
   <meta name="description" content="{{ page_description | escape }}">
   <meta name="author" content="{{ site.author.name | escape }}">
-  <meta name="theme-color" content="#f0f0f0">
+  <meta name="theme-color" content="#f5f2eb">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
@@ -23,91 +23,70 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ asset_version }}">
   <script src="{{ '/assets/js/main.js' | relative_url }}?v={{ asset_version }}" defer></script>
 </head>
-<body class="layout--{{ page.layout | default: layout.layout }}">
+<body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <header class="masthead">
-    <div class="masthead__inner-wrap">
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-        <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
-          <span class="navicon" aria-hidden="true"></span>
-        </button>
-        <ul class="site-nav__links" id="primary-menu">
-          {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item">
-              {% if link.url contains '://' %}
-                <a href="{{ link.url }}">{{ link.title }}</a>
-              {% else %}
-                <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </div>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a class="site-title" href="{{ '/' | relative_url }}" aria-label="Martin Bies, homepage">
+        <span class="site-mark" aria-hidden="true">MB</span>
+        <span>Martin Bies</span>
+      </a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation menu">
+        <span class="navicon" aria-hidden="true"></span>
+      </button>
+      <ul class="site-nav__links" id="primary-menu">
+        {% for link in site.data.navigation.main %}
+          <li>
+            <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
   </header>
 
-  <main id="main-content">
-    <div id="main">
-      {% assign author = site.author %}
-      <aside class="sidebar sticky" aria-label="About {{ author.name }}">
-        <div itemscope itemtype="https://schema.org/Person">
-          <div class="author__avatar">
-            <img src="{{ '/Materials/Images/picture.jpg' | relative_url }}" width="2731" height="2448" alt="Portrait of {{ author.name }}" itemprop="image" fetchpriority="high">
-          </div>
+  <main id="main-content" class="page-shell">
+    {% assign author = site.author %}
+    <aside class="profile" aria-label="About {{ author.name }}">
+      <img class="profile__portrait" src="{{ '/Materials/Images/picture.jpg' | relative_url }}" width="2731" height="2448" alt="Portrait of {{ author.name }}" fetchpriority="high">
+      <div class="profile__identity">
+        <p class="profile__name">{{ author.name }}</p>
+        <p class="profile__role">{{ author.bio }}</p>
+      </div>
 
-          <div class="author__content">
-            <h2 class="author__name" itemprop="name">{{ author.name }}</h2>
-            <p class="author__bio" itemprop="description">{{ author.bio }}</p>
-          </div>
-
-          <div class="author__urls-wrapper">
-            <button class="contact-toggle btn btn--inverse" type="button" aria-expanded="false" aria-controls="author-contact">Contact</button>
-            <ul class="author__urls social-icons" id="author-contact">
-              <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-                <a href="{{ author.reaching_us }}" itemprop="url">
-                  <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i><span itemprop="name">{{ author.location }}</span>
-                </a>
-                <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                  <span itemprop="streetAddress">{{ author.address }}<br>{{ author.address2 }}</span><br>
-                  <span itemprop="postalCode">{{ author.postal_code }}</span> <span itemprop="addressLocality">{{ author.city }}</span><br>
-                  <span itemprop="addressCountry">{{ author.address4 }}</span>
-                </address>
-              </li>
-              <li class="author__phone"><i class="fa fa-fw fa-building" aria-hidden="true"></i><span>Secretary:</span><a href="tel:{{ author.secretary_phone_uri }}">{{ author.secretary_phone }}</a></li>
-              <li class="author__phone"><i class="fa fa-fw fa-user" aria-hidden="true"></i><span>Office:</span><a href="tel:{{ author.phone_uri }}" itemprop="telephone">{{ author.phone }}</a></li>
-              <li>
-                <a href="mailto:{{ author.email }}" itemprop="email"><i class="fa fa-fw fa-envelope-square" aria-hidden="true"></i>Email</a>
-              </li>
-              <li>
-                <a href="https://orcid.org/{{ author.orcid }}" itemprop="sameAs" rel="me">
-                  <img class="orcid-icon" src="{{ '/Materials/Images/orcid.svg' | relative_url }}" width="20" height="20" alt="" aria-hidden="true">ORCID: {{ author.orcid }}
-                </a>
-              </li>
-              <li><a href="https://www.scopus.com/authid/detail.uri?authorId={{ author.scopus }}" itemprop="sameAs"><i class="fa fa-fw fa-key" aria-hidden="true"></i>Scopus</a></li>
-              <li><a href="https://github.com/{{ author.github }}" itemprop="sameAs" rel="me"><i class="fa fa-fw fa-github" aria-hidden="true"></i>GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}" itemprop="sameAs" rel="me"><i class="fa fa-fw fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a></li>
-              <li><a href="https://www.xing.com/profile/{{ author.xing }}" itemprop="sameAs" rel="me"><i class="fa fa-fw fa-xing-square" aria-hidden="true"></i>XING</a></li>
-            </ul>
-          </div>
+      <div class="author__urls-wrapper">
+        <button class="contact-toggle" type="button" aria-expanded="false" aria-controls="author-contact">Contact</button>
+        <div class="author__urls" id="author-contact">
+          <address class="contact-list">
+            <p><span class="contact-label">At</span><a href="{{ author.reaching_us }}">{{ author.location }}</a><br>{{ author.address }}<br>{{ author.address2 }}<br>{{ author.postal_code }} {{ author.city }}, {{ author.address4 }}</p>
+            <p class="author__phone"><span class="contact-label">Secretary</span><a href="tel:{{ author.secretary_phone_uri }}">{{ author.secretary_phone }}</a></p>
+            <p class="author__phone"><span class="contact-label">Office</span><a href="tel:{{ author.phone_uri }}">{{ author.phone }}</a></p>
+            <p><span class="contact-label">Email</span><a href="mailto:{{ author.email }}">{{ author.email }}</a></p>
+          </address>
+          <nav class="profile-links" aria-label="Professional profiles">
+            <a href="https://orcid.org/{{ author.orcid }}" rel="me">ORCID</a>
+            <a href="https://www.scopus.com/authid/detail.uri?authorId={{ author.scopus }}">Scopus</a>
+            <a href="https://github.com/{{ author.github }}" rel="me">GitHub</a>
+            <a href="https://www.linkedin.com/in/{{ author.linkedin }}" rel="me">LinkedIn</a>
+            <a href="https://www.xing.com/profile/{{ author.xing }}" rel="me">XING</a>
+          </nav>
+          <a class="profile-cv" href="{{ '/Materials/General/CV_MartinBies.pdf' | relative_url }}">Curriculum vitae <span aria-hidden="true">↓</span></a>
         </div>
-      </aside>
+      </div>
+    </aside>
 
-      <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-        <h1 class="page-title" itemprop="headline">{{ page.title }}</h1>
-        <section class="page__content" itemprop="text">
-          {{ content }}
-        </section>
-      </article>
-    </div>
+    <article class="page">
+      {% if page.url == '/' %}<p class="page-kicker">Geometry · computation · string theory</p>{% endif %}
+      <h1>{{ page.title }}</h1>
+      <div class="page__content">
+        {{ content }}
+      </div>
+    </article>
   </main>
 
-  <footer class="page__footer">
-    <div class="page__footer-content">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</p>
-      <p>Last generated <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%B %-d, %Y' }}</time>.</p>
-    </div>
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}.</p>
+    <p>Last generated <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%B %-d, %Y' }}</time>.</p>
   </footer>
 </body>
 </html>

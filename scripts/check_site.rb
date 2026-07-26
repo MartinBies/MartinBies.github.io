@@ -7,6 +7,8 @@ require "uri"
 
 SITE_DIR = Pathname.new(ARGV.fetch(0, "_site")).expand_path
 INTERNAL_HOSTS = %w[martinbies.github.io www.martinbies.github.io].freeze
+DATE_FORMAT = /\A\d{1,2} (?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{4}\z/
+LEGACY_MONTH = /\b(?:January|February|March|April|June|July|August|September|Sept\.|October|November|December|Jan\.|Feb\.|Mar\.|Apr\.|Aug\.|Oct\.|Nov\.|Dec\.)\b/
 errors = []
 html_files = Dir[SITE_DIR.join("**/*.html")].sort
 
@@ -49,6 +51,11 @@ pages.each do |url, document|
   errors << "#{label}: expected exactly one main element" unless document.css("main").length == 1
   errors << "#{label}: expected exactly one h1" unless document.css("h1").length == 1
   errors << "#{label}: html element requires a lang attribute" if document.at_css("html")&.[]("lang").to_s.empty?
+
+  visible_text = document.xpath("//text()[not(ancestor::script) and not(ancestor::style)]").text
+  errors << "#{label}: date uses a nonstandard month format" if visible_text.match?(LEGACY_MONTH)
+  generated_date = document.at_css(".site-footer time")&.text.to_s.strip
+  errors << "#{label}: generation date must use D Mon YYYY" unless generated_date.match?(DATE_FORMAT)
   errors << "#{label}: missing strict referrer policy" unless document.at_css('meta[name="referrer"][content="strict-origin-when-cross-origin"]')
 
   policy = document.at_css('meta[http-equiv="Content-Security-Policy"]')&.[]("content").to_s
@@ -135,4 +142,4 @@ if errors.any?
   exit 1
 end
 
-puts "Validated #{html_files.length} HTML pages: structure, security policy, accessibility basics, tables, assets, and internal links are sound."
+puts "Validated #{html_files.length} HTML pages: structure, dates, security policy, accessibility basics, tables, assets, and internal links are sound."

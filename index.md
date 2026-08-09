@@ -3,7 +3,7 @@ title: Martin Bies
 excerpt: "Martin Bies is a mathematical physicist working across geometry, computation, and string theory."
 ---
 
-I am a scientific software developer and mathematical physicist working at the intersection of arithmetic geometry, string theory, and open-source software.
+I am a mathematical physicist working across geometry, computation, and string theory.
 
 ## Research
 

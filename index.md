@@ -3,9 +3,7 @@ title: Martin Bies
 excerpt: "Martin Bies is a mathematical physicist working across geometry, computation, and string theory."
 ---
 
-I am a mathematical physicist working across geometry, computation, and string theory.
-
-My research uses algebraic and computational geometry to study F-theory. I translate questions about particle physics into concrete mathematical problems, then develop enumerative and computer-algebra methods to solve them.
+I am a scientific software developer and mathematical physicist working at the intersection of arithmetic geometry, string theory, and open-source software.
 
 ## Research
 

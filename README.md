@@ -3,6 +3,12 @@
 This is the source for <https://martinbies.github.io>. GitHub Pages builds it
 with Jekyll whenever changes are pushed to the repository.
 
+The local bundle declares only the Jekyll engine, Markdown parser, sitemap plugin,
+and development tools used here. It deliberately omits the `github-pages`
+meta-gem: its unused remote-theme dependency requires a vulnerable Rubyzip
+version. GitHub's managed Pages build environment is maintained separately by
+GitHub; this lockfile controls local builds and tests.
+
 ## Preview locally
 
 The site requires Ruby, Bundler, and the dependencies pinned in `Gemfile.lock`.
@@ -95,6 +101,25 @@ The script can also be invoked by its full path from another directory.
 
 Dependency auditing is separate: `bundle exec rake audit` requires network
 access to refresh the advisory database.
+
+## Security review (23 October 2026)
+
+- Updated JSON from 2.21.1 to a patched release for
+  [CVE-2026-71847](https://github.com/rubysec/ruby-advisory-db/blob/master/gems/json/CVE-2026-71847.yml).
+- Removed the unused remote-theme/Rubyzip dependency chain affected by
+  [CVE-2026-85396](https://github.com/rubysec/ruby-advisory-db/blob/master/gems/rubyzip/CVE-2026-85396.yml).
+  These findings concern build tooling, not a demonstrated exploit against the
+  static website.
+- Escaped layout metadata in text and attribute contexts. Repository authors
+  remain trusted: Markdown page bodies intentionally support HTML.
+- Closed validator gaps for inline event handlers and CSS-selector interpretation
+  of fragment identifiers.
+
+No PHP source, Composer dependencies, or PHP server configuration was found in
+this repository. It generates static files for GitHub Pages and does not use a
+PHP request runtime. The [21 October PHP advisory](https://www.php.net/archive/2026.php#2026-10-21-5)
+for CVE-2026-109618 and CVE-2026-109619 therefore requires no PHP patch in this
+project. This assessment does not cover other applications or hosting accounts.
 
 ### Common setup issues
 

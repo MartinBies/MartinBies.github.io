@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ site.locale | default: 'en-US' | replace: '_', '-' }}">
+<html lang="{{ site.locale | default: 'en-US' | replace: '_', '-' | escape }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,26 +9,26 @@
   {% endif %}
   {% assign page_description = page.excerpt | default: site.description | strip_html | strip_newlines %}
   {% assign asset_version = site.time | date: '%s' %}
-  <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }} {{ site.title_separator }} {{ site.name }}{% endif %}</title>
+  <title>{% if page.url == '/' %}{{ site.title | escape }}{% else %}{{ page.title | escape }} {{ site.title_separator | escape }} {{ site.name | escape }}{% endif %}</title>
   <meta name="description" content="{{ page_description | escape }}">
   <meta name="author" content="{{ site.author.name | escape }}">
   <meta name="theme-color" content="#f5f2eb">
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url | escape }}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ page.title | default: site.title | escape }}">
   <meta property="og:description" content="{{ page_description | escape }}">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:url" content="{{ page.url | absolute_url | escape }}">
   <meta property="og:site_name" content="{{ site.title | escape }}">
-  <link rel="icon" href="{{ '/Materials/Images/favicon.ico' | relative_url }}" sizes="any">
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ asset_version }}">
-  <script src="{{ '/assets/js/main.js' | relative_url }}?v={{ asset_version }}" defer></script>
+  <link rel="icon" href="{{ '/Materials/Images/favicon.ico' | relative_url | escape }}" sizes="any">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | escape }}?v={{ asset_version }}">
+  <script src="{{ '/assets/js/main.js' | relative_url | escape }}?v={{ asset_version }}" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <header class="site-header">
     <nav class="site-nav" aria-label="Primary navigation">
-      <a class="site-title" href="{{ '/' | relative_url }}" aria-label="Martin Bies, homepage">
+      <a class="site-title" href="{{ '/' | relative_url | escape }}" aria-label="Martin Bies, homepage">
         <span class="site-mark" aria-hidden="true">MB</span>
         <span>Martin Bies</span>
       </a>
@@ -38,7 +38,7 @@
       <ul class="site-nav__links" id="primary-menu">
         {% for link in site.data.navigation.main %}
           <li>
-            <a href="{{ link.url | relative_url }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title }}</a>
+            <a href="{{ link.url | relative_url | escape }}"{% if page.url == link.url %} aria-current="page"{% endif %}>{{ link.title | escape }}</a>
           </li>
         {% endfor %}
       </ul>
@@ -47,11 +47,11 @@
 
   <main id="main-content" class="page-shell">
     {% assign author = site.author %}
-    <aside class="profile" aria-label="About {{ author.name }}">
-      <img class="profile__portrait" src="{{ '/Materials/Images/picture.jpg' | relative_url }}" width="600" height="533" alt="Portrait of {{ author.name }}" fetchpriority="high">
+    <aside class="profile" aria-label="About {{ author.name | escape }}">
+      <img class="profile__portrait" src="{{ '/Materials/Images/picture.jpg' | relative_url | escape }}" width="600" height="533" alt="Portrait of {{ author.name | escape }}" fetchpriority="high">
       <div class="profile__identity">
-        <p class="profile__name">{{ author.name }}</p>
-        <p class="profile__role">{{ author.bio }}</p>
+        <p class="profile__name">{{ author.name | escape }}</p>
+        <p class="profile__role">{{ author.bio | escape }}</p>
       </div>
 
       <div class="contact-panel-wrapper">
@@ -60,39 +60,39 @@
           <address class="contact-list">
             <p>
               <span class="contact-label">At</span>
-              <a href="{{ author.directions_url }}">{{ author.location }}</a><br>
-              {{ author.address }}<br>
-              {{ author.office }}<br>
-              {{ author.postal_code }} {{ author.city }}, {{ author.country }}
+              <a href="{{ author.directions_url | escape }}">{{ author.location | escape }}</a><br>
+              {{ author.address | escape }}<br>
+              {{ author.office | escape }}<br>
+              {{ author.postal_code | escape }} {{ author.city | escape }}, {{ author.country | escape }}
             </p>
             <p class="contact-phone">
               <span class="contact-label">Secretary</span>
-              <a href="tel:{{ author.secretary_phone_url }}">{{ author.secretary_phone }}</a>
+              <a href="tel:{{ author.secretary_phone_url | escape }}">{{ author.secretary_phone | escape }}</a>
             </p>
             <p class="contact-phone">
               <span class="contact-label">Office</span>
-              <a href="tel:{{ author.office_phone_url }}">{{ author.office_phone }}</a>
+              <a href="tel:{{ author.office_phone_url | escape }}">{{ author.office_phone | escape }}</a>
             </p>
             <p>
               <span class="contact-label">Email</span>
-              <a href="mailto:{{ author.email }}">{{ author.email }}</a>
+              <a href="mailto:{{ author.email | escape }}">{{ author.email | escape }}</a>
             </p>
           </address>
           <nav class="profile-links" aria-label="Professional profiles">
-            <a href="https://orcid.org/{{ author.orcid }}" rel="me">ORCID</a>
-            <a href="https://www.scopus.com/authid/detail.uri?authorId={{ author.scopus }}">Scopus</a>
-            <a href="https://github.com/{{ author.github }}" rel="me">GitHub</a>
-            <a href="https://www.linkedin.com/in/{{ author.linkedin }}" rel="me">LinkedIn</a>
-            <a href="https://www.xing.com/profile/{{ author.xing }}" rel="me">XING</a>
+            <a href="https://orcid.org/{{ author.orcid | escape }}" rel="me">ORCID</a>
+            <a href="https://www.scopus.com/authid/detail.uri?authorId={{ author.scopus | escape }}">Scopus</a>
+            <a href="https://github.com/{{ author.github | escape }}" rel="me">GitHub</a>
+            <a href="https://www.linkedin.com/in/{{ author.linkedin | escape }}" rel="me">LinkedIn</a>
+            <a href="https://www.xing.com/profile/{{ author.xing | escape }}" rel="me">XING</a>
           </nav>
-          <a class="profile-cv" href="{{ '/Materials/General/CV_MartinBies.pdf' | relative_url }}">Academic CV <span aria-hidden="true">↓</span></a>
+          <a class="profile-cv" href="{{ '/Materials/General/CV_MartinBies.pdf' | relative_url | escape }}">Academic CV <span aria-hidden="true">↓</span></a>
         </div>
       </div>
     </aside>
 
     <article class="page">
       {% if page.url == '/' %}<p class="page-kicker">Software · geometry · string theory</p>{% endif %}
-      <h1>{{ page.title }}</h1>
+      <h1>{{ page.title | escape }}</h1>
       <div class="page__content">
         {{ content }}
       </div>
@@ -100,7 +100,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} <span aria-hidden="true">·</span> Last generated <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%-d %b %Y' }}</time>.</p>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title | escape }} <span aria-hidden="true">·</span> Last generated <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%-d %b %Y' }}</time>.</p>
   </footer>
 </body>
 </html>

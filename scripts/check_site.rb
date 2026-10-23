@@ -72,6 +72,9 @@ pages.each do |url, document|
   errors << "#{label}: inline scripts are forbidden by the content security policy" if document.at_css("script:not([src])")
   errors << "#{label}: inline style attributes are forbidden by the content security policy" if document.at_css("[style]")
   errors << "#{label}: inline style elements are forbidden by the content security policy" if document.at_css("style")
+  document.css("*").each do |element|
+    errors << "#{label}: inline event handlers are forbidden by the content security policy" if element.attributes.keys.any? { |name| name.start_with?("on") }
+  end
 
   ids = document.css("[id]").map { |node| node["id"] }
   ids.tally.select { |_, count| count > 1 }.each_key do |id|
@@ -89,7 +92,7 @@ pages.each do |url, document|
     errors << "#{label}: button is missing an accessible name" if accessible_name.empty?
     errors << "#{label}: button must declare type=button" unless button["type"] == "button"
     controlled_id = button["aria-controls"]
-    errors << "#{label}: aria-controls references missing ##{controlled_id}" if controlled_id && document.at_css("##{controlled_id}").nil?
+    errors << "#{label}: aria-controls references missing ##{controlled_id}" if controlled_id && !ids.include?(controlled_id)
   end
 
   document.css('a[target="_blank"]').each do |link|
@@ -138,7 +141,8 @@ pages.each do |url, document|
 
     target_doc = pages[path.end_with?("/") ? path : path.sub(%r{/index\.html\z}, "/")]
     target_doc ||= Nokogiri::HTML5(destination.read)
-    errors << "#{label}: #{raw} references missing fragment ##{fragment}" unless target_doc.at_css("##{fragment}")
+    fragment_id = URI::DEFAULT_PARSER.unescape(fragment)
+    errors << "#{label}: #{raw} references missing fragment ##{fragment}" unless target_doc.css("[id]").any? { |node| node["id"] == fragment_id }
   end
 end
 

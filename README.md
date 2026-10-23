@@ -79,6 +79,23 @@ bundle exec rake audit
 The generated site is written to `_site/`, which is intentionally ignored by
 Git.
 
+## Test suite
+
+After `bundle install`, run:
+
+```sh
+./scripts/test
+```
+
+The script builds the production site, validates its pages and links, and runs
+12 security regression tests using Minitest. It prints `All tests passed.` and
+exits with status 0 on success, or stops with a nonzero status on failure.
+Tests use temporary copies and require no browser, server, or network access.
+The script can also be invoked by its full path from another directory.
+
+Dependency auditing is separate: `bundle exec rake audit` requires network
+access to refresh the advisory database.
+
 ### Common setup issues
 
 - If `bundle` is unavailable, install Bundler with `gem install bundler`.

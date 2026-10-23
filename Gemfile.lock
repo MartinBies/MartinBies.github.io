@@ -240,9 +240,7 @@ GEM
       jekyll (>= 3.5, < 5.0)
       jekyll-feed (~> 0.9)
       jekyll-seo-tag (~> 2.1)
-    minitest (6.0.6)
-      drb (~> 2.0)
-      prism (~> 1.5)
+    minitest (5.23.1)
     net-http (0.9.1)
       uri (>= 0.11.1)
     nokogiri (1.19.4-arm64-darwin)
@@ -256,7 +254,6 @@ GEM
       sawyer (~> 0.9)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    prism (1.9.0)
     public_suffix (5.1.1)
     racc (1.8.1)
     rake (13.4.2)
@@ -297,6 +294,7 @@ DEPENDENCIES
   bundler-audit (~> 0.9)
   faraday-retry (~> 2.2)
   github-pages
+  minitest (~> 5.23)
   rake (~> 13.2)
   webrick (~> 1.7)
 

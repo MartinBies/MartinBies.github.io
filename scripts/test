@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.."
+bundle exec rake check
+bundle exec ruby scripts/security_test.rb
+echo "All tests passed."
